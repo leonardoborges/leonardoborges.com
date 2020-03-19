@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RailsSummit2009 on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/railssummit2009/</link>
+    <description>Recent content in RailsSummit2009 on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Oct 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/railssummit2009/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>my slides from rails summit 09</title>
+      <link>http://leonardoborges.com/writings/2009/10/18/my-slides-from-rails-summit-09/</link>
+      <pubDate>Sun, 18 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/10/18/my-slides-from-rails-summit-09/</guid>
+      <description>{% img /assets/images/rs2009.jpg %}
+Rails Summit finished a few days ago and I have only one word to describe it: Awesome!
+I met some really cool people, discussed a whole bunch of technical subjects and managed not to get so nervous in my first presentation ever - I&#39;m not counting internal presentations I&#39;ve done for my team...
+My slides and source files can be found here. Feel free to contact me with questions if you got any.</description>
+    </item>
+    
+  </channel>
+</rss>

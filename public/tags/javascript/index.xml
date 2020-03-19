@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/javascript/</link>
+    <description>Recent content in Javascript on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Mar 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>simplejquery daterange picker</title>
+      <link>http://leonardoborges.com/writings/2011/03/31/simplejquery-daterange-picker/</link>
+      <pubDate>Thu, 31 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/03/31/simplejquery-daterange-picker/</guid>
+      <description>As in many web apps out there, this week I needed a date range picker. I shopped around and while I did find a couple of good options they were (a) too clunky and (b) didn&#39;t prevent you from selecting invalid ranges. The latter being the one I was really interested in.
+So I coded up something simple that worked and looked nice and decided to share around. It&#39;s the jquery-daterange-picker.</description>
+    </item>
+    
+    <item>
+      <title>are_you_testing_your_javascript_yet</title>
+      <link>http://leonardoborges.com/writings/2010/06/14/are_you_testing_your_javascript_yet/</link>
+      <pubDate>Mon, 14 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/06/14/are_you_testing_your_javascript_yet/</guid>
+      <description>What&#39;s the difference between your application&#39;s javascript code and its java/ruby/python/whatever code?
+Think about it for a second. Done? Well, the answer is: none!
+In today&#39;s web applications your javascript code is no different from the rest of your code base but yet we treat it with disregard - and we&#39;re all to blame.
+We often see developers investing time writing all sorts of automated tests around their code base but fail to do the same for their javascript - and yet they get surprised when their client can&#39;t click on a button on their web app that depends on that ajax call that has been manually tested once when the page was first released.</description>
+    </item>
+    
+  </channel>
+</rss>

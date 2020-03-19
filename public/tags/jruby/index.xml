@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JRuby on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/jruby/</link>
+    <description>Recent content in JRuby on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Jan 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/jruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>managing multiple ruby versions</title>
+      <link>http://leonardoborges.com/writings/2010/01/02/managing-multiple-ruby-versions/</link>
+      <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/01/02/managing-multiple-ruby-versions/</guid>
+      <description>Today I read a nice post - in Portuguese - by Fábio Akita on how to manage multiple ruby versions on your machine. I&#39;ve tried it once with some tool I can&#39;t even remember the name but failed miserably.
+But this time things look very different. The tool here is the rvm - short for Ruby Version manager - and it works just great.
+Let&#39;s cut to the chase and imagine that you, like me, want to run/develop/test your code on both ruby 1.</description>
+    </item>
+    
+    <item>
+      <title>refactoring for readability</title>
+      <link>http://leonardoborges.com/writings/2009/09/18/refactoring-for-readability/</link>
+      <pubDate>Fri, 18 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/09/18/refactoring-for-readability/</guid>
+      <description>Yesterday I&#39;ve done something I should do more often: Revisit some code written a while ago for our current project and make it better.
+Let&#39;s face it. We all write crappy code the 1st time. The difference is in what we do about it afterwards.
+We might decide it&#39;s good enough and keep moving, or we could (and should!) stop and refactor it!
+The code I revisited worked as a refactoring exercise and it&#39;s initial version is shown below: class Jphoto .</description>
+    </item>
+    
+    <item>
+      <title>rails summit 2009 im speaking</title>
+      <link>http://leonardoborges.com/writings/2009/09/03/rails-summit-2009-im-speaking/</link>
+      <pubDate>Thu, 03 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/09/03/rails-summit-2009-im-speaking/</guid>
+      <description>I&#39;ll be speaking at this year&#39;s Rails Summit Latin America in Sao Paulo, Brazil. It will be a good opportunity to meet some amazing people and visit friends back home! :)
+Overall I&#39;ll be spending 12 days in Brazil, with 2 of them dedicated to the conference. The other 10 I&#39;ll be in Rio de Janeiro visiting my family and friends. I strongly advise you to spend some time in Rio too, if at all possible.</description>
+    </item>
+    
+    <item>
+      <title>jvm language preferences poll results</title>
+      <link>http://leonardoborges.com/writings/2009/07/31/jvm-language-preferences-poll-results/</link>
+      <pubDate>Fri, 31 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/07/31/jvm-language-preferences-poll-results/</guid>
+      <description>- Overall results
+First off, I&#39;d like to thank everyone who voted on this poll.
+With a total of 236 votes, here is the summary of the first two questions:
+- Are you currently working with or researching about language alternatives for the JVM? - e.g. JRuby, Scala, Groovy
+{% img /assets/images/scala_improvements.png %}
+Tooling. The majority of comment urge for better tooling and IDE support. That simple.
+- Others</description>
+    </item>
+    
+    <item>
+      <title>jruby on rails and legacy java apps managing dependencies</title>
+      <link>http://leonardoborges.com/writings/2009/07/01/jruby-on-rails-and-legacy-java-apps-managing-dependencies/</link>
+      <pubDate>Wed, 01 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/07/01/jruby-on-rails-and-legacy-java-apps-managing-dependencies/</guid>
+      <description>The motivation for this post came from a couple of messages I&#39;ve seen on the jruby&#39;s google group and because I think it&#39;s pretty cool to share how we tackled this problem.
+- A little bit of context
+We, as a vast amount of people out there, have legacy Java code. A lot. In our case this legacy is pretty much crucial to our business. We can&#39;t just trash it and start from scratch.</description>
+    </item>
+    
+    <item>
+      <title>google io thoughtworks on gae</title>
+      <link>http://leonardoborges.com/writings/2009/06/22/google-io-thoughtworks-on-gae/</link>
+      <pubDate>Mon, 22 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/06/22/google-io-thoughtworks-on-gae/</guid>
+      <description>I&#39;ve just watched a video from Google IO where Martin Fowler and Rebecca Parsons went through some of the aspects that involves the development of an application for the cloud - focusing on the JVM.
+In terms of the Google App Engine, you don&#39;t have access to a relational database, thing I found out when I first tried it. Instead you get a Big Table.
+Martin put out a good analogy and you can just think of it as a nested hash map.</description>
+    </item>
+    
+    <item>
+      <title>helping the jruby effort debugging the source</title>
+      <link>http://leonardoborges.com/writings/2009/06/14/helping-the-jruby-effort-debugging-the-source/</link>
+      <pubDate>Sun, 14 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/06/14/helping-the-jruby-effort-debugging-the-source/</guid>
+      <description>Wanna help improve JRuby? Make sure you read this post by Charles Nutter first. There he explains how to run Ruby specs with JRuby.
+Start with fixing Ruby specs is a great way to get acquainted with the code. And it&amp;rsquo;s also a important task in order to make sure JRuby is the most complete and compatible ruby implementation out there.
+But before you get your hands dirty, it will be a lot easier if you can actually debug JRuby&amp;rsquo;s source while fixing any specs - or bugs/features for that matter.</description>
+    </item>
+    
+    <item>
+      <title>railswaycon jruby internals by ola bini</title>
+      <link>http://leonardoborges.com/writings/2009/05/29/railswaycon-jruby-internals-by-ola-bini/</link>
+      <pubDate>Fri, 29 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/05/29/railswaycon-jruby-internals-by-ola-bini/</guid>
+      <description>As always I expected a good talk from Ola and once more he delivered it. But this one was different. It might have been even boring to some ruby developers since we saw a fair amount of java code in this presentation. Ola gave us a tour through the main classes that make JRuby possible with a single purpose: so we can check out the code and hack ourselves. You can download his slides here.</description>
+    </item>
+    
+    <item>
+      <title>rcov jruby and rcov_plugin</title>
+      <link>http://leonardoborges.com/writings/2009/05/05/rcov-jruby-and-rcov_plugin/</link>
+      <pubDate>Tue, 05 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/05/05/rcov-jruby-and-rcov_plugin/</guid>
+      <description>The rcov_plugin project is a rails plugin for rcov that adds some useful rake tasks to your application. And since I&#39;m currently working in a JRuby project it made sense to use this plugin.
+The thing is, among other stuff, an rcov report from a JRuby project includes some files that shouldn&#39;t be there at all, plus you also need to change the way you call rcov as such. Thus, I thought I&#39;d contribute these changes to the plugin and my pull request was approved this morning - just install the latest version and you should be good to go.</description>
+    </item>
+    
+    <item>
+      <title>jruby on rails and google app engine</title>
+      <link>http://leonardoborges.com/writings/2009/04/10/jruby-on-rails-and-google-app-engine/</link>
+      <pubDate>Fri, 10 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/04/10/jruby-on-rails-and-google-app-engine/</guid>
+      <description>As many of you know the new language supported at GAE now is Java, as officially announced on their blog. As a Ruby/Rails developer you might not be interested on it but here is a reason you should be: JRuby.
+It was only a matter of time until we saw some people deploying JRuby on Rails apps on GAE, like Ola Bini&#39;s mini blog app. Guess that was the first one really, as he was beta testing the service in secret.</description>
+    </item>
+    
+    <item>
+      <title>jruby db2 xquery bug</title>
+      <link>http://leonardoborges.com/writings/2008/04/07/jruby-db2-xquery-bug/</link>
+      <pubDate>Mon, 07 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/07/jruby-db2-xquery-bug/</guid>
+      <description>Update: Follow up link to this issue on JRuby&#39;s Jira, here
+As I told in my last post, it was time to give JRuby a serious try. So I took one of our rails projects at work and decided to migrate it to JRuby and see what happens.
+We heavily use the XML capabilities of DB2 and this was a huge problem. Every query would work just fine through the activerecord-jdbc-adapter - part of the JRuby Extras .</description>
+    </item>
+    
+    <item>
+      <title>qcon 2008 slides available</title>
+      <link>http://leonardoborges.com/writings/2008/04/04/qcon-2008-slides-available/</link>
+      <pubDate>Fri, 04 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/04/qcon-2008-slides-available/</guid>
+      <description>Most of last QCon&#39;s presentations are available for download here.
+Highlights to Ola Bini&#39;s on JRuby(pdf) and Randy Shoup&#39;s on eBay&#39;s architectural principles(pdf).
+And while we&#39;re talking about JRuby, it&#39;s impressive how it&#39;s becoming a recurrent and big subject. Fast. It had its own small space at big event like QCon and in the last Euruko in Prague, we had a presentation by the JRuby Core Developers Charles Nutter and Thomas Enebo.</description>
+    </item>
+    
+  </channel>
+</rss>

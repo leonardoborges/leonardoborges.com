@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sphinx on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/sphinx/</link>
+    <description>Recent content in Sphinx on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Jan 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/sphinx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>monit thinking sphinx and rvm</title>
+      <link>http://leonardoborges.com/writings/2010/01/13/monit-thinking-sphinx-and-rvm/</link>
+      <pubDate>Wed, 13 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/01/13/monit-thinking-sphinx-and-rvm/</guid>
+      <description>In one of my Rails projects I&#39;m using Sphinx to provide full-text search capabilities. To integrate both worlds I chose Thinking Sphinx, which is just great and so far has met all of my expectations.
+Also, as I previously mentioned, I&#39;m using RVM to manage my ruby installations on both my development and production machines and this setup is what motivated this post.
+I use Monit to monitor the services running on my production server - nginx, mysql, php - and as of the first deploy of this application, it only made sense to also monitor Sphinx.</description>
+    </item>
+    
+  </channel>
+</rss>

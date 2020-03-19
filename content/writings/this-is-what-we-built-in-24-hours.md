@@ -46,21 +46,19 @@ Also, checkout some screenshots of the Android version:
 
 <p>
 <div class="gallery">
-    <a rel="gallery1" href="/assets/images/posts/cool-story-1.png" class="fancybox hoverZoomLink">
-        <img src="/assets/images/posts/cool-story-1.png" width="120" height="213"/>
+    <a rel="gallery1" href="/images//cool-story-1.png" class="fancybox hoverZoomLink">
+        <img src="/images//cool-story-1.png" width="120" height="213"/>
     </a>
-    <a rel="gallery1" href="/assets/images/posts/cool-story-2.png" class="fancybox hoverZoomLink">
-        <img src="/assets/images/posts/cool-story-2.png" width="120" height="213"/>
+    <a rel="gallery1" href="/images//cool-story-2.png" class="fancybox hoverZoomLink">
+        <img src="/images//cool-story-2.png" width="120" height="213"/>
     </a>
-    <a rel="gallery1" href="/assets/images/posts/cool-story-3.png" class="fancybox hoverZoomLink">
-        <img src="/assets/images/posts/cool-story-3.png" width="120" height="213"/>
+    <a rel="gallery1" href="/images//cool-story-3.png" class="fancybox hoverZoomLink">
+        <img src="/images//cool-story-3.png" width="120" height="213"/>
     </a>
-    <a rel="gallery1" href="/assets/images/posts/cool-story-4.png" class="fancybox hoverZoomLink">
-        <img src="/assets/images/posts/cool-story-4.png" width="120" height="213"/>
+    <a rel="gallery1" href="/images//cool-story-4.png" class="fancybox hoverZoomLink">
+        <img src="/images//cool-story-4.png" width="120" height="213"/>
     </a>
     <div class="clear"></div>
 </div>
-
-{% include fancybox.html %}
 
 Enjoy! :)

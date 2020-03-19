@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patterns on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/patterns/</link>
+    <description>Recent content in Patterns on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Oct 2007 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/patterns/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>como o spring me ajudou a manter o active record</title>
+      <link>http://leonardoborges.com/writings/2007/10/13/como-o-spring-me-ajudou-a-manter-o-active-record/</link>
+      <pubDate>Sat, 13 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/13/como-o-spring-me-ajudou-a-manter-o-active-record/</guid>
+      <description>&lt;p&gt;
+Nesse primeiro post vou falar um pouco sobre meu novo trabalho. Na verdade, sobre um problema que encontramos lÃ¡.&lt;br&gt;&lt;br&gt;Dentre diversas coisas que estamos fazendo, como migraÃ§Ãµes por exemplo, estou ajudando na elaboraÃ§Ã£o da arquitetura que irÃ¡ abrigar as novas aplicaÃ§Ãµes desenvolvidas na empresa.</description>
+    </item>
+    
+  </channel>
+</rss>

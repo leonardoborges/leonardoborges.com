@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rails on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/rails/</link>
+    <description>Recent content in Rails on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Apr 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/rails/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>look ma no hands tweeting with your voice</title>
+      <link>http://leonardoborges.com/writings/2011/04/09/look-ma-no-hands-tweeting-with-your-voice/</link>
+      <pubDate>Sat, 09 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/04/09/look-ma-no-hands-tweeting-with-your-voice/</guid>
+      <description>This is just another one of those boring weekends where I felt the need to hack on something.
+If you follow Google Chrome&#39;s blog you&#39;re probably aware of this little nifty feature they started to implement in their latest builds: HTML5 voice recognition.
+And that&#39;s when it struck me: &#34;Hey, what if I use that and tweet with my voice instead of typing?&#34;
+The result of this hacking session is LoudParrot, a sample Rails app that shows how to do just that.</description>
+    </item>
+    
+    <item>
+      <title>ide review rubymine</title>
+      <link>http://leonardoborges.com/writings/2011/02/16/ide-review-rubymine/</link>
+      <pubDate>Wed, 16 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/02/16/ide-review-rubymine/</guid>
+      <description>Since I started working with Ruby about 4 years ago, I&#39;ve used quite a few text editors and ide&#39;s: RadRails, gedit + plugins, TextMate and Vim.
+TextMate is the one I&#39;ve used the most and it&#39;s been ok for a long time. Until you realize you need half a dozen bundles to make it really useful for ruby development. Obviously the same goes for Vim and gedit.
+Oh, and forget about refactoring.</description>
+    </item>
+    
+    <item>
+      <title>clouds against the floods presentation available</title>
+      <link>http://leonardoborges.com/writings/2011/02/12/clouds-against-the-floods-presentation-available/</link>
+      <pubDate>Sat, 12 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/02/12/clouds-against-the-floods-presentation-available/</guid>
+      <description> Last Tuesday I gave a short presentation on the whole Clouds Against the Floods thing at the Ruby on Rails Oceania User Group here in Sydney.
+Those guys are awesome and they recorded the talk - thanks guys!
+If you&#39;d like to download the slides, they&#39;re available on Slideshare.
+Enjoy! ;)
+ </description>
+    </item>
+    
+    <item>
+      <title>update to appconstants it can now be used as a gem</title>
+      <link>http://leonardoborges.com/writings/2011/02/02/update-to-appconstants-it-can-now-be-used-as-a-gem/</link>
+      <pubDate>Wed, 02 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/02/02/update-to-appconstants-it-can-now-be-used-as-a-gem/</guid>
+      <description>This is just a quick post to let you know that AppConstants can now be used as gem!
+Just add it to your Gemfile and &#39;bundle install&#39; it:
+#in your Gemfile gem &amp;quot;app_constants&amp;quot; #in the console $ bundle install $ rails generate app_constants #then follow the instructions on-screen instructions 
+It can also be used without Rails. Check out full instructions on the GitHub repository.
+Feedback welcome :)</description>
+    </item>
+    
+    <item>
+      <title>clouds against the floods</title>
+      <link>http://leonardoborges.com/writings/2011/01/16/clouds-against-the-floods/</link>
+      <pubDate>Sun, 16 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/01/16/clouds-against-the-floods/</guid>
+      <description>I think by now everyone&#39;s heard of the hard time the guys up in Queensland, Australia are having because of the recent floods. People have lost their lives and many others have lost their homes and businesses, product of years of hard work.
+As a result of this massive disaster the Queensland Government decided to run a telethon to encourage donations to help the flood victims. The Telethon aired last Sunday, 09/01/11, on Channel 9 and lasted for 2 hours.</description>
+    </item>
+    
+    <item>
+      <title>small update to appconstants</title>
+      <link>http://leonardoborges.com/writings/2010/04/24/small-update-to-appconstants/</link>
+      <pubDate>Sat, 24 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/04/24/small-update-to-appconstants/</guid>
+      <description>It&#39;s been now over a week since we moved to Sydney and everything is just great. We&#39;re still house hunting but I got a feeling we&#39;ll have a home soon. :)
+In the meantime, this morning I got a feature request on github to allow AppConstants to interpret YAML files with embedded code like this:
+
+I haven&#39;t needed it myself but thought it would be a nice addition so my latest commit does exactly that.</description>
+    </item>
+    
+    <item>
+      <title>upgrading appconstants to rails 3</title>
+      <link>http://leonardoborges.com/writings/2010/02/28/upgrading-appconstants-to-rails-3/</link>
+      <pubDate>Sun, 28 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/02/28/upgrading-appconstants-to-rails-3/</guid>
+      <description>Back in January I announced a small but useful plugin called AppConstants, that basically provides a central place where you can store environment specific constants. And since I started using Rails 3 in the past week, I thought I&#39;d make it Rails 3 compatible.
+The code is really simple and - as I expected - the upgrade process was quite straight forward.
+I&#39;m not gonna write a guide here on how to upgrade your plugins to Rails 3 - there is plenty about that around the web - but instead, just show the steps I went through to upgrade mine.</description>
+    </item>
+    
+    <item>
+      <title>my take on rails environment specific constants</title>
+      <link>http://leonardoborges.com/writings/2010/01/23/my-take-on-rails-environment-specific-constants/</link>
+      <pubDate>Sat, 23 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/01/23/my-take-on-rails-environment-specific-constants/</guid>
+      <description>It’s funny how every Rails application I - and possibly you - work on ends up needing some sort of per-environment global constants.
+Examples may include the application url - It might be used in account activation emails and thus should be different between the development and production environments.
+Or perhaps your application depends on external services that, depending on the environment, are available in different URIs.
+There are a couple solutions out there but my needs were simple and straightforward, thus I developed a small rails plugin that is the simplest thing that could possibly work: AppConstants.</description>
+    </item>
+    
+    <item>
+      <title>monit thinking sphinx and rvm</title>
+      <link>http://leonardoborges.com/writings/2010/01/13/monit-thinking-sphinx-and-rvm/</link>
+      <pubDate>Wed, 13 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/01/13/monit-thinking-sphinx-and-rvm/</guid>
+      <description>In one of my Rails projects I&#39;m using Sphinx to provide full-text search capabilities. To integrate both worlds I chose Thinking Sphinx, which is just great and so far has met all of my expectations.
+Also, as I previously mentioned, I&#39;m using RVM to manage my ruby installations on both my development and production machines and this setup is what motivated this post.
+I use Monit to monitor the services running on my production server - nginx, mysql, php - and as of the first deploy of this application, it only made sense to also monitor Sphinx.</description>
+    </item>
+    
+    <item>
+      <title>rails summit 2009 im speaking</title>
+      <link>http://leonardoborges.com/writings/2009/09/03/rails-summit-2009-im-speaking/</link>
+      <pubDate>Thu, 03 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/09/03/rails-summit-2009-im-speaking/</guid>
+      <description>I&#39;ll be speaking at this year&#39;s Rails Summit Latin America in Sao Paulo, Brazil. It will be a good opportunity to meet some amazing people and visit friends back home! :)
+Overall I&#39;ll be spending 12 days in Brazil, with 2 of them dedicated to the conference. The other 10 I&#39;ll be in Rio de Janeiro visiting my family and friends. I strongly advise you to spend some time in Rio too, if at all possible.</description>
+    </item>
+    
+    <item>
+      <title>rails rumble 09</title>
+      <link>http://leonardoborges.com/writings/2009/08/25/rails-rumble-09/</link>
+      <pubDate>Tue, 25 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/08/25/rails-rumble-09/</guid>
+      <description>Update: The service is now down while we move it from the VPS provided by Rails Rumble to our own. I&#39;ll let you know once it&#39;s up.
+Last weekend Philip, Pedro and myself got together for this year&#39;s Rails Rumble.
+We haven&#39;t had really decided what to do until a few days before the competition, but I had this really simple idea and decided to go with it. Seems people liked it, given a few positive comments we received.</description>
+    </item>
+    
+    <item>
+      <title>jruby on rails and legacy java apps managing dependencies</title>
+      <link>http://leonardoborges.com/writings/2009/07/01/jruby-on-rails-and-legacy-java-apps-managing-dependencies/</link>
+      <pubDate>Wed, 01 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/07/01/jruby-on-rails-and-legacy-java-apps-managing-dependencies/</guid>
+      <description>The motivation for this post came from a couple of messages I&#39;ve seen on the jruby&#39;s google group and because I think it&#39;s pretty cool to share how we tackled this problem.
+- A little bit of context
+We, as a vast amount of people out there, have legacy Java code. A lot. In our case this legacy is pretty much crucial to our business. We can&#39;t just trash it and start from scratch.</description>
+    </item>
+    
+    <item>
+      <title>rails readable test names run individual tests from the console</title>
+      <link>http://leonardoborges.com/writings/2009/05/16/rails-readable-test-names-run-individual-tests-from-the-console/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/05/16/rails-readable-test-names-run-individual-tests-from-the-console/</guid>
+      <description>As you probably know, since rails 2.1 you can write test methods in the following format:
+test &#34;hotel should return its permalink&#34; do
+#your test code here
+end
+
+Which is great, as the test name becomes much more clear. But you can&#39;t simply run this test easily from the command line. You&#39;d have to run something like:
+$ ruby your_test_file.rb -n test_hotel_should_return_its_permalink
+
+It annoys me. And it&#39;s not practical either to make the test fail just so you can get the test&#39;s real name.</description>
+    </item>
+    
+    <item>
+      <title>rcov jruby and rcov_plugin</title>
+      <link>http://leonardoborges.com/writings/2009/05/05/rcov-jruby-and-rcov_plugin/</link>
+      <pubDate>Tue, 05 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/05/05/rcov-jruby-and-rcov_plugin/</guid>
+      <description>The rcov_plugin project is a rails plugin for rcov that adds some useful rake tasks to your application. And since I&#39;m currently working in a JRuby project it made sense to use this plugin.
+The thing is, among other stuff, an rcov report from a JRuby project includes some files that shouldn&#39;t be there at all, plus you also need to change the way you call rcov as such. Thus, I thought I&#39;d contribute these changes to the plugin and my pull request was approved this morning - just install the latest version and you should be good to go.</description>
+    </item>
+    
+    <item>
+      <title>jruby on rails and google app engine</title>
+      <link>http://leonardoborges.com/writings/2009/04/10/jruby-on-rails-and-google-app-engine/</link>
+      <pubDate>Fri, 10 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/04/10/jruby-on-rails-and-google-app-engine/</guid>
+      <description>As many of you know the new language supported at GAE now is Java, as officially announced on their blog. As a Ruby/Rails developer you might not be interested on it but here is a reason you should be: JRuby.
+It was only a matter of time until we saw some people deploying JRuby on Rails apps on GAE, like Ola Bini&#39;s mini blog app. Guess that was the first one really, as he was beta testing the service in secret.</description>
+    </item>
+    
+    <item>
+      <title>rails performance scripts profiler benchmarker</title>
+      <link>http://leonardoborges.com/writings/2008/11/20/rails-performance-scripts-profiler-benchmarker/</link>
+      <pubDate>Thu, 20 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/11/20/rails-performance-scripts-profiler-benchmarker/</guid>
+      <description>There are several ways you can measure your rails application&#39;s performance. The techniques range from filling your code with &#34;puts&#34; statements - :p - to fancy ones like NewRelic - which is quite nice, I must say.
+But what many people don&#39;t know is that rails ships with a handful of scripts to help you out. One of which is called profiler, located under your application&#39;s scripts/performance directory.
+By default it uses the standard ruby profiler but if you want more speed - and additional reporting options - , consider installing the ruby-prof gem.</description>
+    </item>
+    
+    <item>
+      <title>dont use rexml i mean it</title>
+      <link>http://leonardoborges.com/writings/2008/10/08/dont-use-rexml-i-mean-it/</link>
+      <pubDate>Wed, 08 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/10/08/dont-use-rexml-i-mean-it/</guid>
+      <description>REXML is the standard XML processing library for Ruby. It&#39;s on Ruby&#39;s core and is terribly slow.
+Yeah, I know it&#39;s pretty simple to use, got a nice interface and, again, it&#39;s just there. And it is a good library, for most things. But if you, as me, came to a point that processing XML is taking 50% of the time to render a rails action, it&#39;s time to change.</description>
+    </item>
+    
+    <item>
+      <title>railsconf europe 2008 impressions and highlights</title>
+      <link>http://leonardoborges.com/writings/2008/09/09/railsconf-europe-2008-impressions-and-highlights/</link>
+      <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/09/09/railsconf-europe-2008-impressions-and-highlights/</guid>
+      <description>I&#39;m back in Madrid again after the RailsConf and I think it&#39;s time to say something about it. :)
+First off, the infrastructure provided by the conference was really great. The rooms, WiFi connection, food...Â Really well organized.
+Now to the sessions, highlights:
+Tutorials (Tuesday)
+- Meta-programming Ruby for fun and profit (Neal Ford, Patrick Farley)
+The old and good techniques that made Ruby so powerful. Here Neal and Patrick walked us through the main tricks to meta programming like open classes - and conditionally open them - , dynamically define methods, sending messages to objects and how Ruby can help test your Java code in a much easier way.</description>
+    </item>
+    
+    <item>
+      <title>railsconf europe 2008 heading to berlin</title>
+      <link>http://leonardoborges.com/writings/2008/08/30/railsconf-europe-2008-heading-to-berlin/</link>
+      <pubDate>Sat, 30 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/30/railsconf-europe-2008-heading-to-berlin/</guid>
+      <description> The title says it already.
+On monday I&#39;ll be going to Berlin to attend this yearÂ´s RailsConf.
+This will be my first one and of course my expectations are pretty high!
+As usual, after the conference I&#39;ll try and give a summary of what happened there, providing as much content as I can.
+Anyone else&#39;s going??? :)
+C u there! </description>
+    </item>
+    
+    <item>
+      <title>mac os x getting mysql and rails to work</title>
+      <link>http://leonardoborges.com/writings/2008/08/28/mac-os-x-getting-mysql-and-rails-to-work/</link>
+      <pubDate>Thu, 28 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/28/mac-os-x-getting-mysql-and-rails-to-work/</guid>
+      <description>So I couldn&#39;t resist and bought myself a MacBook Pro! It&#39;s my first week with my new toy and I&#39;m really enjoying it.
+But I need to do something useful with it so I started to prepare it to be my new development platform, starting with Ruby/Rails + MySQL: Here is where the fun begins!
+After I installed both Rails and MySQL, I fired up a terminal an typed:</description>
+    </item>
+    
+    <item>
+      <title>rails vulnerability on rexml</title>
+      <link>http://leonardoborges.com/writings/2008/08/24/rails-vulnerability-on-rexml/</link>
+      <pubDate>Sun, 24 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/24/rails-vulnerability-on-rexml/</guid>
+      <description> REXML, the XML library uses by many ruby apps, including rails, has a vulnerability that requires an immediate patch on whatever rails version you&#39;re using.
+Details and instructions on the official rails weblog, here.
+But basically, this is what you need to do:
+gem install rexml-expansion-fix
+
+Then, require rexml-expansion-fix in your rails&#39;s app environment.rb file. </description>
+    </item>
+    
+    <item>
+      <title>the biggest rails event in latin america</title>
+      <link>http://leonardoborges.com/writings/2008/08/04/the-biggest-rails-event-in-latin-america/</link>
+      <pubDate>Mon, 04 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/04/the-biggest-rails-event-in-latin-america/</guid>
+      <description>Behold latin american railers!
+This year we will have the Rails Summit Latin America on October, 15th and 16th, in SÃ£o Paulo, Brazil.
+It&#39;s by far the biggest Rails event we&#39;ve ever had, including many of the speakers that were present at RailsConf.
+FÃ¡bio Akita is also one of the speakers and provides more details on his blog.
+If you&#39;re a assumed rails geek don&#39;t miss the opportunity to hear from the big names and to know a beautiful country like Brazil.</description>
+    </item>
+    
+    <item>
+      <title>passenger mod_rails and problems with custom apache installation</title>
+      <link>http://leonardoborges.com/writings/2008/06/07/passenger-mod_rails-and-problems-with-custom-apache-installation/</link>
+      <pubDate>Sat, 07 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/06/07/passenger-mod_rails-and-problems-with-custom-apache-installation/</guid>
+      <description>This week we started to test mod_rails in a couple of projects where I work on. One in production.
+Of course it&#39;s too early for any conclusions, but I just wanted to share a couple of problems you might find when the installer tries to compile the Apache module.
+In our case, and I believe it is the case of many servers out there, we have a custom Apache installation, what makes the installer not find it and/or not find the Apache Portable Runtime (APR) sometimes.</description>
+    </item>
+    
+    <item>
+      <title>euruko 2008 materials available</title>
+      <link>http://leonardoborges.com/writings/2008/05/14/euruko-2008-materials-available/</link>
+      <pubDate>Wed, 14 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/05/14/euruko-2008-materials-available/</guid>
+      <description> As some of you know I went to the European Ruby Conf in Prague, this year.
+The event was awesome and it&#39;s good to know they finally made available the majority of the slides, here.
+They also published Matz&#39;s keynote, and more videos from the conference are being edited right now, so stay tuned to their home page!
+Enjoy! </description>
+    </item>
+    
+    <item>
+      <title>a couple of things from here</title>
+      <link>http://leonardoborges.com/writings/2008/05/10/a-couple-of-things-from-here/</link>
+      <pubDate>Sat, 10 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/05/10/a-couple-of-things-from-here/</guid>
+      <description>It&#39;s been some time since my last post but here I am! Where? In Spain, of course! Having a great time, I must say.
+I arrived last week in Madrid and the past 2 weeks before that I spent basically packing my stuff. There is still some paperwork going on but everything is flowing well.
+Besides this little feedback, I was reading this week&#39;s issue of the excellent series This Week In Ruby, from my friend Antonio Cangiano.</description>
+    </item>
+    
+    <item>
+      <title>passengermod_rails released</title>
+      <link>http://leonardoborges.com/writings/2008/04/14/passengermod_rails-released/</link>
+      <pubDate>Mon, 14 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/14/passengermod_rails-released/</guid>
+      <description>Passenger(mod_rails) has been released.
+The idea is to ease the pain on rails applications deployment. I tested myself and in less than five minutes I had my application working behind Apache!
+I&#39;m not going to say much here besides the fact that it seems like a really good option for rails deployment and people have been talking about it already, including DHH.
+But I do recommend a read on the architecture overview document.</description>
+    </item>
+    
+    <item>
+      <title>jruby db2 xquery bug</title>
+      <link>http://leonardoborges.com/writings/2008/04/07/jruby-db2-xquery-bug/</link>
+      <pubDate>Mon, 07 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/07/jruby-db2-xquery-bug/</guid>
+      <description>Update: Follow up link to this issue on JRuby&#39;s Jira, here
+As I told in my last post, it was time to give JRuby a serious try. So I took one of our rails projects at work and decided to migrate it to JRuby and see what happens.
+We heavily use the XML capabilities of DB2 and this was a huge problem. Every query would work just fine through the activerecord-jdbc-adapter - part of the JRuby Extras .</description>
+    </item>
+    
+    <item>
+      <title>qcon 2008 slides available</title>
+      <link>http://leonardoborges.com/writings/2008/04/04/qcon-2008-slides-available/</link>
+      <pubDate>Fri, 04 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/04/qcon-2008-slides-available/</guid>
+      <description>Most of last QCon&#39;s presentations are available for download here.
+Highlights to Ola Bini&#39;s on JRuby(pdf) and Randy Shoup&#39;s on eBay&#39;s architectural principles(pdf).
+And while we&#39;re talking about JRuby, it&#39;s impressive how it&#39;s becoming a recurrent and big subject. Fast. It had its own small space at big event like QCon and in the last Euruko in Prague, we had a presentation by the JRuby Core Developers Charles Nutter and Thomas Enebo.</description>
+    </item>
+    
+    <item>
+      <title>euruko 2008 european rubyconf prague</title>
+      <link>http://leonardoborges.com/writings/2008/03/25/euruko-2008-european-rubyconf-prague/</link>
+      <pubDate>Tue, 25 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/03/25/euruko-2008-european-rubyconf-prague/</guid>
+      <description>On friday I&#39;ll be heading Prague for the European RubyConf.
+Anyone is going? :)
+Almost 300 attendees already registered for the event. And a few very interesting people will be speaking there like Matz and DHH (this one, through skype).
+Besides that, the organization staff is scheduling 2 parties, friday and saturday, for the attendees.
+Networking comes to mind, doesn&#39;t it? I think it will be a great opportunity to meet interesting and bright people.</description>
+    </item>
+    
+    <item>
+      <title>openid</title>
+      <link>http://leonardoborges.com/writings/2008/02/18/openid/</link>
+      <pubDate>Mon, 18 Feb 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/02/18/openid/</guid>
+      <description>I think I&#39;ve been really lucky lately. In my new job I&#39;m getting to work with many interesting things and OpenID is just one of them.
+We are investing high in Ruby on Rails and we have now a few internal applications in development stages. Our manager wanted the ability to let people log in to our rails applications(for now) using their OpenID accounts.
+It was a funny task, as I knew very little about OpenID.</description>
+    </item>
+    
+    <item>
+      <title>rails 20 xml data type and db2</title>
+      <link>http://leonardoborges.com/writings/2008/01/02/rails-20-xml-data-type-and-db2/</link>
+      <pubDate>Wed, 02 Jan 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/01/02/rails-20-xml-data-type-and-db2/</guid>
+      <description>[2008/04/30] Update: The ibm_db gem has been updated to support the new Rails 2.0 style migration. Now you can just use t.xml and it will work. Look here for more info. Thanks to Mario Briggs for pointing me to the update.
+---
+In my new job we work with XML data natively stored on DB2. I have done some test with Rails and DB2 a few weeks ago and it&#39;s pretty interesting, specially the easiness that Rails deals with XML.</description>
+    </item>
+    
+    <item>
+      <title>rails 20 scaffold</title>
+      <link>http://leonardoborges.com/writings/2007/12/21/rails-20-scaffold/</link>
+      <pubDate>Fri, 21 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/12/21/rails-20-scaffold/</guid>
+      <description>Following the Rails 2.0 hype, I&#39;ve been playing around with it and decided to share a first impression: Scaffolding is gone!
+But wait, before you knock your head against the wall, let me tell you something: I lied :)
+Scaffolding is not really gone. It&#39;s just changed a bit.
+How can I tell? Well, as a good developer I thought: &#34;I&#39;ll just create a scaffold with the new version and see what&#39;s different&#34;</description>
+    </item>
+    
+    <item>
+      <title>rubyworks production stack for rails</title>
+      <link>http://leonardoborges.com/writings/2007/12/01/rubyworks-production-stack-for-rails/</link>
+      <pubDate>Sat, 01 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/12/01/rubyworks-production-stack-for-rails/</guid>
+      <description>&lt;p&gt;
+Well, we all know how hard, or at least cumbersome, it can be to set up a production environment to deploy your applications. Besides all the hardware stuff like storages, links, routers you are still left with a huge amount of software configuration to handle. This often includes configuring things like clusters, load balancing and services monitoring - Including notification of interested parts in case of any failure. Pieces of software you have to tie up and make them work together.&lt;br&gt;&lt;br&gt;But hey, ruby lovers, you may have a better way to get this going! Released by &lt;a href=&#34;http://www.thoughtworks.com/&#34; title=&#34;TW&#39;s web site&#34;&gt;ThoughtWorks&lt;/a&gt;, &lt;a href=&#34;http://studios.thoughtworks.com/rubyworks&#34; title=&#34;RubyWorks&#34;&gt;RubyWorks&lt;/a&gt; is, as quoted from their website, a production application stack for &lt;a href=&#34;http://www.rubyonrails.org/&#34; title=&#34;Ruby On Rails&#34;&gt;Ruby On Rails&lt;/a&gt; applications. I decided to give it a try and I really enjoyed it.&lt;br&gt;&lt;br&gt;First of all I didn&#39;t want to mess with my actual configuration so I installed a new vm with &lt;a href=&#34;http://www.virtualbox.org/&#34; title=&#34;Virtual Box&#34;&gt;Virtual Box&lt;/a&gt;. It has Ubuntu 7.10 on it, with 256MB of memory.&lt;br&gt;&lt;br&gt;After installing RubyWorks - instructions on their website -, you get a new skeleton rails app up and running, being served by 4 &lt;a href=&#34;http://mongrel.rubyforge.org/&#34; title=&#34;Mongrel&#34;&gt;mongrels&lt;/a&gt; that defaults to production environment! Impressed? There is more. A &lt;a href=&#34;http://haproxy.1wt.eu/&#34; title=&#34;HAProxy&#34;&gt;HAProxy&lt;/a&gt; is also set up in front of your mongrel servers acting as a load balancer.&lt;br&gt;&lt;br&gt;Well, you probably want to monitor all that stuff huh? A &lt;a href=&#34;http://www.tildeslash.com/monit/&#34; title=&#34;Monit&#34;&gt;monit&lt;/a&gt; web interface is waiting for your call on port 2812! It monitors all your mongrel servers - four by default - and your HAProxy, allowing you to measure CPU and Memory usage, among other things.&lt;br&gt;&lt;br&gt;The coolest thing here is that all these softwares you would have to setup by hand are already working together, ready for production! Well, is it?&lt;br&gt;&lt;br&gt;Going a little deeper, I deployed a database backed application to test this stack&#39;s performance.&lt;br&gt;&lt;br&gt;I used &lt;a href=&#34;http://www.joedog.org/JoeDog/Siege&#34; title=&#34;Siege&#34;&gt;Siege&lt;/a&gt; to stress the app and I am very happy with the results! I compared it with a single mongrel running on production env and no proxy at all.&lt;br&gt;&lt;br&gt;It is worth mentioning that having 4 mongrels running took my vm to 77% of memory usage, while a single mongrel took it to 38%.&lt;br&gt;&lt;br&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CodingDojo on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/codingdojo/</link>
+    <description>Recent content in CodingDojo on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Jun 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/codingdojo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>coding dojo 1 the fun begins</title>
+      <link>http://leonardoborges.com/writings/2009/06/06/coding-dojo-1-the-fun-begins/</link>
+      <pubDate>Sat, 06 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/06/06/coding-dojo-1-the-fun-begins/</guid>
+      <description>Yesterday I organized our first CodingDojo here at the company and I&#39;m glad to say it was a great success!
+The problem chosen was the Karate Chop, from Dave Thomas&#39; Code Kata.
+As it was also my first time organizing a Dojo, we took some time to get things straight, explain everyone the rules and start coding. Nothing that would compromise the experience, though.
+The rules were basically the ones of a RandoriKata and as a mechanism for switching pairs we chose the TimeBox with a limit of 5 minutes.</description>
+    </item>
+    
+  </channel>
+</rss>

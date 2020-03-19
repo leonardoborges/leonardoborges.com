@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>twitter on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/twitter/</link>
+    <description>Recent content in twitter on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Apr 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>look ma no hands tweeting with your voice</title>
+      <link>http://leonardoborges.com/writings/2011/04/09/look-ma-no-hands-tweeting-with-your-voice/</link>
+      <pubDate>Sat, 09 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/04/09/look-ma-no-hands-tweeting-with-your-voice/</guid>
+      <description>This is just another one of those boring weekends where I felt the need to hack on something.
+If you follow Google Chrome&#39;s blog you&#39;re probably aware of this little nifty feature they started to implement in their latest builds: HTML5 voice recognition.
+And that&#39;s when it struck me: &#34;Hey, what if I use that and tweet with my voice instead of typing?&#34;
+The result of this hacking session is LoudParrot, a sample Rails app that shows how to do just that.</description>
+    </item>
+    
+  </channel>
+</rss>

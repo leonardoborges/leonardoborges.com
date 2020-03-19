@@ -1,0 +1,11 @@
++++ 
+title = "apologizing in advance p"
+date = "2008-12-03"
+slug = "2008/12/03/apologizing-in-advance-p"
+tags =["World"]
++++
+
+<p>
+<strong>UPDATE</strong>: By next friday I meant this friday, december 5th. Tks Pillip! :P<br><br>This will be a really quiet month on my blog.<br><br>The reason? Next friday I'm going to Brazil for vacation and right after, in the end of december, I'm going to extend my trip a bit and spend xmas in Norway.<br><br>Just hope to come back alive from Brazil! My friends are promising a real blast!!!!! :D<br><br>C u all soon!
+</p>
+

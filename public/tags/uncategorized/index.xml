@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uncategorized on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/uncategorized/</link>
+    <description>Recent content in Uncategorized on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Sep 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>help stop the ie money drain</title>
+      <link>http://leonardoborges.com/writings/2010/09/28/help-stop-the-ie-money-drain/</link>
+      <pubDate>Tue, 28 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/09/28/help-stop-the-ie-money-drain/</guid>
+      <description>I&#39;m a big heavy metal fan. And so are most of my friends. As a result I launched RottingNames, a band name generator that will generate the most hilarious, nastiest and nonsense names the metal world is yet to discover - ok, that&#39;s probably a bit of an overstatement but the idea is good.
+However, a friend pointed out the code had a bug when running under - gasp - Internet Explorer.</description>
+    </item>
+    
+  </channel>
+</rss>

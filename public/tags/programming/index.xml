@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/programming/</link>
+    <description>Recent content in Programming on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Apr 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>fallingdreams my very own tetris clone</title>
+      <link>http://leonardoborges.com/writings/2010/04/09/fallingdreams-my-very-own-tetris-clone/</link>
+      <pubDate>Fri, 09 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/04/09/fallingdreams-my-very-own-tetris-clone/</guid>
+      <description>This will come as no surprise to my closest friends, but I am a long time game development admirer. Although I&#39;ve never done anything professionally I did spend some time in the past studying this amazingly interesting field - it&#39;s my dark hobby. As hardware evolves and gamers demand more and more reality from their consoles, the game development industry is one of the few that basically didn&#39;t suffer with the latest economic crisis.</description>
+    </item>
+    
+    <item>
+      <title>learning objective c a ruby analogy</title>
+      <link>http://leonardoborges.com/writings/2010/02/25/learning-objective-c-a-ruby-analogy/</link>
+      <pubDate>Thu, 25 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/02/25/learning-objective-c-a-ruby-analogy/</guid>
+      <description>Learning new programming languages is fun. And if it&#39;s your 2nd, 3rd...Nth programming language you will eventually look for features you already know and love.
+Coming from Ruby - but after having done my fair amount of Java for many years, among other things - I end up looking for features like blocks, open classes and syntax sugar like automatic generation of attribute accessors. These are hard to let go of.</description>
+    </item>
+    
+    <item>
+      <title>how do you keep yourself focused</title>
+      <link>http://leonardoborges.com/writings/2009/06/08/how-do-you-keep-yourself-focused/</link>
+      <pubDate>Mon, 08 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/06/08/how-do-you-keep-yourself-focused/</guid>
+      <description>This is basically a compilation of a few tools/habits that I use to keep focused and at a high level of productivity when working alone. Works great for me and I hope there are useful tips for you as well.
+ Music This is one of my favorites. When working alone I hate having noisy people around, which happens quite often if you work in an open office space like me.</description>
+    </item>
+    
+    <item>
+      <title>why every programmer have to be dumb</title>
+      <link>http://leonardoborges.com/writings/2007/11/23/why-every-programmer-have-to-be-dumb/</link>
+      <pubDate>Fri, 23 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/11/23/why-every-programmer-have-to-be-dumb/</guid>
+      <description>At least, dumb for the companies hiring them. The old dream is still for sale out there: Build a &#34;I do everything framework&#34; and hire a bunch of dumb programmers - monkeys? - and you shall make money easily!
+Just put some button pressers and a full featured enterprise system will be waiting on the other side of this &#34;machine&#34;!
+C&#39;mon, I thought this dream was over! We&#39;ve had enough proofs that this doesn&#39;t work!</description>
+    </item>
+    
+  </channel>
+</rss>

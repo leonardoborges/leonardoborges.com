@@ -63,5 +63,145 @@ YOW! LambdaJam is a conference targeted at intermediate and advanced functional 
 This year though, all bets were off. Fabio Akita and Locaweb put together a great event, with over 700 attendees and about 30 speakers split in two streams and two awesome days.</description>
     </item>
     
+    <item>
+      <title>my slides from rails summit 09</title>
+      <link>http://leonardoborges.com/writings/2009/10/18/my-slides-from-rails-summit-09/</link>
+      <pubDate>Sun, 18 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/10/18/my-slides-from-rails-summit-09/</guid>
+      <description>{% img /assets/images/rs2009.jpg %}
+Rails Summit finished a few days ago and I have only one word to describe it: Awesome!
+I met some really cool people, discussed a whole bunch of technical subjects and managed not to get so nervous in my first presentation ever - I&#39;m not counting internal presentations I&#39;ve done for my team...
+My slides and source files can be found here. Feel free to contact me with questions if you got any.</description>
+    </item>
+    
+    <item>
+      <title>rails summit 2009 im speaking</title>
+      <link>http://leonardoborges.com/writings/2009/09/03/rails-summit-2009-im-speaking/</link>
+      <pubDate>Thu, 03 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/09/03/rails-summit-2009-im-speaking/</guid>
+      <description>I&#39;ll be speaking at this year&#39;s Rails Summit Latin America in Sao Paulo, Brazil. It will be a good opportunity to meet some amazing people and visit friends back home! :)
+Overall I&#39;ll be spending 12 days in Brazil, with 2 of them dedicated to the conference. The other 10 I&#39;ll be in Rio de Janeiro visiting my family and friends. I strongly advise you to spend some time in Rio too, if at all possible.</description>
+    </item>
+    
+    <item>
+      <title>railswaycon jruby internals by ola bini</title>
+      <link>http://leonardoborges.com/writings/2009/05/29/railswaycon-jruby-internals-by-ola-bini/</link>
+      <pubDate>Fri, 29 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/05/29/railswaycon-jruby-internals-by-ola-bini/</guid>
+      <description>As always I expected a good talk from Ola and once more he delivered it. But this one was different. It might have been even boring to some ruby developers since we saw a fair amount of java code in this presentation. Ola gave us a tour through the main classes that make JRuby possible with a single purpose: so we can check out the code and hack ourselves. You can download his slides here.</description>
+    </item>
+    
+    <item>
+      <title>qcon london 09</title>
+      <link>http://leonardoborges.com/writings/2009/03/09/qcon-london-09/</link>
+      <pubDate>Mon, 09 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/03/09/qcon-london-09/</guid>
+      <description> Tomorrow I&#39;ll be once more heading London for this year&#39;s QCon.
+As usual, the schedule looks amazing and I&#39;ll try to keep you all posted about what&#39;s going on there.
+Oh and if any of you guys is going and wanna meet up for a geek talk and a couple of beers, just send me a message.
+Cheers! :) </description>
+    </item>
+    
+    <item>
+      <title>railsconf europe 2008 impressions and highlights</title>
+      <link>http://leonardoborges.com/writings/2008/09/09/railsconf-europe-2008-impressions-and-highlights/</link>
+      <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/09/09/railsconf-europe-2008-impressions-and-highlights/</guid>
+      <description>I&#39;m back in Madrid again after the RailsConf and I think it&#39;s time to say something about it. :)
+First off, the infrastructure provided by the conference was really great. The rooms, WiFi connection, food...Â Really well organized.
+Now to the sessions, highlights:
+Tutorials (Tuesday)
+- Meta-programming Ruby for fun and profit (Neal Ford, Patrick Farley)
+The old and good techniques that made Ruby so powerful. Here Neal and Patrick walked us through the main tricks to meta programming like open classes - and conditionally open them - , dynamically define methods, sending messages to objects and how Ruby can help test your Java code in a much easier way.</description>
+    </item>
+    
+    <item>
+      <title>railsconf europe 2008 heading to berlin</title>
+      <link>http://leonardoborges.com/writings/2008/08/30/railsconf-europe-2008-heading-to-berlin/</link>
+      <pubDate>Sat, 30 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/30/railsconf-europe-2008-heading-to-berlin/</guid>
+      <description> The title says it already.
+On monday I&#39;ll be going to Berlin to attend this yearÂ´s RailsConf.
+This will be my first one and of course my expectations are pretty high!
+As usual, after the conference I&#39;ll try and give a summary of what happened there, providing as much content as I can.
+Anyone else&#39;s going??? :)
+C u there! </description>
+    </item>
+    
+    <item>
+      <title>the biggest rails event in latin america</title>
+      <link>http://leonardoborges.com/writings/2008/08/04/the-biggest-rails-event-in-latin-america/</link>
+      <pubDate>Mon, 04 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/04/the-biggest-rails-event-in-latin-america/</guid>
+      <description>Behold latin american railers!
+This year we will have the Rails Summit Latin America on October, 15th and 16th, in SÃ£o Paulo, Brazil.
+It&#39;s by far the biggest Rails event we&#39;ve ever had, including many of the speakers that were present at RailsConf.
+FÃ¡bio Akita is also one of the speakers and provides more details on his blog.
+If you&#39;re a assumed rails geek don&#39;t miss the opportunity to hear from the big names and to know a beautiful country like Brazil.</description>
+    </item>
+    
+    <item>
+      <title>euruko 2008 materials available</title>
+      <link>http://leonardoborges.com/writings/2008/05/14/euruko-2008-materials-available/</link>
+      <pubDate>Wed, 14 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/05/14/euruko-2008-materials-available/</guid>
+      <description> As some of you know I went to the European Ruby Conf in Prague, this year.
+The event was awesome and it&#39;s good to know they finally made available the majority of the slides, here.
+They also published Matz&#39;s keynote, and more videos from the conference are being edited right now, so stay tuned to their home page!
+Enjoy! </description>
+    </item>
+    
+    <item>
+      <title>qcon 2008 slides available</title>
+      <link>http://leonardoborges.com/writings/2008/04/04/qcon-2008-slides-available/</link>
+      <pubDate>Fri, 04 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/04/qcon-2008-slides-available/</guid>
+      <description>Most of last QCon&#39;s presentations are available for download here.
+Highlights to Ola Bini&#39;s on JRuby(pdf) and Randy Shoup&#39;s on eBay&#39;s architectural principles(pdf).
+And while we&#39;re talking about JRuby, it&#39;s impressive how it&#39;s becoming a recurrent and big subject. Fast. It had its own small space at big event like QCon and in the last Euruko in Prague, we had a presentation by the JRuby Core Developers Charles Nutter and Thomas Enebo.</description>
+    </item>
+    
+    <item>
+      <title>euruko 2008 european rubyconf prague</title>
+      <link>http://leonardoborges.com/writings/2008/03/25/euruko-2008-european-rubyconf-prague/</link>
+      <pubDate>Tue, 25 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/03/25/euruko-2008-european-rubyconf-prague/</guid>
+      <description>On friday I&#39;ll be heading Prague for the European RubyConf.
+Anyone is going? :)
+Almost 300 attendees already registered for the event. And a few very interesting people will be speaking there like Matz and DHH (this one, through skype).
+Besides that, the organization staff is scheduling 2 parties, friday and saturday, for the attendees.
+Networking comes to mind, doesn&#39;t it? I think it will be a great opportunity to meet interesting and bright people.</description>
+    </item>
+    
+    <item>
+      <title>qcon 2008 domain specific languages</title>
+      <link>http://leonardoborges.com/writings/2008/03/10/qcon-2008-domain-specific-languages/</link>
+      <pubDate>Mon, 10 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/03/10/qcon-2008-domain-specific-languages/</guid>
+      <description>Today was the first day of the conference and it started with a tutorial about DSL&#39;s with Martin Fowler, Neal Ford and Rebecca Parsons. We also had as attendants Ola Bini, core developer of JRuby, and others. My expectations were pretty high and the presentation didn&#39;t let me down. I&#39;ll try to put here toghether my impressions and some notes I took while I was there.
+Marting Fowler started discussing what DSL&#39;s are and giving some examples that many of us use in our day to day Job.</description>
+    </item>
+    
+    <item>
+      <title>qcon 2008 london</title>
+      <link>http://leonardoborges.com/writings/2008/03/07/qcon-2008-london/</link>
+      <pubDate>Fri, 07 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/03/07/qcon-2008-london/</guid>
+      <description>Next week I&#39;ll be at QCon, in London, so if any of you are going to the conference and would like meet up for a couple of beers and a tech talk, please don&#39;t hesitate to drop a message.
+For those of you who have never heard of QCon before, it is a really nice event to play along with some of the most popular names in the software engineering community.</description>
+    </item>
+    
   </channel>
 </rss>

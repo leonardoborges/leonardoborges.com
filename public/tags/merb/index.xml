@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Merb on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/merb/</link>
+    <description>Recent content in Merb on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Nov 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/merb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>merb turns 10 and started driving me crazy</title>
+      <link>http://leonardoborges.com/writings/2008/11/18/merb-turns-10-and-started-driving-me-crazy/</link>
+      <pubDate>Tue, 18 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/11/18/merb-turns-10-and-started-driving-me-crazy/</guid>
+      <description>As you may already know, Merb turned 1.0 a while ago and I decided to resume my studies to learn the framework.
+So I just built a new app with a few resources and fired the migration scripts:
+$ rake db:automigrate
+
+And this is what I got:
+Loading init file from /Users/leo/projects/merb/my-first-app/config/init.rb
+Loading /Users/leo/projects/merb/my-first-app/config/environments/development.rb
+~ Connecting to database...
+/opt/local/lib/ruby/gems/1.8/gems/dm-core-0.9.6/lib/dm-core/adapters/data_objects_adapter.rb:137:in `initialize&#39;: wrong number of arguments (8 for 1) (ArgumentError)</description>
+    </item>
+    
+  </channel>
+</rss>

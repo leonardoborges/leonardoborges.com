@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Games on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/games/</link>
+    <description>Recent content in Games on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Apr 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>fallingdreams my very own tetris clone</title>
+      <link>http://leonardoborges.com/writings/2010/04/09/fallingdreams-my-very-own-tetris-clone/</link>
+      <pubDate>Fri, 09 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/04/09/fallingdreams-my-very-own-tetris-clone/</guid>
+      <description>This will come as no surprise to my closest friends, but I am a long time game development admirer. Although I&#39;ve never done anything professionally I did spend some time in the past studying this amazingly interesting field - it&#39;s my dark hobby. As hardware evolves and gamers demand more and more reality from their consoles, the game development industry is one of the few that basically didn&#39;t suffer with the latest economic crisis.</description>
+    </item>
+    
+  </channel>
+</rss>

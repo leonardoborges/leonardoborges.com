@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DSL on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/dsl/</link>
+    <description>Recent content in DSL on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Mar 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/dsl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>qcon 2008 domain specific languages</title>
+      <link>http://leonardoborges.com/writings/2008/03/10/qcon-2008-domain-specific-languages/</link>
+      <pubDate>Mon, 10 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/03/10/qcon-2008-domain-specific-languages/</guid>
+      <description>Today was the first day of the conference and it started with a tutorial about DSL&#39;s with Martin Fowler, Neal Ford and Rebecca Parsons. We also had as attendants Ola Bini, core developer of JRuby, and others. My expectations were pretty high and the presentation didn&#39;t let me down. I&#39;ll try to put here toghether my impressions and some notes I took while I was there.
+Marting Fowler started discussing what DSL&#39;s are and giving some examples that many of us use in our day to day Job.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agile on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/agile/</link>
+    <description>Recent content in Agile on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Apr 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>long stand up meetings</title>
+      <link>http://leonardoborges.com/writings/2009/04/06/long-stand-up-meetings/</link>
+      <pubDate>Mon, 06 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/04/06/long-stand-up-meetings/</guid>
+      <description>It&#39;s been more than a year since I started my new endeavor here in Spain, moving from Brazil and starting a whole new life - both personal and professional. Time for a little retrospective.
+More precisely, a retrospective about the agile practices here at the company.
+When I first started out back in January &#39;08 the company thought they were agile. NOT! They did adopt some XP practices but just to give you an idea, I&#39;m gonna focus on just one: stand-up meetings.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Why I Like Ruby on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/why-i-like-ruby/</link>
+    <description>Recent content in Why I Like Ruby on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Aug 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/why-i-like-ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>why i like ruby 1 alias_method</title>
+      <link>http://leonardoborges.com/writings/2008/08/07/why-i-like-ruby-1-alias_method/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/07/why-i-like-ruby-1-alias_method/</guid>
+      <description>So you found yourself in the need to override a method but still count on it&#39;s old behaviour?
+No problem! Override it with your new code, call super and.... Uh oh!! Suddenly this turned into a problem... Let me give some more context.
+I was testing Ferret (and the acts_as_ferret plugin) in a project to provide full text search capabilities to our models. One of the things the plugin does is to add a new method to ActiveRecord, called find_with_ferret.</description>
+    </item>
+    
+    <item>
+      <title>why i like ruby or ruby the language of the lazy programmer</title>
+      <link>http://leonardoborges.com/writings/2008/04/01/why-i-like-ruby-or-ruby-the-language-of-the-lazy-programmer/</link>
+      <pubDate>Tue, 01 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/01/why-i-like-ruby-or-ruby-the-language-of-the-lazy-programmer/</guid>
+      <description>This is quite funny. A friend, Perl addicted, is now learning Ruby. He really enjoys the language but made a interesting observation: Ruby is a language for lazy programmers!
+Well, I have to agree... You know, I love saving keystrokes and achieving more by writing less. And this is so true with Ruby.
+Let me give a really simple example, comparing with java - don&#39;t get me wrong... I love java, specially the platform, but it fits well here since I&#39;ve always been a Java guy.</description>
+    </item>
+    
+  </channel>
+</rss>

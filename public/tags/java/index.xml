@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/java/</link>
+    <description>Recent content in Java on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Mar 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>fallingdreams my very own tetris clone</title>
+      <link>http://leonardoborges.com/writings/2010/04/09/fallingdreams-my-very-own-tetris-clone/</link>
+      <pubDate>Fri, 09 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/04/09/fallingdreams-my-very-own-tetris-clone/</guid>
+      <description>This will come as no surprise to my closest friends, but I am a long time game development admirer. Although I&#39;ve never done anything professionally I did spend some time in the past studying this amazingly interesting field - it&#39;s my dark hobby. As hardware evolves and gamers demand more and more reality from their consoles, the game development industry is one of the few that basically didn&#39;t suffer with the latest economic crisis.</description>
+    </item>
+    
+    <item>
+      <title>a few more thoughts on final classes</title>
+      <link>http://leonardoborges.com/writings/2009/10/07/a-few-more-thoughts-on-final-classes/</link>
+      <pubDate>Wed, 07 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/10/07/a-few-more-thoughts-on-final-classes/</guid>
+      <description>I said final classes are evil and that post got some attention with interesting comments. Maybe because of the title and the tone I wrote it, a few comments didn&#39;t get my real intention and perhaps I should have been more explicit about it. Go ahead and read it. I&#39;ll wait. :)
+Anyway, I thought I&#39;d expand a little more on that subject, explaining my motivation to write that post and going through the topics I think were raised by my dear readers.</description>
+    </item>
+    
+    <item>
+      <title>jvm language preferences poll results</title>
+      <link>http://leonardoborges.com/writings/2009/07/31/jvm-language-preferences-poll-results/</link>
+      <pubDate>Fri, 31 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/07/31/jvm-language-preferences-poll-results/</guid>
+      <description>- Overall results
+First off, I&#39;d like to thank everyone who voted on this poll.
+With a total of 236 votes, here is the summary of the first two questions:
+- Are you currently working with or researching about language alternatives for the JVM? - e.g. JRuby, Scala, Groovy
+{% img /assets/images/scala_improvements.png %}
+Tooling. The majority of comment urge for better tooling and IDE support. That simple.
+- Others</description>
+    </item>
+    
+    <item>
+      <title>jruby on rails and legacy java apps managing dependencies</title>
+      <link>http://leonardoborges.com/writings/2009/07/01/jruby-on-rails-and-legacy-java-apps-managing-dependencies/</link>
+      <pubDate>Wed, 01 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/07/01/jruby-on-rails-and-legacy-java-apps-managing-dependencies/</guid>
+      <description>The motivation for this post came from a couple of messages I&#39;ve seen on the jruby&#39;s google group and because I think it&#39;s pretty cool to share how we tackled this problem.
+- A little bit of context
+We, as a vast amount of people out there, have legacy Java code. A lot. In our case this legacy is pretty much crucial to our business. We can&#39;t just trash it and start from scratch.</description>
+    </item>
+    
+    <item>
+      <title>google io thoughtworks on gae</title>
+      <link>http://leonardoborges.com/writings/2009/06/22/google-io-thoughtworks-on-gae/</link>
+      <pubDate>Mon, 22 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/06/22/google-io-thoughtworks-on-gae/</guid>
+      <description>I&#39;ve just watched a video from Google IO where Martin Fowler and Rebecca Parsons went through some of the aspects that involves the development of an application for the cloud - focusing on the JVM.
+In terms of the Google App Engine, you don&#39;t have access to a relational database, thing I found out when I first tried it. Instead you get a Big Table.
+Martin put out a good analogy and you can just think of it as a nested hash map.</description>
+    </item>
+    
+    <item>
+      <title>helping the jruby effort debugging the source</title>
+      <link>http://leonardoborges.com/writings/2009/06/14/helping-the-jruby-effort-debugging-the-source/</link>
+      <pubDate>Sun, 14 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/06/14/helping-the-jruby-effort-debugging-the-source/</guid>
+      <description>Wanna help improve JRuby? Make sure you read this post by Charles Nutter first. There he explains how to run Ruby specs with JRuby.
+Start with fixing Ruby specs is a great way to get acquainted with the code. And it&amp;rsquo;s also a important task in order to make sure JRuby is the most complete and compatible ruby implementation out there.
+But before you get your hands dirty, it will be a lot easier if you can actually debug JRuby&amp;rsquo;s source while fixing any specs - or bugs/features for that matter.</description>
+    </item>
+    
+    <item>
+      <title>railswaycon jruby internals by ola bini</title>
+      <link>http://leonardoborges.com/writings/2009/05/29/railswaycon-jruby-internals-by-ola-bini/</link>
+      <pubDate>Fri, 29 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/05/29/railswaycon-jruby-internals-by-ola-bini/</guid>
+      <description>As always I expected a good talk from Ola and once more he delivered it. But this one was different. It might have been even boring to some ruby developers since we saw a fair amount of java code in this presentation. Ola gave us a tour through the main classes that make JRuby possible with a single purpose: so we can check out the code and hack ourselves. You can download his slides here.</description>
+    </item>
+    
+    <item>
+      <title>jruby on rails and google app engine</title>
+      <link>http://leonardoborges.com/writings/2009/04/10/jruby-on-rails-and-google-app-engine/</link>
+      <pubDate>Fri, 10 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/04/10/jruby-on-rails-and-google-app-engine/</guid>
+      <description>As many of you know the new language supported at GAE now is Java, as officially announced on their blog. As a Ruby/Rails developer you might not be interested on it but here is a reason you should be: JRuby.
+It was only a matter of time until we saw some people deploying JRuby on Rails apps on GAE, like Ola Bini&#39;s mini blog app. Guess that was the first one really, as he was beta testing the service in secret.</description>
+    </item>
+    
+    <item>
+      <title>final classes are evil</title>
+      <link>http://leonardoborges.com/writings/2009/03/17/final-classes-are-evil/</link>
+      <pubDate>Tue, 17 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/03/17/final-classes-are-evil/</guid>
+      <description>Update: Go ahead and read this post in its entirety - including the comments. Then, read my other post where I expand the subject a little more. --
+Every now and then I still do some Java coding. And I actually like it. I spent several years of my career developing primarily in Java and am very keen about the language.
+I&#39;ve been a fierce defender of it these days, specially with the wave of popularity of other languages such as Ruby and Groovy.</description>
+    </item>
+    
+    <item>
+      <title>eclipse tip debugging non wtp projects</title>
+      <link>http://leonardoborges.com/writings/2009/02/01/eclipse-tip-debugging-non-wtp-projects/</link>
+      <pubDate>Sun, 01 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/02/01/eclipse-tip-debugging-non-wtp-projects/</guid>
+      <description>&lt;p&gt;
+This is a very useful tip I shared a while ago at the office and turned out to be extremely useful.&lt;br&gt;&lt;br&gt;If you work with java and use eclipse as an IDE you know that eclipse has something called WTP, which stands for Web Tools Platform. It&#39;s a set of tools and API&#39;s to aid in the development of web and JEE projects.&lt;br&gt;&lt;br&gt;That means that if you have a WTP project in your workspace, you can deploy, run and debug it straight from the IDE. But what happens if your project is not of a WTP nature?&lt;br&gt;&lt;br&gt;Back at the office we have a coupe of really old Java project. WTP didn&#39;t exist back then but we do use Eclipse as our IDE of choice.&lt;br&gt;&lt;br&gt;So, how do we debug a deployed project that we don&#39;t actually deploy from the IDE? As long as you have the source, it is quite simple:</description>
+    </item>
+    
+    <item>
+      <title>mock objects</title>
+      <link>http://leonardoborges.com/writings/2008/07/07/mock-objects/</link>
+      <pubDate>Mon, 07 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/07/07/mock-objects/</guid>
+      <description>When testing it&#39;s pretty common to see the need for mocking a certain object, say, a Data Access Ojbect. This way you don&#39;t need to depend on a database and you can focus on the actual logic implemented by the method being tested.
+For that you have several alternatives like creating the Mock class by hand or - and this is the more common - use one of the various mocking libraries out there.</description>
+    </item>
+    
+    <item>
+      <title>why i like ruby or ruby the language of the lazy programmer</title>
+      <link>http://leonardoborges.com/writings/2008/04/01/why-i-like-ruby-or-ruby-the-language-of-the-lazy-programmer/</link>
+      <pubDate>Tue, 01 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/01/why-i-like-ruby-or-ruby-the-language-of-the-lazy-programmer/</guid>
+      <description>This is quite funny. A friend, Perl addicted, is now learning Ruby. He really enjoys the language but made a interesting observation: Ruby is a language for lazy programmers!
+Well, I have to agree... You know, I love saving keystrokes and achieving more by writing less. And this is so true with Ruby.
+Let me give a really simple example, comparing with java - don&#39;t get me wrong... I love java, specially the platform, but it fits well here since I&#39;ve always been a Java guy.</description>
+    </item>
+    
+    <item>
+      <title>qcon 2008 domain specific languages</title>
+      <link>http://leonardoborges.com/writings/2008/03/10/qcon-2008-domain-specific-languages/</link>
+      <pubDate>Mon, 10 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/03/10/qcon-2008-domain-specific-languages/</guid>
+      <description>Today was the first day of the conference and it started with a tutorial about DSL&#39;s with Martin Fowler, Neal Ford and Rebecca Parsons. We also had as attendants Ola Bini, core developer of JRuby, and others. My expectations were pretty high and the presentation didn&#39;t let me down. I&#39;ll try to put here toghether my impressions and some notes I took while I was there.
+Marting Fowler started discussing what DSL&#39;s are and giving some examples that many of us use in our day to day Job.</description>
+    </item>
+    
+    <item>
+      <title>dbunit and hibernate</title>
+      <link>http://leonardoborges.com/writings/2008/01/17/dbunit-and-hibernate/</link>
+      <pubDate>Thu, 17 Jan 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/01/17/dbunit-and-hibernate/</guid>
+      <description>&lt;p&gt;
+I never paid too much attention on testing database stuff. While working with java, the closest I got to something &lt;em&gt;workable &lt;/em&gt;was using the test case abstractions provided by the Spring framework. It ensures that each test method runs in its own transaction that is rolled back after the test&#39;s execution.&lt;br&gt;&lt;br&gt;Fair enough. I used the &lt;a href=&#34;http://junit.sourceforge.net/javadoc/junit/framework/TestCase.html#setUp()&#34;&gt;setUp()&lt;/a&gt; method on my &lt;a href=&#34;http://junit.sourceforge.net/javadoc/junit/framework/TestCase.html&#34;&gt;TestCase&lt;/a&gt; to configure some records so I could work with them, removing all of them in the &lt;a href=&#34;http://junit.sourceforge.net/javadoc/junit/framework/TestCase.html#tearDown()&#34;&gt;tearDown()&lt;/a&gt; method. It was quite simple and worked.&lt;br&gt;&lt;br&gt;But I always felt something strange with this solution. First of all, I had to add another framework just for that. - Actually I was using spring for dependency injection, but if I wasn&#39;t, it wouldn&#39;t be a nice option. And another thing that bothered me, is that you cannot guarantee that your database is in a known state.&lt;br&gt;&lt;br&gt;After I started to work with Ruby - and Rails - I discovered the &lt;a href=&#34;http://manuals.rubyonrails.com/read/chapter/26&#34;&gt;testing fixtures&lt;/a&gt;. It is a really nice way to set up your testing data without having to worry about your database state. - If you don&#39;t know what I&#39;m talking about, follow the above link first.&lt;br&gt;&lt;br&gt;Then I received a message from a co-worker saying he was having some trouble in using &lt;a href=&#34;http://www.dbunit.org/&#34;&gt;DBUnit&lt;/a&gt; with Hibernate, and asked for some help. I&#39;ve heard of DBUnit before but never tried it myself. It was a very good opportunity to take a better look into it.&lt;br&gt;&lt;br&gt;The basic idea after all is very similar to that of the Rails Fixtures: You have some sort of external file - XML in this case - where you set up the testing data. So the framework takes care of erasing the database, inserting your test data and returning it to its original state.&lt;br&gt;&lt;br&gt;So far so good, DBUnit&#39;s default Classes works with &lt;a href=&#34;http://www.dbunit.org/apidocs/org/dbunit/JdbcBasedDBTestCase.html&#34;&gt;JDBC,&lt;/a&gt; &lt;a href=&#34;http://www.dbunit.org/apidocs/org/dbunit/DataSourceBasedDBTestCase.html&#34;&gt;DataSources&lt;/a&gt; and &lt;a href=&#34;http://www.dbunit.org/apidocs/org/dbunit/JndiBasedDBTestCase.html&#34;&gt;JNDIDatasources&lt;/a&gt;, but not with Hibernate.  The effort to put them working together is minimal and is documented in their web site.&lt;br&gt;&lt;br&gt;I decided to share how this can be done with hibernate and in the end, you would have a test case similar to this one:&lt;br&gt;&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>spring 25 dependency injection that doesnt hurt</title>
+      <link>http://leonardoborges.com/writings/2007/12/07/spring-25-dependency-injection-that-doesnt-hurt/</link>
+      <pubDate>Fri, 07 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/12/07/spring-25-dependency-injection-that-doesnt-hurt/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34;&gt;Dependency injection&lt;/a&gt; - &lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34;&gt;DI&lt;/a&gt;Â - Â is a great thing. Really. The hability to tweak implementations without touching your code is awesome and the DI frameworks, like spring, saves you a lot of coding. No more service locators stuff.&lt;br&gt;&lt;br&gt;But, and there is always a but, you&#39;re left with a bunch of XML configuration. And I hate it. Not that XML files are bad... the thing is that everything nowadays has its own set of XML configurarion files. And &lt;a href=&#34;http://www.springframework.org&#34;&gt;Spring&lt;/a&gt; is not different.&lt;br&gt;&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>eu odeio xml</title>
+      <link>http://leonardoborges.com/writings/2007/10/29/eu-odeio-xml/</link>
+      <pubDate>Mon, 29 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/29/eu-odeio-xml/</guid>
+      <description>&lt;p&gt;
+Isso Ã© um fato. Cada linha de XML que eu escrevo me faz pensar em formas de evita-las. E isso nÃ£o Ã© simples.&lt;br&gt;&lt;br&gt;Ultimamente, desde o Java 5, tem se trocado o XML pelas &lt;a href=&#34;http://http://java.sun.com/j2se/1.5.0/docs/guide/language/annotations.html&#34; title=&#34;Java Annotations&#34;&gt;annotations&lt;/a&gt;. TÃ¡ bom, fica bonitinho nÃ©? AtÃ© que fica. Em alguns casos, atÃ© mais organizado. O &lt;a href=&#34;http://www.hibernate.org/hib_docs/annotations/reference/en/html_single/&#34; title=&#34;Hibernate Annotations&#34;&gt;Hibernate&lt;/a&gt; desde a versÃ£o 3 faz uso das &lt;a href=&#34;http://java.sun.com/javaee/overview/faq/persistence.jsp&#34; title=&#34;Java Persistence API&#34;&gt;annotaions da JPA&lt;/a&gt; como alernativa ao seu XML de configuraÃ§Ã£o. E esse sim Ã© um belo caso de sucesso!&lt;br&gt;&lt;br&gt;SÃ£o apenas algumas anotaÃ§Ãµes na classe para mapea-la e pronto, adeus xml! Mas como sempre, as anotaÃ§Ãµes jÃ¡ estÃ£o sendo exageradas por aÃ­. Basta decidir configurar uns 3 frameworks - e provavelmente dois deles sÃ£o descenessÃ¡rios no seu projeto - usando anotaÃ§Ãµes e as suas classes ficarÃ£o uma zona! E muito mais ilegÃ­veis que um arquivo XML!&lt;br&gt;&lt;br&gt;As anotaÃ§Ãµes sÃ£o recursos muito poderosos e devem ser usadas de forma consciente. Use as que realmente valem a pena, como as que vou falar agora, que fazem parte da nova release do Spring framework, a &lt;a href=&#34;http://www.springframework.org/node/548&#34; title=&#34;Spring 2.5 rc1&#34;&gt;2.5 RC1&lt;/a&gt;.</description>
+    </item>
+    
+    <item>
+      <title>scea 5 beta</title>
+      <link>http://leonardoborges.com/writings/2007/10/15/scea-5-beta/</link>
+      <pubDate>Mon, 15 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/15/scea-5-beta/</guid>
+      <description>&lt;p&gt;
+Hoje fiz a versÃ£o beta da nova prova de arquiteto da Sun e eis algumas impressÃµes:&lt;br&gt;&lt;br&gt;- Ã‰ longa e cansativa... fato justificÃ¡vel se levar-mos em consideraÃ§Ã£o o fato de ser uma prova em estado beta. Ela possui mais questÃµes que a versÃ£o final. SÃ£o 153 questÃµes no total, em 4h e 30min.</description>
+    </item>
+    
+    <item>
+      <title>como o spring me ajudou a manter o active record</title>
+      <link>http://leonardoborges.com/writings/2007/10/13/como-o-spring-me-ajudou-a-manter-o-active-record/</link>
+      <pubDate>Sat, 13 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/13/como-o-spring-me-ajudou-a-manter-o-active-record/</guid>
+      <description>&lt;p&gt;
+Nesse primeiro post vou falar um pouco sobre meu novo trabalho. Na verdade, sobre um problema que encontramos lÃ¡.&lt;br&gt;&lt;br&gt;Dentre diversas coisas que estamos fazendo, como migraÃ§Ãµes por exemplo, estou ajudando na elaboraÃ§Ã£o da arquitetura que irÃ¡ abrigar as novas aplicaÃ§Ãµes desenvolvidas na empresa.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/testing/</link>
+    <description>Recent content in Testing on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jun 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>are_you_testing_your_javascript_yet</title>
+      <link>http://leonardoborges.com/writings/2010/06/14/are_you_testing_your_javascript_yet/</link>
+      <pubDate>Mon, 14 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/06/14/are_you_testing_your_javascript_yet/</guid>
+      <description>What&#39;s the difference between your application&#39;s javascript code and its java/ruby/python/whatever code?
+Think about it for a second. Done? Well, the answer is: none!
+In today&#39;s web applications your javascript code is no different from the rest of your code base but yet we treat it with disregard - and we&#39;re all to blame.
+We often see developers investing time writing all sorts of automated tests around their code base but fail to do the same for their javascript - and yet they get surprised when their client can&#39;t click on a button on their web app that depends on that ajax call that has been manually tested once when the page was first released.</description>
+    </item>
+    
+    <item>
+      <title>rcov jruby and rcov_plugin</title>
+      <link>http://leonardoborges.com/writings/2009/05/05/rcov-jruby-and-rcov_plugin/</link>
+      <pubDate>Tue, 05 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/05/05/rcov-jruby-and-rcov_plugin/</guid>
+      <description>The rcov_plugin project is a rails plugin for rcov that adds some useful rake tasks to your application. And since I&#39;m currently working in a JRuby project it made sense to use this plugin.
+The thing is, among other stuff, an rcov report from a JRuby project includes some files that shouldn&#39;t be there at all, plus you also need to change the way you call rcov as such. Thus, I thought I&#39;d contribute these changes to the plugin and my pull request was approved this morning - just install the latest version and you should be good to go.</description>
+    </item>
+    
+    <item>
+      <title>mock objects</title>
+      <link>http://leonardoborges.com/writings/2008/07/07/mock-objects/</link>
+      <pubDate>Mon, 07 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/07/07/mock-objects/</guid>
+      <description>When testing it&#39;s pretty common to see the need for mocking a certain object, say, a Data Access Ojbect. This way you don&#39;t need to depend on a database and you can focus on the actual logic implemented by the method being tested.
+For that you have several alternatives like creating the Mock class by hand or - and this is the more common - use one of the various mocking libraries out there.</description>
+    </item>
+    
+    <item>
+      <title>dbunit and hibernate</title>
+      <link>http://leonardoborges.com/writings/2008/01/17/dbunit-and-hibernate/</link>
+      <pubDate>Thu, 17 Jan 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/01/17/dbunit-and-hibernate/</guid>
+      <description>&lt;p&gt;
+I never paid too much attention on testing database stuff. While working with java, the closest I got to something &lt;em&gt;workable &lt;/em&gt;was using the test case abstractions provided by the Spring framework. It ensures that each test method runs in its own transaction that is rolled back after the test&#39;s execution.&lt;br&gt;&lt;br&gt;Fair enough. I used the &lt;a href=&#34;http://junit.sourceforge.net/javadoc/junit/framework/TestCase.html#setUp()&#34;&gt;setUp()&lt;/a&gt; method on my &lt;a href=&#34;http://junit.sourceforge.net/javadoc/junit/framework/TestCase.html&#34;&gt;TestCase&lt;/a&gt; to configure some records so I could work with them, removing all of them in the &lt;a href=&#34;http://junit.sourceforge.net/javadoc/junit/framework/TestCase.html#tearDown()&#34;&gt;tearDown()&lt;/a&gt; method. It was quite simple and worked.&lt;br&gt;&lt;br&gt;But I always felt something strange with this solution. First of all, I had to add another framework just for that. - Actually I was using spring for dependency injection, but if I wasn&#39;t, it wouldn&#39;t be a nice option. And another thing that bothered me, is that you cannot guarantee that your database is in a known state.&lt;br&gt;&lt;br&gt;After I started to work with Ruby - and Rails - I discovered the &lt;a href=&#34;http://manuals.rubyonrails.com/read/chapter/26&#34;&gt;testing fixtures&lt;/a&gt;. It is a really nice way to set up your testing data without having to worry about your database state. - If you don&#39;t know what I&#39;m talking about, follow the above link first.&lt;br&gt;&lt;br&gt;Then I received a message from a co-worker saying he was having some trouble in using &lt;a href=&#34;http://www.dbunit.org/&#34;&gt;DBUnit&lt;/a&gt; with Hibernate, and asked for some help. I&#39;ve heard of DBUnit before but never tried it myself. It was a very good opportunity to take a better look into it.&lt;br&gt;&lt;br&gt;The basic idea after all is very similar to that of the Rails Fixtures: You have some sort of external file - XML in this case - where you set up the testing data. So the framework takes care of erasing the database, inserting your test data and returning it to its original state.&lt;br&gt;&lt;br&gt;So far so good, DBUnit&#39;s default Classes works with &lt;a href=&#34;http://www.dbunit.org/apidocs/org/dbunit/JdbcBasedDBTestCase.html&#34;&gt;JDBC,&lt;/a&gt; &lt;a href=&#34;http://www.dbunit.org/apidocs/org/dbunit/DataSourceBasedDBTestCase.html&#34;&gt;DataSources&lt;/a&gt; and &lt;a href=&#34;http://www.dbunit.org/apidocs/org/dbunit/JndiBasedDBTestCase.html&#34;&gt;JNDIDatasources&lt;/a&gt;, but not with Hibernate.  The effort to put them working together is minimal and is documented in their web site.&lt;br&gt;&lt;br&gt;I decided to share how this can be done with hibernate and in the end, you would have a test case similar to this one:&lt;br&gt;&lt;br&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

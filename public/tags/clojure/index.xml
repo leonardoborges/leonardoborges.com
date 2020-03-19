@@ -274,5 +274,16 @@ You can find Ola&amp;rsquo;s slides here.</description>
 If you&amp;rsquo;ve been following my blog, you&amp;rsquo;ll have noticed I started running internal Clojure meetups/hack nights at ThoughtWorks here in Sydney a while ago. While being closed, we&amp;rsquo;ve already had one international speaker - [Ola Bini][7] - come and share his experience as an attendee at [Clojure/conj][8].</description>
     </item>
     
+    <item>
+      <title>Report: Clojure Meetup - 1</title>
+      <link>http://leonardoborges.com/writings/2011/10/12/report-clojure-meetup-1/</link>
+      <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/10/12/report-clojure-meetup-1/</guid>
+      <description>Last Tuesday we held ThoughtWorks&#39; Australia first Clojure meetup here in Sydney. It was a lot of fun so I thought I&#39;d share a few words about it.
+The format was rather simple. First, we had a brief introduction to the language syntax by breaking down a couple of snippets and understanding how each bit worked. For instance, this is one of those snippets:
+;;word count (reduce #(if (%1 %2) (assoc %1 %2 (inc (%1 %2))) (assoc %1 %2 1)) {} (clojure.</description>
+    </item>
+    
   </channel>
 </rss>

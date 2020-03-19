@@ -12,7 +12,7 @@
     
     
     <item>
-      <title></title>
+      <title>A Few Useful Git Commands</title>
       <link>http://leonardoborges.com/writings/2011/05/29/a-few-useful-git-commands/</link>
       <pubDate>Sun, 29 May 2011 00:00:00 +0000</pubDate>
       
@@ -20,6 +20,16 @@
       <description>I&amp;rsquo;ve been working fulltime with Git for a while now and I&amp;rsquo;ve noticed a pattern of commands that emerge every so often, but not often enough that would make me remember them.
 That&amp;rsquo;s why I decided to post them here so I know where to look in the future. And of course they can turn out to be useful to someone else too.
 So without further ado, here they are:</description>
+    </item>
+    
+    <item>
+      <title>git cheat shee</title>
+      <link>http://leonardoborges.com/writings/2009/04/22/git-cheat-shee/</link>
+      <pubDate>Wed, 22 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/04/22/git-cheat-shee/</guid>
+      <description>For those who don&#39;t know Git is a version control system developed by Linus Torvalds. It&#39;s main difference from other tools like SVN and CVS is the fact that it&#39;s distributed.
+Recently I gave a workshop about Git here at the company where I walked through the most common cases I usually see when working in a team and thought about posting a summary of the commands used in the workshop.</description>
     </item>
     
   </channel>

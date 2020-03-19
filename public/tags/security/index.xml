@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/security/</link>
+    <description>Recent content in Security on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Aug 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>rails vulnerability on rexml</title>
+      <link>http://leonardoborges.com/writings/2008/08/24/rails-vulnerability-on-rexml/</link>
+      <pubDate>Sun, 24 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/24/rails-vulnerability-on-rexml/</guid>
+      <description> REXML, the XML library uses by many ruby apps, including rails, has a vulnerability that requires an immediate patch on whatever rails version you&#39;re using.
+Details and instructions on the official rails weblog, here.
+But basically, this is what you need to do:
+gem install rexml-expansion-fix
+
+Then, require rexml-expansion-fix in your rails&#39;s app environment.rb file. </description>
+    </item>
+    
+  </channel>
+</rss>

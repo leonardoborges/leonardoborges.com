@@ -1,4 +1,5 @@
 +++
+title = "A Few Useful Git Commands"
 date = "2011-05-29"
 slug = "2011/05/29/a-few-useful-git-commands"
 excerpt = "I've been working fulltime with Git for a while now and I've noticed a pattern of commands that emerge every so often, but not often enough that would..."

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Architecture on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/architecture/</link>
+    <description>Recent content in Architecture on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Oct 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>a few more thoughts on final classes</title>
+      <link>http://leonardoborges.com/writings/2009/10/07/a-few-more-thoughts-on-final-classes/</link>
+      <pubDate>Wed, 07 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/10/07/a-few-more-thoughts-on-final-classes/</guid>
+      <description>I said final classes are evil and that post got some attention with interesting comments. Maybe because of the title and the tone I wrote it, a few comments didn&#39;t get my real intention and perhaps I should have been more explicit about it. Go ahead and read it. I&#39;ll wait. :)
+Anyway, I thought I&#39;d expand a little more on that subject, explaining my motivation to write that post and going through the topics I think were raised by my dear readers.</description>
+    </item>
+    
+    <item>
+      <title>final classes are evil</title>
+      <link>http://leonardoborges.com/writings/2009/03/17/final-classes-are-evil/</link>
+      <pubDate>Tue, 17 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/03/17/final-classes-are-evil/</guid>
+      <description>Update: Go ahead and read this post in its entirety - including the comments. Then, read my other post where I expand the subject a little more. --
+Every now and then I still do some Java coding. And I actually like it. I spent several years of my career developing primarily in Java and am very keen about the language.
+I&#39;ve been a fierce defender of it these days, specially with the wave of popularity of other languages such as Ruby and Groovy.</description>
+    </item>
+    
+    <item>
+      <title>spring 25 dependency injection that doesnt hurt</title>
+      <link>http://leonardoborges.com/writings/2007/12/07/spring-25-dependency-injection-that-doesnt-hurt/</link>
+      <pubDate>Fri, 07 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/12/07/spring-25-dependency-injection-that-doesnt-hurt/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34;&gt;Dependency injection&lt;/a&gt; - &lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34;&gt;DI&lt;/a&gt;Â - Â is a great thing. Really. The hability to tweak implementations without touching your code is awesome and the DI frameworks, like spring, saves you a lot of coding. No more service locators stuff.&lt;br&gt;&lt;br&gt;But, and there is always a but, you&#39;re left with a bunch of XML configuration. And I hate it. Not that XML files are bad... the thing is that everything nowadays has its own set of XML configurarion files. And &lt;a href=&#34;http://www.springframework.org&#34;&gt;Spring&lt;/a&gt; is not different.&lt;br&gt;&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>scea 5 beta</title>
+      <link>http://leonardoborges.com/writings/2007/10/15/scea-5-beta/</link>
+      <pubDate>Mon, 15 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/15/scea-5-beta/</guid>
+      <description>&lt;p&gt;
+Hoje fiz a versÃ£o beta da nova prova de arquiteto da Sun e eis algumas impressÃµes:&lt;br&gt;&lt;br&gt;- Ã‰ longa e cansativa... fato justificÃ¡vel se levar-mos em consideraÃ§Ã£o o fato de ser uma prova em estado beta. Ela possui mais questÃµes que a versÃ£o final. SÃ£o 153 questÃµes no total, em 4h e 30min.</description>
+    </item>
+    
+    <item>
+      <title>como o spring me ajudou a manter o active record</title>
+      <link>http://leonardoborges.com/writings/2007/10/13/como-o-spring-me-ajudou-a-manter-o-active-record/</link>
+      <pubDate>Sat, 13 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/13/como-o-spring-me-ajudou-a-manter-o-active-record/</guid>
+      <description>&lt;p&gt;
+Nesse primeiro post vou falar um pouco sobre meu novo trabalho. Na verdade, sobre um problema que encontramos lÃ¡.&lt;br&gt;&lt;br&gt;Dentre diversas coisas que estamos fazendo, como migraÃ§Ãµes por exemplo, estou ajudando na elaboraÃ§Ã£o da arquitetura que irÃ¡ abrigar as novas aplicaÃ§Ãµes desenvolvidas na empresa.</description>
+    </item>
+    
+  </channel>
+</rss>

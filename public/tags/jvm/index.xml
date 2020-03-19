@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JVM on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/jvm/</link>
+    <description>Recent content in JVM on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 Jul 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/jvm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>jvm language preferences poll results</title>
+      <link>http://leonardoborges.com/writings/2009/07/31/jvm-language-preferences-poll-results/</link>
+      <pubDate>Fri, 31 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/07/31/jvm-language-preferences-poll-results/</guid>
+      <description>- Overall results
+First off, I&#39;d like to thank everyone who voted on this poll.
+With a total of 236 votes, here is the summary of the first two questions:
+- Are you currently working with or researching about language alternatives for the JVM? - e.g. JRuby, Scala, Groovy
+{% img /assets/images/scala_improvements.png %}
+Tooling. The majority of comment urge for better tooling and IDE support. That simple.
+- Others</description>
+    </item>
+    
+  </channel>
+</rss>

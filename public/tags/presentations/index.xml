@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentations on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/presentations/</link>
+    <description>Recent content in Presentations on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Feb 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/presentations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>clouds against the floods presentation available</title>
+      <link>http://leonardoborges.com/writings/2011/02/12/clouds-against-the-floods-presentation-available/</link>
+      <pubDate>Sat, 12 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/02/12/clouds-against-the-floods-presentation-available/</guid>
+      <description> Last Tuesday I gave a short presentation on the whole Clouds Against the Floods thing at the Ruby on Rails Oceania User Group here in Sydney.
+Those guys are awesome and they recorded the talk - thanks guys!
+If you&#39;d like to download the slides, they&#39;re available on Slideshare.
+Enjoy! ;)
+ </description>
+    </item>
+    
+    <item>
+      <title>presentation spring framework</title>
+      <link>http://leonardoborges.com/writings/2008/06/07/presentation-spring-framework/</link>
+      <pubDate>Sat, 07 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/06/07/presentation-spring-framework/</guid>
+      <description> Last friday I&#39;ve done a small presentation about Dependency Injection and how it can improve the testing environment of a project. You can find it in the presentations page.
+Hope you like it. </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RailsConf2008 on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/railsconf2008/</link>
+    <description>Recent content in RailsConf2008 on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Sep 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/railsconf2008/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>railsconf europe 2008 impressions and highlights</title>
+      <link>http://leonardoborges.com/writings/2008/09/09/railsconf-europe-2008-impressions-and-highlights/</link>
+      <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/09/09/railsconf-europe-2008-impressions-and-highlights/</guid>
+      <description>I&#39;m back in Madrid again after the RailsConf and I think it&#39;s time to say something about it. :)
+First off, the infrastructure provided by the conference was really great. The rooms, WiFi connection, food...Â Really well organized.
+Now to the sessions, highlights:
+Tutorials (Tuesday)
+- Meta-programming Ruby for fun and profit (Neal Ford, Patrick Farley)
+The old and good techniques that made Ruby so powerful. Here Neal and Patrick walked us through the main tricks to meta programming like open classes - and conditionally open them - , dynamically define methods, sending messages to objects and how Ruby can help test your Java code in a much easier way.</description>
+    </item>
+    
+  </channel>
+</rss>

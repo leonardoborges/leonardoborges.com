@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Performance on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/performance/</link>
+    <description>Recent content in Performance on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Nov 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>rails performance scripts profiler benchmarker</title>
+      <link>http://leonardoborges.com/writings/2008/11/20/rails-performance-scripts-profiler-benchmarker/</link>
+      <pubDate>Thu, 20 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/11/20/rails-performance-scripts-profiler-benchmarker/</guid>
+      <description>There are several ways you can measure your rails application&#39;s performance. The techniques range from filling your code with &#34;puts&#34; statements - :p - to fancy ones like NewRelic - which is quite nice, I must say.
+But what many people don&#39;t know is that rails ships with a handful of scripts to help you out. One of which is called profiler, located under your application&#39;s scripts/performance directory.
+By default it uses the standard ruby profiler but if you want more speed - and additional reporting options - , consider installing the ruby-prof gem.</description>
+    </item>
+    
+  </channel>
+</rss>

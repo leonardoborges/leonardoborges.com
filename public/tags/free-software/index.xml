@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Free Software on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/free-software/</link>
+    <description>Recent content in Free Software on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Oct 2007 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/free-software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>software livre</title>
+      <link>http://leonardoborges.com/writings/2007/10/21/software-livre/</link>
+      <pubDate>Sun, 21 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/21/software-livre/</guid>
+      <description> Aqui no trabalho atualmente temos uma grande barreira com relaÃ§Ã£o ao software livre. Pensei em escrever aqui alguma coisa sobre as barreiras que as empresas colocam quando o assunto Ã© esse porÃ©m o Cleuton jÃ¡ fez isso, e ficou muito bom.
+Vale a visita! </description>
+    </item>
+    
+  </channel>
+</rss>

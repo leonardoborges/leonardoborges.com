@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ThoughtWorks on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/thoughtworks/</link>
+    <description>Recent content in ThoughtWorks on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Oct 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/thoughtworks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Report: Clojure Meetup - 1</title>
+      <link>http://leonardoborges.com/writings/2011/10/12/report-clojure-meetup-1/</link>
+      <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/10/12/report-clojure-meetup-1/</guid>
+      <description>Last Tuesday we held ThoughtWorks&#39; Australia first Clojure meetup here in Sydney. It was a lot of fun so I thought I&#39;d share a few words about it.
+The format was rather simple. First, we had a brief introduction to the language syntax by breaking down a couple of snippets and understanding how each bit worked. For instance, this is one of those snippets:
+;;word count (reduce #(if (%1 %2) (assoc %1 %2 (inc (%1 %2))) (assoc %1 %2 1)) {} (clojure.</description>
+    </item>
+    
+    <item>
+      <title>one year of thoughtworks a retrospective</title>
+      <link>http://leonardoborges.com/writings/2011/04/25/one-year-of-thoughtworks-a-retrospective/</link>
+      <pubDate>Mon, 25 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/04/25/one-year-of-thoughtworks-a-retrospective/</guid>
+      <description>It seems like it was yesterday that I wrote about my next big challenge: Moving to Australia to join ThoughtWorks. Since then a year has passed and I thought I&#39;d share a little bit about what it&#39;s been like so far.
+The first thing you notice when joining ThoughtWorks is that you&#39;re surrounded by smart, opinionated people. It was once common for me to be the one fighting for automated testing, TDD, Ruby and overall finding new and better ways of doing what we do - but imagine how different it is to join a team that takes that for granted.</description>
+    </item>
+    
+    <item>
+      <title>clouds against the floods</title>
+      <link>http://leonardoborges.com/writings/2011/01/16/clouds-against-the-floods/</link>
+      <pubDate>Sun, 16 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/01/16/clouds-against-the-floods/</guid>
+      <description>I think by now everyone&#39;s heard of the hard time the guys up in Queensland, Australia are having because of the recent floods. People have lost their lives and many others have lost their homes and businesses, product of years of hard work.
+As a result of this massive disaster the Queensland Government decided to run a telethon to encourage donations to help the flood victims. The Telethon aired last Sunday, 09/01/11, on Channel 9 and lasted for 2 hours.</description>
+    </item>
+    
+    <item>
+      <title>soon off to conquer lands afar</title>
+      <link>http://leonardoborges.com/writings/2009/10/08/soon-off-to-conquer-lands-afar/</link>
+      <pubDate>Thu, 08 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/10/08/soon-off-to-conquer-lands-afar/</guid>
+      <description>Once more my life is taking a huge turn.
+I&#39;ve been pretty quiet for the past month and honestly don&#39;t know how I managed to hold in my excitement. I&#39;ve just accepted an offer from ThoughtWorks to be based at their australian offices, either in Sydney or Melbourne, depending on where my 1st project will be.
+For those of you who don&#39;t know, ThoughtWorks is a global IT consultancy that is really well known in the software development community.</description>
+    </item>
+    
+  </channel>
+</rss>

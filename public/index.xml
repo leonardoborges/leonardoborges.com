@@ -445,6 +445,26 @@ This year though, all bets were off. Fabio Akita and Locaweb put together a grea
     </item>
     
     <item>
+      <title>Report: Clojure Meetup - 1</title>
+      <link>http://leonardoborges.com/writings/2011/10/12/report-clojure-meetup-1/</link>
+      <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/10/12/report-clojure-meetup-1/</guid>
+      <description>Last Tuesday we held ThoughtWorks&#39; Australia first Clojure meetup here in Sydney. It was a lot of fun so I thought I&#39;d share a few words about it.
+The format was rather simple. First, we had a brief introduction to the language syntax by breaking down a couple of snippets and understanding how each bit worked. For instance, this is one of those snippets:
+;;word count (reduce #(if (%1 %2) (assoc %1 %2 (inc (%1 %2))) (assoc %1 %2 1)) {} (clojure.</description>
+    </item>
+    
+    <item>
+      <title>Hiring good people is really simple</title>
+      <link>http://leonardoborges.com/writings/2011/07/30/hiring-good-people-is-really-simple/</link>
+      <pubDate>Sat, 30 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/07/30/hiring-good-people-is-really-simple/</guid>
+      <description>It really is. There&#39;s no magic involved.  Again and again I come across articles from people complaining about the current interview practices. They complain it doesn&#39;t give you enough depth into the candidate&#39;s ability, personality etc. That it measures the wrong qualities. Or that it just doesn&#39;t work and bad people keep coming through the pipeline.  Well, instead of complaining how about you change it? I&#39;m talking about hiring software engineers here so the first rule you should keep in mind is that you need to get them to write code.</description>
+    </item>
+    
+    <item>
       <title>A Tale Of Concurrency: Partitioning Data Between Processes</title>
       <link>http://leonardoborges.com/writings/2011/06/19/a-tale-of-concurrency-partitioning-data-between-processes/</link>
       <pubDate>Sun, 19 Jun 2011 00:00:00 +0000</pubDate>
@@ -456,7 +476,7 @@ That&amp;rsquo;s what happened in a recent production release at our current cli
     </item>
     
     <item>
-      <title></title>
+      <title>A Few Useful Git Commands</title>
       <link>http://leonardoborges.com/writings/2011/05/29/a-few-useful-git-commands/</link>
       <pubDate>Sun, 29 May 2011 00:00:00 +0000</pubDate>
       
@@ -464,6 +484,959 @@ That&amp;rsquo;s what happened in a recent production release at our current cli
       <description>I&amp;rsquo;ve been working fulltime with Git for a while now and I&amp;rsquo;ve noticed a pattern of commands that emerge every so often, but not often enough that would make me remember them.
 That&amp;rsquo;s why I decided to post them here so I know where to look in the future. And of course they can turn out to be useful to someone else too.
 So without further ado, here they are:</description>
+    </item>
+    
+    <item>
+      <title>Goodbye Wordpress, Hello nanoc!</title>
+      <link>http://leonardoborges.com/writings/2011/05/08/good-bye-wordpress-hello-nanoc/</link>
+      <pubDate>Sun, 08 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/05/08/good-bye-wordpress-hello-nanoc/</guid>
+      <description>I just finished migrating my blog from wordpress to nanoc using a customized version of nanoc3_blog and it feels nice. I grew tired of keeping up with Wordpress&#39; updates and this migration also means that I can finally get rid of php on my vps.  However, do let me know if there is anything weird around here. The whole customization done on nanoc3_blog was related to the wordpress migration.</description>
+    </item>
+    
+    <item>
+      <title>one year of thoughtworks a retrospective</title>
+      <link>http://leonardoborges.com/writings/2011/04/25/one-year-of-thoughtworks-a-retrospective/</link>
+      <pubDate>Mon, 25 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/04/25/one-year-of-thoughtworks-a-retrospective/</guid>
+      <description>It seems like it was yesterday that I wrote about my next big challenge: Moving to Australia to join ThoughtWorks. Since then a year has passed and I thought I&#39;d share a little bit about what it&#39;s been like so far.
+The first thing you notice when joining ThoughtWorks is that you&#39;re surrounded by smart, opinionated people. It was once common for me to be the one fighting for automated testing, TDD, Ruby and overall finding new and better ways of doing what we do - but imagine how different it is to join a team that takes that for granted.</description>
+    </item>
+    
+    <item>
+      <title>look ma no hands tweeting with your voice</title>
+      <link>http://leonardoborges.com/writings/2011/04/09/look-ma-no-hands-tweeting-with-your-voice/</link>
+      <pubDate>Sat, 09 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/04/09/look-ma-no-hands-tweeting-with-your-voice/</guid>
+      <description>This is just another one of those boring weekends where I felt the need to hack on something.
+If you follow Google Chrome&#39;s blog you&#39;re probably aware of this little nifty feature they started to implement in their latest builds: HTML5 voice recognition.
+And that&#39;s when it struck me: &#34;Hey, what if I use that and tweet with my voice instead of typing?&#34;
+The result of this hacking session is LoudParrot, a sample Rails app that shows how to do just that.</description>
+    </item>
+    
+    <item>
+      <title>simplejquery daterange picker</title>
+      <link>http://leonardoborges.com/writings/2011/03/31/simplejquery-daterange-picker/</link>
+      <pubDate>Thu, 31 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/03/31/simplejquery-daterange-picker/</guid>
+      <description>As in many web apps out there, this week I needed a date range picker. I shopped around and while I did find a couple of good options they were (a) too clunky and (b) didn&#39;t prevent you from selecting invalid ranges. The latter being the one I was really interested in.
+So I coded up something simple that worked and looked nice and decided to share around. It&#39;s the jquery-daterange-picker.</description>
+    </item>
+    
+    <item>
+      <title>rottingnames for iphone available for free</title>
+      <link>http://leonardoborges.com/writings/2011/03/19/rottingnames-for-iphone-available-for-free/</link>
+      <pubDate>Sat, 19 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/03/19/rottingnames-for-iphone-available-for-free/</guid>
+      <description>Following the staggering success of the online version of RottingNames - where by success I mean the handful of metal heads constantly using the app :) - I released the iPhone version for free . You can now generate crazy and fun names anywhere! Go get it!
+I&#39;ve been meaning to post this for a while but I was waiting to have some free time and add a few new features to the app, which I just realised won&#39;t happen any time soon given the priorities I have at the moment.</description>
+    </item>
+    
+    <item>
+      <title>ide review rubymine</title>
+      <link>http://leonardoborges.com/writings/2011/02/16/ide-review-rubymine/</link>
+      <pubDate>Wed, 16 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/02/16/ide-review-rubymine/</guid>
+      <description>Since I started working with Ruby about 4 years ago, I&#39;ve used quite a few text editors and ide&#39;s: RadRails, gedit + plugins, TextMate and Vim.
+TextMate is the one I&#39;ve used the most and it&#39;s been ok for a long time. Until you realize you need half a dozen bundles to make it really useful for ruby development. Obviously the same goes for Vim and gedit.
+Oh, and forget about refactoring.</description>
+    </item>
+    
+    <item>
+      <title>clouds against the floods presentation available</title>
+      <link>http://leonardoborges.com/writings/2011/02/12/clouds-against-the-floods-presentation-available/</link>
+      <pubDate>Sat, 12 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/02/12/clouds-against-the-floods-presentation-available/</guid>
+      <description> Last Tuesday I gave a short presentation on the whole Clouds Against the Floods thing at the Ruby on Rails Oceania User Group here in Sydney.
+Those guys are awesome and they recorded the talk - thanks guys!
+If you&#39;d like to download the slides, they&#39;re available on Slideshare.
+Enjoy! ;)
+ </description>
+    </item>
+    
+    <item>
+      <title>update to appconstants it can now be used as a gem</title>
+      <link>http://leonardoborges.com/writings/2011/02/02/update-to-appconstants-it-can-now-be-used-as-a-gem/</link>
+      <pubDate>Wed, 02 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/02/02/update-to-appconstants-it-can-now-be-used-as-a-gem/</guid>
+      <description>This is just a quick post to let you know that AppConstants can now be used as gem!
+Just add it to your Gemfile and &#39;bundle install&#39; it:
+#in your Gemfile gem &amp;quot;app_constants&amp;quot; #in the console $ bundle install $ rails generate app_constants #then follow the instructions on-screen instructions 
+It can also be used without Rails. Check out full instructions on the GitHub repository.
+Feedback welcome :)</description>
+    </item>
+    
+    <item>
+      <title>clouds against the floods</title>
+      <link>http://leonardoborges.com/writings/2011/01/16/clouds-against-the-floods/</link>
+      <pubDate>Sun, 16 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/01/16/clouds-against-the-floods/</guid>
+      <description>I think by now everyone&#39;s heard of the hard time the guys up in Queensland, Australia are having because of the recent floods. People have lost their lives and many others have lost their homes and businesses, product of years of hard work.
+As a result of this massive disaster the Queensland Government decided to run a telethon to encourage donations to help the flood victims. The Telethon aired last Sunday, 09/01/11, on Channel 9 and lasted for 2 hours.</description>
+    </item>
+    
+    <item>
+      <title>help stop the ie money drain</title>
+      <link>http://leonardoborges.com/writings/2010/09/28/help-stop-the-ie-money-drain/</link>
+      <pubDate>Tue, 28 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/09/28/help-stop-the-ie-money-drain/</guid>
+      <description>I&#39;m a big heavy metal fan. And so are most of my friends. As a result I launched RottingNames, a band name generator that will generate the most hilarious, nastiest and nonsense names the metal world is yet to discover - ok, that&#39;s probably a bit of an overstatement but the idea is good.
+However, a friend pointed out the code had a bug when running under - gasp - Internet Explorer.</description>
+    </item>
+    
+    <item>
+      <title>are_you_testing_your_javascript_yet</title>
+      <link>http://leonardoborges.com/writings/2010/06/14/are_you_testing_your_javascript_yet/</link>
+      <pubDate>Mon, 14 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/06/14/are_you_testing_your_javascript_yet/</guid>
+      <description>What&#39;s the difference between your application&#39;s javascript code and its java/ruby/python/whatever code?
+Think about it for a second. Done? Well, the answer is: none!
+In today&#39;s web applications your javascript code is no different from the rest of your code base but yet we treat it with disregard - and we&#39;re all to blame.
+We often see developers investing time writing all sorts of automated tests around their code base but fail to do the same for their javascript - and yet they get surprised when their client can&#39;t click on a button on their web app that depends on that ajax call that has been manually tested once when the page was first released.</description>
+    </item>
+    
+    <item>
+      <title>small update to appconstants</title>
+      <link>http://leonardoborges.com/writings/2010/04/24/small-update-to-appconstants/</link>
+      <pubDate>Sat, 24 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/04/24/small-update-to-appconstants/</guid>
+      <description>It&#39;s been now over a week since we moved to Sydney and everything is just great. We&#39;re still house hunting but I got a feeling we&#39;ll have a home soon. :)
+In the meantime, this morning I got a feature request on github to allow AppConstants to interpret YAML files with embedded code like this:
+
+I haven&#39;t needed it myself but thought it would be a nice addition so my latest commit does exactly that.</description>
+    </item>
+    
+    <item>
+      <title>goodbye europe a two year retrospective</title>
+      <link>http://leonardoborges.com/writings/2010/04/10/goodbye-europe-a-two-year-retrospective/</link>
+      <pubDate>Sat, 10 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/04/10/goodbye-europe-a-two-year-retrospective/</guid>
+      <description>Now several months after I announced my odyssey to obtain my Australian work visa, the time has finally come!
+I&#39;ll be flying to Sydney next week, April 15th, and as you can probably guess, I&#39;m excited as hell! :) This starts an important new page both in my life and my career, but that&#39;s not what this post is about. It&#39;s about sharing the experience of living for over two years in Europe.</description>
+    </item>
+    
+    <item>
+      <title>fallingdreams my very own tetris clone</title>
+      <link>http://leonardoborges.com/writings/2010/04/09/fallingdreams-my-very-own-tetris-clone/</link>
+      <pubDate>Fri, 09 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/04/09/fallingdreams-my-very-own-tetris-clone/</guid>
+      <description>This will come as no surprise to my closest friends, but I am a long time game development admirer. Although I&#39;ve never done anything professionally I did spend some time in the past studying this amazingly interesting field - it&#39;s my dark hobby. As hardware evolves and gamers demand more and more reality from their consoles, the game development industry is one of the few that basically didn&#39;t suffer with the latest economic crisis.</description>
+    </item>
+    
+    <item>
+      <title>upgrading appconstants to rails 3</title>
+      <link>http://leonardoborges.com/writings/2010/02/28/upgrading-appconstants-to-rails-3/</link>
+      <pubDate>Sun, 28 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/02/28/upgrading-appconstants-to-rails-3/</guid>
+      <description>Back in January I announced a small but useful plugin called AppConstants, that basically provides a central place where you can store environment specific constants. And since I started using Rails 3 in the past week, I thought I&#39;d make it Rails 3 compatible.
+The code is really simple and - as I expected - the upgrade process was quite straight forward.
+I&#39;m not gonna write a guide here on how to upgrade your plugins to Rails 3 - there is plenty about that around the web - but instead, just show the steps I went through to upgrade mine.</description>
+    </item>
+    
+    <item>
+      <title>learning objective c a ruby analogy</title>
+      <link>http://leonardoborges.com/writings/2010/02/25/learning-objective-c-a-ruby-analogy/</link>
+      <pubDate>Thu, 25 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/02/25/learning-objective-c-a-ruby-analogy/</guid>
+      <description>Learning new programming languages is fun. And if it&#39;s your 2nd, 3rd...Nth programming language you will eventually look for features you already know and love.
+Coming from Ruby - but after having done my fair amount of Java for many years, among other things - I end up looking for features like blocks, open classes and syntax sugar like automatic generation of attribute accessors. These are hard to let go of.</description>
+    </item>
+    
+    <item>
+      <title>hacking rubys syntax</title>
+      <link>http://leonardoborges.com/writings/2010/02/03/hacking-rubys-syntax/</link>
+      <pubDate>Wed, 03 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/02/03/hacking-rubys-syntax/</guid>
+      <description>What?
+In Ruby you have basically two ways of defining private methods:
+
+I see a small problem with both approaches. In the first one, and the most obvious, is that you need to duplicate the method name as well as add an extra method call - private - just to change its visibility.
+The second approach avoids this but adds the risk of accidentally putting a method that is intended to be public under the private section of the source file, which can render an annoying debugging session.</description>
+    </item>
+    
+    <item>
+      <title>my take on rails environment specific constants</title>
+      <link>http://leonardoborges.com/writings/2010/01/23/my-take-on-rails-environment-specific-constants/</link>
+      <pubDate>Sat, 23 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/01/23/my-take-on-rails-environment-specific-constants/</guid>
+      <description>It’s funny how every Rails application I - and possibly you - work on ends up needing some sort of per-environment global constants.
+Examples may include the application url - It might be used in account activation emails and thus should be different between the development and production environments.
+Or perhaps your application depends on external services that, depending on the environment, are available in different URIs.
+There are a couple solutions out there but my needs were simple and straightforward, thus I developed a small rails plugin that is the simplest thing that could possibly work: AppConstants.</description>
+    </item>
+    
+    <item>
+      <title>monit thinking sphinx and rvm</title>
+      <link>http://leonardoborges.com/writings/2010/01/13/monit-thinking-sphinx-and-rvm/</link>
+      <pubDate>Wed, 13 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/01/13/monit-thinking-sphinx-and-rvm/</guid>
+      <description>In one of my Rails projects I&#39;m using Sphinx to provide full-text search capabilities. To integrate both worlds I chose Thinking Sphinx, which is just great and so far has met all of my expectations.
+Also, as I previously mentioned, I&#39;m using RVM to manage my ruby installations on both my development and production machines and this setup is what motivated this post.
+I use Monit to monitor the services running on my production server - nginx, mysql, php - and as of the first deploy of this application, it only made sense to also monitor Sphinx.</description>
+    </item>
+    
+    <item>
+      <title>managing multiple ruby versions</title>
+      <link>http://leonardoborges.com/writings/2010/01/02/managing-multiple-ruby-versions/</link>
+      <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2010/01/02/managing-multiple-ruby-versions/</guid>
+      <description>Today I read a nice post - in Portuguese - by Fábio Akita on how to manage multiple ruby versions on your machine. I&#39;ve tried it once with some tool I can&#39;t even remember the name but failed miserably.
+But this time things look very different. The tool here is the rvm - short for Ruby Version manager - and it works just great.
+Let&#39;s cut to the chase and imagine that you, like me, want to run/develop/test your code on both ruby 1.</description>
+    </item>
+    
+    <item>
+      <title>rupy 2009 poznan</title>
+      <link>http://leonardoborges.com/writings/2009/11/04/rupy-2009-poznan/</link>
+      <pubDate>Wed, 04 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/11/04/rupy-2009-poznan/</guid>
+      <description>Next week the RuPy Conference 2009 will be held in Poznan, Poland and I was planning to talk there.
+My talk had been approved and everything was looking good - I was gonna talk about JRuby in the Enterprise - until my move to ThoughtWorks became a reality less than a month ago.
+This move led to a lack of support and time from my current company. I was counting on it to go there but since I&#39;ll be leaving soon, that wouldn&#39;t be possible.</description>
+    </item>
+    
+    <item>
+      <title>my slides from rails summit 09</title>
+      <link>http://leonardoborges.com/writings/2009/10/18/my-slides-from-rails-summit-09/</link>
+      <pubDate>Sun, 18 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/10/18/my-slides-from-rails-summit-09/</guid>
+      <description>{% img /assets/images/rs2009.jpg %}
+Rails Summit finished a few days ago and I have only one word to describe it: Awesome!
+I met some really cool people, discussed a whole bunch of technical subjects and managed not to get so nervous in my first presentation ever - I&#39;m not counting internal presentations I&#39;ve done for my team...
+My slides and source files can be found here. Feel free to contact me with questions if you got any.</description>
+    </item>
+    
+    <item>
+      <title>soon off to conquer lands afar</title>
+      <link>http://leonardoborges.com/writings/2009/10/08/soon-off-to-conquer-lands-afar/</link>
+      <pubDate>Thu, 08 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/10/08/soon-off-to-conquer-lands-afar/</guid>
+      <description>Once more my life is taking a huge turn.
+I&#39;ve been pretty quiet for the past month and honestly don&#39;t know how I managed to hold in my excitement. I&#39;ve just accepted an offer from ThoughtWorks to be based at their australian offices, either in Sydney or Melbourne, depending on where my 1st project will be.
+For those of you who don&#39;t know, ThoughtWorks is a global IT consultancy that is really well known in the software development community.</description>
+    </item>
+    
+    <item>
+      <title>a few more thoughts on final classes</title>
+      <link>http://leonardoborges.com/writings/2009/10/07/a-few-more-thoughts-on-final-classes/</link>
+      <pubDate>Wed, 07 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/10/07/a-few-more-thoughts-on-final-classes/</guid>
+      <description>I said final classes are evil and that post got some attention with interesting comments. Maybe because of the title and the tone I wrote it, a few comments didn&#39;t get my real intention and perhaps I should have been more explicit about it. Go ahead and read it. I&#39;ll wait. :)
+Anyway, I thought I&#39;d expand a little more on that subject, explaining my motivation to write that post and going through the topics I think were raised by my dear readers.</description>
+    </item>
+    
+    <item>
+      <title>refactoring for readability</title>
+      <link>http://leonardoborges.com/writings/2009/09/18/refactoring-for-readability/</link>
+      <pubDate>Fri, 18 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/09/18/refactoring-for-readability/</guid>
+      <description>Yesterday I&#39;ve done something I should do more often: Revisit some code written a while ago for our current project and make it better.
+Let&#39;s face it. We all write crappy code the 1st time. The difference is in what we do about it afterwards.
+We might decide it&#39;s good enough and keep moving, or we could (and should!) stop and refactor it!
+The code I revisited worked as a refactoring exercise and it&#39;s initial version is shown below: class Jphoto .</description>
+    </item>
+    
+    <item>
+      <title>rails summit 2009 im speaking</title>
+      <link>http://leonardoborges.com/writings/2009/09/03/rails-summit-2009-im-speaking/</link>
+      <pubDate>Thu, 03 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/09/03/rails-summit-2009-im-speaking/</guid>
+      <description>I&#39;ll be speaking at this year&#39;s Rails Summit Latin America in Sao Paulo, Brazil. It will be a good opportunity to meet some amazing people and visit friends back home! :)
+Overall I&#39;ll be spending 12 days in Brazil, with 2 of them dedicated to the conference. The other 10 I&#39;ll be in Rio de Janeiro visiting my family and friends. I strongly advise you to spend some time in Rio too, if at all possible.</description>
+    </item>
+    
+    <item>
+      <title>rails rumble 09</title>
+      <link>http://leonardoborges.com/writings/2009/08/25/rails-rumble-09/</link>
+      <pubDate>Tue, 25 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/08/25/rails-rumble-09/</guid>
+      <description>Update: The service is now down while we move it from the VPS provided by Rails Rumble to our own. I&#39;ll let you know once it&#39;s up.
+Last weekend Philip, Pedro and myself got together for this year&#39;s Rails Rumble.
+We haven&#39;t had really decided what to do until a few days before the competition, but I had this really simple idea and decided to go with it. Seems people liked it, given a few positive comments we received.</description>
+    </item>
+    
+    <item>
+      <title>jvm language preferences poll results</title>
+      <link>http://leonardoborges.com/writings/2009/07/31/jvm-language-preferences-poll-results/</link>
+      <pubDate>Fri, 31 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/07/31/jvm-language-preferences-poll-results/</guid>
+      <description>- Overall results
+First off, I&#39;d like to thank everyone who voted on this poll.
+With a total of 236 votes, here is the summary of the first two questions:
+- Are you currently working with or researching about language alternatives for the JVM? - e.g. JRuby, Scala, Groovy
+{% img /assets/images/scala_improvements.png %}
+Tooling. The majority of comment urge for better tooling and IDE support. That simple.
+- Others</description>
+    </item>
+    
+    <item>
+      <title>procs lambdas blocks whats the difference</title>
+      <link>http://leonardoborges.com/writings/2009/07/22/procs-lambdas-blocks-whats-the-difference/</link>
+      <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/07/22/procs-lambdas-blocks-whats-the-difference/</guid>
+      <description>Do you know? I didn&#39;t. And started to get annoyed by using these terms interchangeably and not really knowing the difference.
+There are a few. And they are subtle. I don&#39;t think most of us would ever have problems with it but it&#39;s the kind of information you&#39;ll be glad to know when having those weird behaviors in your code on a Friday at 6:01 pm, just before pushing to production.</description>
+    </item>
+    
+    <item>
+      <title>jruby on rails and legacy java apps managing dependencies</title>
+      <link>http://leonardoborges.com/writings/2009/07/01/jruby-on-rails-and-legacy-java-apps-managing-dependencies/</link>
+      <pubDate>Wed, 01 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/07/01/jruby-on-rails-and-legacy-java-apps-managing-dependencies/</guid>
+      <description>The motivation for this post came from a couple of messages I&#39;ve seen on the jruby&#39;s google group and because I think it&#39;s pretty cool to share how we tackled this problem.
+- A little bit of context
+We, as a vast amount of people out there, have legacy Java code. A lot. In our case this legacy is pretty much crucial to our business. We can&#39;t just trash it and start from scratch.</description>
+    </item>
+    
+    <item>
+      <title>google io thoughtworks on gae</title>
+      <link>http://leonardoborges.com/writings/2009/06/22/google-io-thoughtworks-on-gae/</link>
+      <pubDate>Mon, 22 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/06/22/google-io-thoughtworks-on-gae/</guid>
+      <description>I&#39;ve just watched a video from Google IO where Martin Fowler and Rebecca Parsons went through some of the aspects that involves the development of an application for the cloud - focusing on the JVM.
+In terms of the Google App Engine, you don&#39;t have access to a relational database, thing I found out when I first tried it. Instead you get a Big Table.
+Martin put out a good analogy and you can just think of it as a nested hash map.</description>
+    </item>
+    
+    <item>
+      <title>helping the jruby effort debugging the source</title>
+      <link>http://leonardoborges.com/writings/2009/06/14/helping-the-jruby-effort-debugging-the-source/</link>
+      <pubDate>Sun, 14 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/06/14/helping-the-jruby-effort-debugging-the-source/</guid>
+      <description>Wanna help improve JRuby? Make sure you read this post by Charles Nutter first. There he explains how to run Ruby specs with JRuby.
+Start with fixing Ruby specs is a great way to get acquainted with the code. And it&amp;rsquo;s also a important task in order to make sure JRuby is the most complete and compatible ruby implementation out there.
+But before you get your hands dirty, it will be a lot easier if you can actually debug JRuby&amp;rsquo;s source while fixing any specs - or bugs/features for that matter.</description>
+    </item>
+    
+    <item>
+      <title>how do you keep yourself focused</title>
+      <link>http://leonardoborges.com/writings/2009/06/08/how-do-you-keep-yourself-focused/</link>
+      <pubDate>Mon, 08 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/06/08/how-do-you-keep-yourself-focused/</guid>
+      <description>This is basically a compilation of a few tools/habits that I use to keep focused and at a high level of productivity when working alone. Works great for me and I hope there are useful tips for you as well.
+ Music This is one of my favorites. When working alone I hate having noisy people around, which happens quite often if you work in an open office space like me.</description>
+    </item>
+    
+    <item>
+      <title>coding dojo 1 the fun begins</title>
+      <link>http://leonardoborges.com/writings/2009/06/06/coding-dojo-1-the-fun-begins/</link>
+      <pubDate>Sat, 06 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/06/06/coding-dojo-1-the-fun-begins/</guid>
+      <description>Yesterday I organized our first CodingDojo here at the company and I&#39;m glad to say it was a great success!
+The problem chosen was the Karate Chop, from Dave Thomas&#39; Code Kata.
+As it was also my first time organizing a Dojo, we took some time to get things straight, explain everyone the rules and start coding. Nothing that would compromise the experience, though.
+The rules were basically the ones of a RandoriKata and as a mechanism for switching pairs we chose the TimeBox with a limit of 5 minutes.</description>
+    </item>
+    
+    <item>
+      <title>railswaycon jruby internals by ola bini</title>
+      <link>http://leonardoborges.com/writings/2009/05/29/railswaycon-jruby-internals-by-ola-bini/</link>
+      <pubDate>Fri, 29 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/05/29/railswaycon-jruby-internals-by-ola-bini/</guid>
+      <description>As always I expected a good talk from Ola and once more he delivered it. But this one was different. It might have been even boring to some ruby developers since we saw a fair amount of java code in this presentation. Ola gave us a tour through the main classes that make JRuby possible with a single purpose: so we can check out the code and hack ourselves. You can download his slides here.</description>
+    </item>
+    
+    <item>
+      <title>rails readable test names run individual tests from the console</title>
+      <link>http://leonardoborges.com/writings/2009/05/16/rails-readable-test-names-run-individual-tests-from-the-console/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/05/16/rails-readable-test-names-run-individual-tests-from-the-console/</guid>
+      <description>As you probably know, since rails 2.1 you can write test methods in the following format:
+test &#34;hotel should return its permalink&#34; do
+#your test code here
+end
+
+Which is great, as the test name becomes much more clear. But you can&#39;t simply run this test easily from the command line. You&#39;d have to run something like:
+$ ruby your_test_file.rb -n test_hotel_should_return_its_permalink
+
+It annoys me. And it&#39;s not practical either to make the test fail just so you can get the test&#39;s real name.</description>
+    </item>
+    
+    <item>
+      <title>rcov jruby and rcov_plugin</title>
+      <link>http://leonardoborges.com/writings/2009/05/05/rcov-jruby-and-rcov_plugin/</link>
+      <pubDate>Tue, 05 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/05/05/rcov-jruby-and-rcov_plugin/</guid>
+      <description>The rcov_plugin project is a rails plugin for rcov that adds some useful rake tasks to your application. And since I&#39;m currently working in a JRuby project it made sense to use this plugin.
+The thing is, among other stuff, an rcov report from a JRuby project includes some files that shouldn&#39;t be there at all, plus you also need to change the way you call rcov as such. Thus, I thought I&#39;d contribute these changes to the plugin and my pull request was approved this morning - just install the latest version and you should be good to go.</description>
+    </item>
+    
+    <item>
+      <title>git cheat shee</title>
+      <link>http://leonardoborges.com/writings/2009/04/22/git-cheat-shee/</link>
+      <pubDate>Wed, 22 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/04/22/git-cheat-shee/</guid>
+      <description>For those who don&#39;t know Git is a version control system developed by Linus Torvalds. It&#39;s main difference from other tools like SVN and CVS is the fact that it&#39;s distributed.
+Recently I gave a workshop about Git here at the company where I walked through the most common cases I usually see when working in a team and thought about posting a summary of the commands used in the workshop.</description>
+    </item>
+    
+    <item>
+      <title>jruby on rails and google app engine</title>
+      <link>http://leonardoborges.com/writings/2009/04/10/jruby-on-rails-and-google-app-engine/</link>
+      <pubDate>Fri, 10 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/04/10/jruby-on-rails-and-google-app-engine/</guid>
+      <description>As many of you know the new language supported at GAE now is Java, as officially announced on their blog. As a Ruby/Rails developer you might not be interested on it but here is a reason you should be: JRuby.
+It was only a matter of time until we saw some people deploying JRuby on Rails apps on GAE, like Ola Bini&#39;s mini blog app. Guess that was the first one really, as he was beta testing the service in secret.</description>
+    </item>
+    
+    <item>
+      <title>long stand up meetings</title>
+      <link>http://leonardoborges.com/writings/2009/04/06/long-stand-up-meetings/</link>
+      <pubDate>Mon, 06 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/04/06/long-stand-up-meetings/</guid>
+      <description>It&#39;s been more than a year since I started my new endeavor here in Spain, moving from Brazil and starting a whole new life - both personal and professional. Time for a little retrospective.
+More precisely, a retrospective about the agile practices here at the company.
+When I first started out back in January &#39;08 the company thought they were agile. NOT! They did adopt some XP practices but just to give you an idea, I&#39;m gonna focus on just one: stand-up meetings.</description>
+    </item>
+    
+    <item>
+      <title>final classes are evil</title>
+      <link>http://leonardoborges.com/writings/2009/03/17/final-classes-are-evil/</link>
+      <pubDate>Tue, 17 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/03/17/final-classes-are-evil/</guid>
+      <description>Update: Go ahead and read this post in its entirety - including the comments. Then, read my other post where I expand the subject a little more. --
+Every now and then I still do some Java coding. And I actually like it. I spent several years of my career developing primarily in Java and am very keen about the language.
+I&#39;ve been a fierce defender of it these days, specially with the wave of popularity of other languages such as Ruby and Groovy.</description>
+    </item>
+    
+    <item>
+      <title>qcon london 09</title>
+      <link>http://leonardoborges.com/writings/2009/03/09/qcon-london-09/</link>
+      <pubDate>Mon, 09 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/03/09/qcon-london-09/</guid>
+      <description> Tomorrow I&#39;ll be once more heading London for this year&#39;s QCon.
+As usual, the schedule looks amazing and I&#39;ll try to keep you all posted about what&#39;s going on there.
+Oh and if any of you guys is going and wanna meet up for a geek talk and a couple of beers, just send me a message.
+Cheers! :) </description>
+    </item>
+    
+    <item>
+      <title>eclipse tip debugging non wtp projects</title>
+      <link>http://leonardoborges.com/writings/2009/02/01/eclipse-tip-debugging-non-wtp-projects/</link>
+      <pubDate>Sun, 01 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/02/01/eclipse-tip-debugging-non-wtp-projects/</guid>
+      <description>&lt;p&gt;
+This is a very useful tip I shared a while ago at the office and turned out to be extremely useful.&lt;br&gt;&lt;br&gt;If you work with java and use eclipse as an IDE you know that eclipse has something called WTP, which stands for Web Tools Platform. It&#39;s a set of tools and API&#39;s to aid in the development of web and JEE projects.&lt;br&gt;&lt;br&gt;That means that if you have a WTP project in your workspace, you can deploy, run and debug it straight from the IDE. But what happens if your project is not of a WTP nature?&lt;br&gt;&lt;br&gt;Back at the office we have a coupe of really old Java project. WTP didn&#39;t exist back then but we do use Eclipse as our IDE of choice.&lt;br&gt;&lt;br&gt;So, how do we debug a deployed project that we don&#39;t actually deploy from the IDE? As long as you have the source, it is quite simple:</description>
+    </item>
+    
+    <item>
+      <title>somewhere in between</title>
+      <link>http://leonardoborges.com/writings/2008/12/29/somewhere-in-between/</link>
+      <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/12/29/somewhere-in-between/</guid>
+      <description>So here I am! Alive and kicking!!!
+Just got back from vacation. Brazil was awesome and so was xmas in Norway! Lots of food in both places! Need a diet! :p Warming up for new year&#39;s now.
+But the reason for this post is the last comment on my Rails 2.0 scaffold post, quoted here:
+Hi Leonardo,
+I am extremely grateful for your info altruism. I thought maybe I could show my gratitude with a small donation but I donâ€™t see anywhere on your site to do so.</description>
+    </item>
+    
+    <item>
+      <title>apologizing in advance p</title>
+      <link>http://leonardoborges.com/writings/2008/12/03/apologizing-in-advance-p/</link>
+      <pubDate>Wed, 03 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/12/03/apologizing-in-advance-p/</guid>
+      <description>UPDATE: By next friday I meant this friday, december 5th. Tks Pillip! :P
+This will be a really quiet month on my blog.
+The reason? Next friday I&#39;m going to Brazil for vacation and right after, in the end of december, I&#39;m going to extend my trip a bit and spend xmas in Norway.
+Just hope to come back alive from Brazil! My friends are promising a real blast!!!!! :D</description>
+    </item>
+    
+    <item>
+      <title>rails performance scripts profiler benchmarker</title>
+      <link>http://leonardoborges.com/writings/2008/11/20/rails-performance-scripts-profiler-benchmarker/</link>
+      <pubDate>Thu, 20 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/11/20/rails-performance-scripts-profiler-benchmarker/</guid>
+      <description>There are several ways you can measure your rails application&#39;s performance. The techniques range from filling your code with &#34;puts&#34; statements - :p - to fancy ones like NewRelic - which is quite nice, I must say.
+But what many people don&#39;t know is that rails ships with a handful of scripts to help you out. One of which is called profiler, located under your application&#39;s scripts/performance directory.
+By default it uses the standard ruby profiler but if you want more speed - and additional reporting options - , consider installing the ruby-prof gem.</description>
+    </item>
+    
+    <item>
+      <title>merb turns 10 and started driving me crazy</title>
+      <link>http://leonardoborges.com/writings/2008/11/18/merb-turns-10-and-started-driving-me-crazy/</link>
+      <pubDate>Tue, 18 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/11/18/merb-turns-10-and-started-driving-me-crazy/</guid>
+      <description>As you may already know, Merb turned 1.0 a while ago and I decided to resume my studies to learn the framework.
+So I just built a new app with a few resources and fired the migration scripts:
+$ rake db:automigrate
+
+And this is what I got:
+Loading init file from /Users/leo/projects/merb/my-first-app/config/init.rb
+Loading /Users/leo/projects/merb/my-first-app/config/environments/development.rb
+~ Connecting to database...
+/opt/local/lib/ruby/gems/1.8/gems/dm-core-0.9.6/lib/dm-core/adapters/data_objects_adapter.rb:137:in `initialize&#39;: wrong number of arguments (8 for 1) (ArgumentError)</description>
+    </item>
+    
+    <item>
+      <title>understanding ruby threads</title>
+      <link>http://leonardoborges.com/writings/2008/10/28/understanding-ruby-threads/</link>
+      <pubDate>Tue, 28 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/10/28/understanding-ruby-threads/</guid>
+      <description>This post is just to clarify some confusion I&#39;ve noticed reading some posts around the web. There is some misunderstanding of the differences between Ruby 1.8 and Ruby 1.9 regarding threads. And the difference between them and JRuby.
+So I decided to write this small summary:
+Ruby 1.8 - Supports only Green Threads
+This means that the ruby interpreter has its own scheduler. No matter how many threads you create in your ruby program, there will be only one native thread on your OS.</description>
+    </item>
+    
+    <item>
+      <title>dont use rexml i mean it</title>
+      <link>http://leonardoborges.com/writings/2008/10/08/dont-use-rexml-i-mean-it/</link>
+      <pubDate>Wed, 08 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/10/08/dont-use-rexml-i-mean-it/</guid>
+      <description>REXML is the standard XML processing library for Ruby. It&#39;s on Ruby&#39;s core and is terribly slow.
+Yeah, I know it&#39;s pretty simple to use, got a nice interface and, again, it&#39;s just there. And it is a good library, for most things. But if you, as me, came to a point that processing XML is taking 50% of the time to render a rails action, it&#39;s time to change.</description>
+    </item>
+    
+    <item>
+      <title>were hiring</title>
+      <link>http://leonardoborges.com/writings/2008/09/26/were-hiring/</link>
+      <pubDate>Fri, 26 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/09/26/were-hiring/</guid>
+      <description>Here at Mirai we&#39;re looking for passionate software engineers.
+And if it&#39;s not clear, by passionate I mean people who actually enjoy their job, aren&#39;t afraid of trying new things, likes to research/study, is up to date to what&#39;s happening around them and is a true team player.
+Interested? Hold on, click here to find out more about the offer, as well as instructions on how to apply.
+Doubts? Send them to jobs@hotelsearch.</description>
+    </item>
+    
+    <item>
+      <title>railsconf europe 2008 impressions and highlights</title>
+      <link>http://leonardoborges.com/writings/2008/09/09/railsconf-europe-2008-impressions-and-highlights/</link>
+      <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/09/09/railsconf-europe-2008-impressions-and-highlights/</guid>
+      <description>I&#39;m back in Madrid again after the RailsConf and I think it&#39;s time to say something about it. :)
+First off, the infrastructure provided by the conference was really great. The rooms, WiFi connection, food...Â Really well organized.
+Now to the sessions, highlights:
+Tutorials (Tuesday)
+- Meta-programming Ruby for fun and profit (Neal Ford, Patrick Farley)
+The old and good techniques that made Ruby so powerful. Here Neal and Patrick walked us through the main tricks to meta programming like open classes - and conditionally open them - , dynamically define methods, sending messages to objects and how Ruby can help test your Java code in a much easier way.</description>
+    </item>
+    
+    <item>
+      <title>railsconf europe 2008 heading to berlin</title>
+      <link>http://leonardoborges.com/writings/2008/08/30/railsconf-europe-2008-heading-to-berlin/</link>
+      <pubDate>Sat, 30 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/30/railsconf-europe-2008-heading-to-berlin/</guid>
+      <description> The title says it already.
+On monday I&#39;ll be going to Berlin to attend this yearÂ´s RailsConf.
+This will be my first one and of course my expectations are pretty high!
+As usual, after the conference I&#39;ll try and give a summary of what happened there, providing as much content as I can.
+Anyone else&#39;s going??? :)
+C u there! </description>
+    </item>
+    
+    <item>
+      <title>mac os x getting mysql and rails to work</title>
+      <link>http://leonardoborges.com/writings/2008/08/28/mac-os-x-getting-mysql-and-rails-to-work/</link>
+      <pubDate>Thu, 28 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/28/mac-os-x-getting-mysql-and-rails-to-work/</guid>
+      <description>So I couldn&#39;t resist and bought myself a MacBook Pro! It&#39;s my first week with my new toy and I&#39;m really enjoying it.
+But I need to do something useful with it so I started to prepare it to be my new development platform, starting with Ruby/Rails + MySQL: Here is where the fun begins!
+After I installed both Rails and MySQL, I fired up a terminal an typed:</description>
+    </item>
+    
+    <item>
+      <title>rails vulnerability on rexml</title>
+      <link>http://leonardoborges.com/writings/2008/08/24/rails-vulnerability-on-rexml/</link>
+      <pubDate>Sun, 24 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/24/rails-vulnerability-on-rexml/</guid>
+      <description> REXML, the XML library uses by many ruby apps, including rails, has a vulnerability that requires an immediate patch on whatever rails version you&#39;re using.
+Details and instructions on the official rails weblog, here.
+But basically, this is what you need to do:
+gem install rexml-expansion-fix
+
+Then, require rexml-expansion-fix in your rails&#39;s app environment.rb file. </description>
+    </item>
+    
+    <item>
+      <title>yes we do eat</title>
+      <link>http://leonardoborges.com/writings/2008/08/15/yes-we-do-eat/</link>
+      <pubDate>Fri, 15 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/15/yes-we-do-eat/</guid>
+      <description>Besides the fact that I am a software developer, I do eat. I even enjoy doing so. Specially when I&#39;m traveling.
+That&#39;s why i decided to put up a new weblog only for this kind of stuff - it&#39;s called Travel tips - food &amp; stuff. Basically for friends and whoever else might be interested.
+There I plan to share some nice restaurants I&#39;ve been to. At least to start with.</description>
+    </item>
+    
+    <item>
+      <title>why i like ruby 1 alias_method</title>
+      <link>http://leonardoborges.com/writings/2008/08/07/why-i-like-ruby-1-alias_method/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/07/why-i-like-ruby-1-alias_method/</guid>
+      <description>So you found yourself in the need to override a method but still count on it&#39;s old behaviour?
+No problem! Override it with your new code, call super and.... Uh oh!! Suddenly this turned into a problem... Let me give some more context.
+I was testing Ferret (and the acts_as_ferret plugin) in a project to provide full text search capabilities to our models. One of the things the plugin does is to add a new method to ActiveRecord, called find_with_ferret.</description>
+    </item>
+    
+    <item>
+      <title>the biggest rails event in latin america</title>
+      <link>http://leonardoborges.com/writings/2008/08/04/the-biggest-rails-event-in-latin-america/</link>
+      <pubDate>Mon, 04 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/08/04/the-biggest-rails-event-in-latin-america/</guid>
+      <description>Behold latin american railers!
+This year we will have the Rails Summit Latin America on October, 15th and 16th, in SÃ£o Paulo, Brazil.
+It&#39;s by far the biggest Rails event we&#39;ve ever had, including many of the speakers that were present at RailsConf.
+FÃ¡bio Akita is also one of the speakers and provides more details on his blog.
+If you&#39;re a assumed rails geek don&#39;t miss the opportunity to hear from the big names and to know a beautiful country like Brazil.</description>
+    </item>
+    
+    <item>
+      <title>new provider</title>
+      <link>http://leonardoborges.com/writings/2008/07/26/new-provider/</link>
+      <pubDate>Sat, 26 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/07/26/new-provider/</guid>
+      <description> I decided to change my blog&#39;s hosting provider and this is the first post using the new service.
+Please if you see any abnormal behaviour around here don&#39;t hesitate to contact me either at leonardoborges@leonardoborges.com or leonardoborges.rj@gmail.com
+Thanks! </description>
+    </item>
+    
+    <item>
+      <title>mock objects</title>
+      <link>http://leonardoborges.com/writings/2008/07/07/mock-objects/</link>
+      <pubDate>Mon, 07 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/07/07/mock-objects/</guid>
+      <description>When testing it&#39;s pretty common to see the need for mocking a certain object, say, a Data Access Ojbect. This way you don&#39;t need to depend on a database and you can focus on the actual logic implemented by the method being tested.
+For that you have several alternatives like creating the Mock class by hand or - and this is the more common - use one of the various mocking libraries out there.</description>
+    </item>
+    
+    <item>
+      <title>passenger mod_rails and problems with custom apache installation</title>
+      <link>http://leonardoborges.com/writings/2008/06/07/passenger-mod_rails-and-problems-with-custom-apache-installation/</link>
+      <pubDate>Sat, 07 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/06/07/passenger-mod_rails-and-problems-with-custom-apache-installation/</guid>
+      <description>This week we started to test mod_rails in a couple of projects where I work on. One in production.
+Of course it&#39;s too early for any conclusions, but I just wanted to share a couple of problems you might find when the installer tries to compile the Apache module.
+In our case, and I believe it is the case of many servers out there, we have a custom Apache installation, what makes the installer not find it and/or not find the Apache Portable Runtime (APR) sometimes.</description>
+    </item>
+    
+    <item>
+      <title>presentation spring framework</title>
+      <link>http://leonardoborges.com/writings/2008/06/07/presentation-spring-framework/</link>
+      <pubDate>Sat, 07 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/06/07/presentation-spring-framework/</guid>
+      <description> Last friday I&#39;ve done a small presentation about Dependency Injection and how it can improve the testing environment of a project. You can find it in the presentations page.
+Hope you like it. </description>
+    </item>
+    
+    <item>
+      <title>euruko 2008 materials available</title>
+      <link>http://leonardoborges.com/writings/2008/05/14/euruko-2008-materials-available/</link>
+      <pubDate>Wed, 14 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/05/14/euruko-2008-materials-available/</guid>
+      <description> As some of you know I went to the European Ruby Conf in Prague, this year.
+The event was awesome and it&#39;s good to know they finally made available the majority of the slides, here.
+They also published Matz&#39;s keynote, and more videos from the conference are being edited right now, so stay tuned to their home page!
+Enjoy! </description>
+    </item>
+    
+    <item>
+      <title>a couple of things from here</title>
+      <link>http://leonardoborges.com/writings/2008/05/10/a-couple-of-things-from-here/</link>
+      <pubDate>Sat, 10 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/05/10/a-couple-of-things-from-here/</guid>
+      <description>It&#39;s been some time since my last post but here I am! Where? In Spain, of course! Having a great time, I must say.
+I arrived last week in Madrid and the past 2 weeks before that I spent basically packing my stuff. There is still some paperwork going on but everything is flowing well.
+Besides this little feedback, I was reading this week&#39;s issue of the excellent series This Week In Ruby, from my friend Antonio Cangiano.</description>
+    </item>
+    
+    <item>
+      <title>passengermod_rails released</title>
+      <link>http://leonardoborges.com/writings/2008/04/14/passengermod_rails-released/</link>
+      <pubDate>Mon, 14 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/14/passengermod_rails-released/</guid>
+      <description>Passenger(mod_rails) has been released.
+The idea is to ease the pain on rails applications deployment. I tested myself and in less than five minutes I had my application working behind Apache!
+I&#39;m not going to say much here besides the fact that it seems like a really good option for rails deployment and people have been talking about it already, including DHH.
+But I do recommend a read on the architecture overview document.</description>
+    </item>
+    
+    <item>
+      <title>time to reveal</title>
+      <link>http://leonardoborges.com/writings/2008/04/08/time-to-reveal/</link>
+      <pubDate>Tue, 08 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/08/time-to-reveal/</guid>
+      <description>Some of you may know. Some of you may not. Some of you may find weird. And most of you probably have no idea of what I&#39;m talking about but the thing is: This is a year of big changes for me.
+I&#39;ve been hired by Mirai, a Spanish company located in Madrid, to work as a Software Engineer. Yes, it does mean I&#39;ll be moving there. Sooner than later.</description>
+    </item>
+    
+    <item>
+      <title>jruby db2 xquery bug</title>
+      <link>http://leonardoborges.com/writings/2008/04/07/jruby-db2-xquery-bug/</link>
+      <pubDate>Mon, 07 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/07/jruby-db2-xquery-bug/</guid>
+      <description>Update: Follow up link to this issue on JRuby&#39;s Jira, here
+As I told in my last post, it was time to give JRuby a serious try. So I took one of our rails projects at work and decided to migrate it to JRuby and see what happens.
+We heavily use the XML capabilities of DB2 and this was a huge problem. Every query would work just fine through the activerecord-jdbc-adapter - part of the JRuby Extras .</description>
+    </item>
+    
+    <item>
+      <title>qcon 2008 slides available</title>
+      <link>http://leonardoborges.com/writings/2008/04/04/qcon-2008-slides-available/</link>
+      <pubDate>Fri, 04 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/04/qcon-2008-slides-available/</guid>
+      <description>Most of last QCon&#39;s presentations are available for download here.
+Highlights to Ola Bini&#39;s on JRuby(pdf) and Randy Shoup&#39;s on eBay&#39;s architectural principles(pdf).
+And while we&#39;re talking about JRuby, it&#39;s impressive how it&#39;s becoming a recurrent and big subject. Fast. It had its own small space at big event like QCon and in the last Euruko in Prague, we had a presentation by the JRuby Core Developers Charles Nutter and Thomas Enebo.</description>
+    </item>
+    
+    <item>
+      <title>why i like ruby or ruby the language of the lazy programmer</title>
+      <link>http://leonardoborges.com/writings/2008/04/01/why-i-like-ruby-or-ruby-the-language-of-the-lazy-programmer/</link>
+      <pubDate>Tue, 01 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/04/01/why-i-like-ruby-or-ruby-the-language-of-the-lazy-programmer/</guid>
+      <description>This is quite funny. A friend, Perl addicted, is now learning Ruby. He really enjoys the language but made a interesting observation: Ruby is a language for lazy programmers!
+Well, I have to agree... You know, I love saving keystrokes and achieving more by writing less. And this is so true with Ruby.
+Let me give a really simple example, comparing with java - don&#39;t get me wrong... I love java, specially the platform, but it fits well here since I&#39;ve always been a Java guy.</description>
+    </item>
+    
+    <item>
+      <title>euruko 2008 european rubyconf prague</title>
+      <link>http://leonardoborges.com/writings/2008/03/25/euruko-2008-european-rubyconf-prague/</link>
+      <pubDate>Tue, 25 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/03/25/euruko-2008-european-rubyconf-prague/</guid>
+      <description>On friday I&#39;ll be heading Prague for the European RubyConf.
+Anyone is going? :)
+Almost 300 attendees already registered for the event. And a few very interesting people will be speaking there like Matz and DHH (this one, through skype).
+Besides that, the organization staff is scheduling 2 parties, friday and saturday, for the attendees.
+Networking comes to mind, doesn&#39;t it? I think it will be a great opportunity to meet interesting and bright people.</description>
+    </item>
+    
+    <item>
+      <title>qcon 2008 domain specific languages</title>
+      <link>http://leonardoborges.com/writings/2008/03/10/qcon-2008-domain-specific-languages/</link>
+      <pubDate>Mon, 10 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/03/10/qcon-2008-domain-specific-languages/</guid>
+      <description>Today was the first day of the conference and it started with a tutorial about DSL&#39;s with Martin Fowler, Neal Ford and Rebecca Parsons. We also had as attendants Ola Bini, core developer of JRuby, and others. My expectations were pretty high and the presentation didn&#39;t let me down. I&#39;ll try to put here toghether my impressions and some notes I took while I was there.
+Marting Fowler started discussing what DSL&#39;s are and giving some examples that many of us use in our day to day Job.</description>
+    </item>
+    
+    <item>
+      <title>qcon 2008 london</title>
+      <link>http://leonardoborges.com/writings/2008/03/07/qcon-2008-london/</link>
+      <pubDate>Fri, 07 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/03/07/qcon-2008-london/</guid>
+      <description>Next week I&#39;ll be at QCon, in London, so if any of you are going to the conference and would like meet up for a couple of beers and a tech talk, please don&#39;t hesitate to drop a message.
+For those of you who have never heard of QCon before, it is a really nice event to play along with some of the most popular names in the software engineering community.</description>
+    </item>
+    
+    <item>
+      <title>openid</title>
+      <link>http://leonardoborges.com/writings/2008/02/18/openid/</link>
+      <pubDate>Mon, 18 Feb 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/02/18/openid/</guid>
+      <description>I think I&#39;ve been really lucky lately. In my new job I&#39;m getting to work with many interesting things and OpenID is just one of them.
+We are investing high in Ruby on Rails and we have now a few internal applications in development stages. Our manager wanted the ability to let people log in to our rails applications(for now) using their OpenID accounts.
+It was a funny task, as I knew very little about OpenID.</description>
+    </item>
+    
+    <item>
+      <title>dbunit and hibernate</title>
+      <link>http://leonardoborges.com/writings/2008/01/17/dbunit-and-hibernate/</link>
+      <pubDate>Thu, 17 Jan 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/01/17/dbunit-and-hibernate/</guid>
+      <description>&lt;p&gt;
+I never paid too much attention on testing database stuff. While working with java, the closest I got to something &lt;em&gt;workable &lt;/em&gt;was using the test case abstractions provided by the Spring framework. It ensures that each test method runs in its own transaction that is rolled back after the test&#39;s execution.&lt;br&gt;&lt;br&gt;Fair enough. I used the &lt;a href=&#34;http://junit.sourceforge.net/javadoc/junit/framework/TestCase.html#setUp()&#34;&gt;setUp()&lt;/a&gt; method on my &lt;a href=&#34;http://junit.sourceforge.net/javadoc/junit/framework/TestCase.html&#34;&gt;TestCase&lt;/a&gt; to configure some records so I could work with them, removing all of them in the &lt;a href=&#34;http://junit.sourceforge.net/javadoc/junit/framework/TestCase.html#tearDown()&#34;&gt;tearDown()&lt;/a&gt; method. It was quite simple and worked.&lt;br&gt;&lt;br&gt;But I always felt something strange with this solution. First of all, I had to add another framework just for that. - Actually I was using spring for dependency injection, but if I wasn&#39;t, it wouldn&#39;t be a nice option. And another thing that bothered me, is that you cannot guarantee that your database is in a known state.&lt;br&gt;&lt;br&gt;After I started to work with Ruby - and Rails - I discovered the &lt;a href=&#34;http://manuals.rubyonrails.com/read/chapter/26&#34;&gt;testing fixtures&lt;/a&gt;. It is a really nice way to set up your testing data without having to worry about your database state. - If you don&#39;t know what I&#39;m talking about, follow the above link first.&lt;br&gt;&lt;br&gt;Then I received a message from a co-worker saying he was having some trouble in using &lt;a href=&#34;http://www.dbunit.org/&#34;&gt;DBUnit&lt;/a&gt; with Hibernate, and asked for some help. I&#39;ve heard of DBUnit before but never tried it myself. It was a very good opportunity to take a better look into it.&lt;br&gt;&lt;br&gt;The basic idea after all is very similar to that of the Rails Fixtures: You have some sort of external file - XML in this case - where you set up the testing data. So the framework takes care of erasing the database, inserting your test data and returning it to its original state.&lt;br&gt;&lt;br&gt;So far so good, DBUnit&#39;s default Classes works with &lt;a href=&#34;http://www.dbunit.org/apidocs/org/dbunit/JdbcBasedDBTestCase.html&#34;&gt;JDBC,&lt;/a&gt; &lt;a href=&#34;http://www.dbunit.org/apidocs/org/dbunit/DataSourceBasedDBTestCase.html&#34;&gt;DataSources&lt;/a&gt; and &lt;a href=&#34;http://www.dbunit.org/apidocs/org/dbunit/JndiBasedDBTestCase.html&#34;&gt;JNDIDatasources&lt;/a&gt;, but not with Hibernate.  The effort to put them working together is minimal and is documented in their web site.&lt;br&gt;&lt;br&gt;I decided to share how this can be done with hibernate and in the end, you would have a test case similar to this one:&lt;br&gt;&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>rails 20 xml data type and db2</title>
+      <link>http://leonardoborges.com/writings/2008/01/02/rails-20-xml-data-type-and-db2/</link>
+      <pubDate>Wed, 02 Jan 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2008/01/02/rails-20-xml-data-type-and-db2/</guid>
+      <description>[2008/04/30] Update: The ibm_db gem has been updated to support the new Rails 2.0 style migration. Now you can just use t.xml and it will work. Look here for more info. Thanks to Mario Briggs for pointing me to the update.
+---
+In my new job we work with XML data natively stored on DB2. I have done some test with Rails and DB2 a few weeks ago and it&#39;s pretty interesting, specially the easiness that Rails deals with XML.</description>
+    </item>
+    
+    <item>
+      <title>rails 20 scaffold</title>
+      <link>http://leonardoborges.com/writings/2007/12/21/rails-20-scaffold/</link>
+      <pubDate>Fri, 21 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/12/21/rails-20-scaffold/</guid>
+      <description>Following the Rails 2.0 hype, I&#39;ve been playing around with it and decided to share a first impression: Scaffolding is gone!
+But wait, before you knock your head against the wall, let me tell you something: I lied :)
+Scaffolding is not really gone. It&#39;s just changed a bit.
+How can I tell? Well, as a good developer I thought: &#34;I&#39;ll just create a scaffold with the new version and see what&#39;s different&#34;</description>
+    </item>
+    
+    <item>
+      <title>spring 25 dependency injection that doesnt hurt</title>
+      <link>http://leonardoborges.com/writings/2007/12/07/spring-25-dependency-injection-that-doesnt-hurt/</link>
+      <pubDate>Fri, 07 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/12/07/spring-25-dependency-injection-that-doesnt-hurt/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34;&gt;Dependency injection&lt;/a&gt; - &lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34;&gt;DI&lt;/a&gt;Â - Â is a great thing. Really. The hability to tweak implementations without touching your code is awesome and the DI frameworks, like spring, saves you a lot of coding. No more service locators stuff.&lt;br&gt;&lt;br&gt;But, and there is always a but, you&#39;re left with a bunch of XML configuration. And I hate it. Not that XML files are bad... the thing is that everything nowadays has its own set of XML configurarion files. And &lt;a href=&#34;http://www.springframework.org&#34;&gt;Spring&lt;/a&gt; is not different.&lt;br&gt;&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>rubyworks production stack for rails</title>
+      <link>http://leonardoborges.com/writings/2007/12/01/rubyworks-production-stack-for-rails/</link>
+      <pubDate>Sat, 01 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/12/01/rubyworks-production-stack-for-rails/</guid>
+      <description>&lt;p&gt;
+Well, we all know how hard, or at least cumbersome, it can be to set up a production environment to deploy your applications. Besides all the hardware stuff like storages, links, routers you are still left with a huge amount of software configuration to handle. This often includes configuring things like clusters, load balancing and services monitoring - Including notification of interested parts in case of any failure. Pieces of software you have to tie up and make them work together.&lt;br&gt;&lt;br&gt;But hey, ruby lovers, you may have a better way to get this going! Released by &lt;a href=&#34;http://www.thoughtworks.com/&#34; title=&#34;TW&#39;s web site&#34;&gt;ThoughtWorks&lt;/a&gt;, &lt;a href=&#34;http://studios.thoughtworks.com/rubyworks&#34; title=&#34;RubyWorks&#34;&gt;RubyWorks&lt;/a&gt; is, as quoted from their website, a production application stack for &lt;a href=&#34;http://www.rubyonrails.org/&#34; title=&#34;Ruby On Rails&#34;&gt;Ruby On Rails&lt;/a&gt; applications. I decided to give it a try and I really enjoyed it.&lt;br&gt;&lt;br&gt;First of all I didn&#39;t want to mess with my actual configuration so I installed a new vm with &lt;a href=&#34;http://www.virtualbox.org/&#34; title=&#34;Virtual Box&#34;&gt;Virtual Box&lt;/a&gt;. It has Ubuntu 7.10 on it, with 256MB of memory.&lt;br&gt;&lt;br&gt;After installing RubyWorks - instructions on their website -, you get a new skeleton rails app up and running, being served by 4 &lt;a href=&#34;http://mongrel.rubyforge.org/&#34; title=&#34;Mongrel&#34;&gt;mongrels&lt;/a&gt; that defaults to production environment! Impressed? There is more. A &lt;a href=&#34;http://haproxy.1wt.eu/&#34; title=&#34;HAProxy&#34;&gt;HAProxy&lt;/a&gt; is also set up in front of your mongrel servers acting as a load balancer.&lt;br&gt;&lt;br&gt;Well, you probably want to monitor all that stuff huh? A &lt;a href=&#34;http://www.tildeslash.com/monit/&#34; title=&#34;Monit&#34;&gt;monit&lt;/a&gt; web interface is waiting for your call on port 2812! It monitors all your mongrel servers - four by default - and your HAProxy, allowing you to measure CPU and Memory usage, among other things.&lt;br&gt;&lt;br&gt;The coolest thing here is that all these softwares you would have to setup by hand are already working together, ready for production! Well, is it?&lt;br&gt;&lt;br&gt;Going a little deeper, I deployed a database backed application to test this stack&#39;s performance.&lt;br&gt;&lt;br&gt;I used &lt;a href=&#34;http://www.joedog.org/JoeDog/Siege&#34; title=&#34;Siege&#34;&gt;Siege&lt;/a&gt; to stress the app and I am very happy with the results! I compared it with a single mongrel running on production env and no proxy at all.&lt;br&gt;&lt;br&gt;It is worth mentioning that having 4 mongrels running took my vm to 77% of memory usage, while a single mongrel took it to 38%.&lt;br&gt;&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>why every programmer have to be dumb</title>
+      <link>http://leonardoborges.com/writings/2007/11/23/why-every-programmer-have-to-be-dumb/</link>
+      <pubDate>Fri, 23 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/11/23/why-every-programmer-have-to-be-dumb/</guid>
+      <description>At least, dumb for the companies hiring them. The old dream is still for sale out there: Build a &#34;I do everything framework&#34; and hire a bunch of dumb programmers - monkeys? - and you shall make money easily!
+Just put some button pressers and a full featured enterprise system will be waiting on the other side of this &#34;machine&#34;!
+C&#39;mon, I thought this dream was over! We&#39;ve had enough proofs that this doesn&#39;t work!</description>
+    </item>
+    
+    <item>
+      <title>language change</title>
+      <link>http://leonardoborges.com/writings/2007/11/20/language-change/</link>
+      <pubDate>Tue, 20 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/11/20/language-change/</guid>
+      <description>Well, talking with some friends, I decided that, from now on, I shall only write in english on this blog.
+Of course some of you may not like it. But I think it has more advantages than the other way around.Â I have some friends around the world, including people from the U.S., Spain, Italy, China, India and Australia. This way, they can also enjoy the content of this blog and help me improve it.</description>
+    </item>
+    
+    <item>
+      <title>ruby on db2 a linux nightmare with a happy end</title>
+      <link>http://leonardoborges.com/writings/2007/11/20/ruby-on-db2-a-linux-nightmare-with-a-happy-end/</link>
+      <pubDate>Tue, 20 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/11/20/ruby-on-db2-a-linux-nightmare-with-a-happy-end/</guid>
+      <description>Although the title might look dramatic, it&#39;s pretty close to what I&#39;ve been through.
+I have set up a Ubuntu 64 bits on my laptop last week to do some tests with Ruby and DB2. Oh man, it is not complicated, is it? It shouldn&#39;t be, actually.
+Too sad that I found this so late! It&#39;s a post from a friend, Antonio Cangiano, describing the most common problems you may find trying to set up this environment (Linux + Ruby + DB2).</description>
+    </item>
+    
+    <item>
+      <title>enquanto isso em portugal</title>
+      <link>http://leonardoborges.com/writings/2007/11/10/enquanto-isso-em-portugal/</link>
+      <pubDate>Sat, 10 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/11/10/enquanto-isso-em-portugal/</guid>
+      <description> Pois bem, saÃ­ do Rio hoje rumo a Madrid, com escala em Lisboa.
+A essa hora jÃ¡ estaria por lÃ¡.... mas no momento estou no aeroporto de Lisboa esperando o prÃ³ximo vÃ´o, visto que perdi a conexÃ£o! Acontece atÃ© na europa! :p
+Em teoria o embarque Ã© daqui a 1h:30min...
+Os portugueses sÃ£o muito atenciosos btw!
+AtÃ© a prÃ³xima! </description>
+    </item>
+    
+    <item>
+      <title>eu odeio xml</title>
+      <link>http://leonardoborges.com/writings/2007/10/29/eu-odeio-xml/</link>
+      <pubDate>Mon, 29 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/29/eu-odeio-xml/</guid>
+      <description>&lt;p&gt;
+Isso Ã© um fato. Cada linha de XML que eu escrevo me faz pensar em formas de evita-las. E isso nÃ£o Ã© simples.&lt;br&gt;&lt;br&gt;Ultimamente, desde o Java 5, tem se trocado o XML pelas &lt;a href=&#34;http://http://java.sun.com/j2se/1.5.0/docs/guide/language/annotations.html&#34; title=&#34;Java Annotations&#34;&gt;annotations&lt;/a&gt;. TÃ¡ bom, fica bonitinho nÃ©? AtÃ© que fica. Em alguns casos, atÃ© mais organizado. O &lt;a href=&#34;http://www.hibernate.org/hib_docs/annotations/reference/en/html_single/&#34; title=&#34;Hibernate Annotations&#34;&gt;Hibernate&lt;/a&gt; desde a versÃ£o 3 faz uso das &lt;a href=&#34;http://java.sun.com/javaee/overview/faq/persistence.jsp&#34; title=&#34;Java Persistence API&#34;&gt;annotaions da JPA&lt;/a&gt; como alernativa ao seu XML de configuraÃ§Ã£o. E esse sim Ã© um belo caso de sucesso!&lt;br&gt;&lt;br&gt;SÃ£o apenas algumas anotaÃ§Ãµes na classe para mapea-la e pronto, adeus xml! Mas como sempre, as anotaÃ§Ãµes jÃ¡ estÃ£o sendo exageradas por aÃ­. Basta decidir configurar uns 3 frameworks - e provavelmente dois deles sÃ£o descenessÃ¡rios no seu projeto - usando anotaÃ§Ãµes e as suas classes ficarÃ£o uma zona! E muito mais ilegÃ­veis que um arquivo XML!&lt;br&gt;&lt;br&gt;As anotaÃ§Ãµes sÃ£o recursos muito poderosos e devem ser usadas de forma consciente. Use as que realmente valem a pena, como as que vou falar agora, que fazem parte da nova release do Spring framework, a &lt;a href=&#34;http://www.springframework.org/node/548&#34; title=&#34;Spring 2.5 rc1&#34;&gt;2.5 RC1&lt;/a&gt;.</description>
+    </item>
+    
+    <item>
+      <title>software livre</title>
+      <link>http://leonardoborges.com/writings/2007/10/21/software-livre/</link>
+      <pubDate>Sun, 21 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/21/software-livre/</guid>
+      <description> Aqui no trabalho atualmente temos uma grande barreira com relaÃ§Ã£o ao software livre. Pensei em escrever aqui alguma coisa sobre as barreiras que as empresas colocam quando o assunto Ã© esse porÃ©m o Cleuton jÃ¡ fez isso, e ficou muito bom.
+Vale a visita! </description>
+    </item>
+    
+    <item>
+      <title>scea 5 beta</title>
+      <link>http://leonardoborges.com/writings/2007/10/15/scea-5-beta/</link>
+      <pubDate>Mon, 15 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/15/scea-5-beta/</guid>
+      <description>&lt;p&gt;
+Hoje fiz a versÃ£o beta da nova prova de arquiteto da Sun e eis algumas impressÃµes:&lt;br&gt;&lt;br&gt;- Ã‰ longa e cansativa... fato justificÃ¡vel se levar-mos em consideraÃ§Ã£o o fato de ser uma prova em estado beta. Ela possui mais questÃµes que a versÃ£o final. SÃ£o 153 questÃµes no total, em 4h e 30min.</description>
+    </item>
+    
+    <item>
+      <title>como o spring me ajudou a manter o active record</title>
+      <link>http://leonardoborges.com/writings/2007/10/13/como-o-spring-me-ajudou-a-manter-o-active-record/</link>
+      <pubDate>Sat, 13 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/13/como-o-spring-me-ajudou-a-manter-o-active-record/</guid>
+      <description>&lt;p&gt;
+Nesse primeiro post vou falar um pouco sobre meu novo trabalho. Na verdade, sobre um problema que encontramos lÃ¡.&lt;br&gt;&lt;br&gt;Dentre diversas coisas que estamos fazendo, como migraÃ§Ãµes por exemplo, estou ajudando na elaboraÃ§Ã£o da arquitetura que irÃ¡ abrigar as novas aplicaÃ§Ãµes desenvolvidas na empresa.</description>
     </item>
     
   </channel>

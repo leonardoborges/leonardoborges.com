@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Refactoring on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/refactoring/</link>
+    <description>Recent content in Refactoring on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Sep 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/refactoring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>refactoring for readability</title>
+      <link>http://leonardoborges.com/writings/2009/09/18/refactoring-for-readability/</link>
+      <pubDate>Fri, 18 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2009/09/18/refactoring-for-readability/</guid>
+      <description>Yesterday I&#39;ve done something I should do more often: Revisit some code written a while ago for our current project and make it better.
+Let&#39;s face it. We all write crappy code the 1st time. The difference is in what we do about it afterwards.
+We might decide it&#39;s good enough and keep moving, or we could (and should!) stop and refactor it!
+The code I revisited worked as a refactoring exercise and it&#39;s initial version is shown below: class Jphoto .</description>
+    </item>
+    
+  </channel>
+</rss>

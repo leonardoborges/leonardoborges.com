@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/spring/</link>
+    <description>Recent content in Spring on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Dec 2007 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>spring 25 dependency injection that doesnt hurt</title>
+      <link>http://leonardoborges.com/writings/2007/12/07/spring-25-dependency-injection-that-doesnt-hurt/</link>
+      <pubDate>Fri, 07 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/12/07/spring-25-dependency-injection-that-doesnt-hurt/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34;&gt;Dependency injection&lt;/a&gt; - &lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34;&gt;DI&lt;/a&gt;Â - Â is a great thing. Really. The hability to tweak implementations without touching your code is awesome and the DI frameworks, like spring, saves you a lot of coding. No more service locators stuff.&lt;br&gt;&lt;br&gt;But, and there is always a but, you&#39;re left with a bunch of XML configuration. And I hate it. Not that XML files are bad... the thing is that everything nowadays has its own set of XML configurarion files. And &lt;a href=&#34;http://www.springframework.org&#34;&gt;Spring&lt;/a&gt; is not different.&lt;br&gt;&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>eu odeio xml</title>
+      <link>http://leonardoborges.com/writings/2007/10/29/eu-odeio-xml/</link>
+      <pubDate>Mon, 29 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/29/eu-odeio-xml/</guid>
+      <description>&lt;p&gt;
+Isso Ã© um fato. Cada linha de XML que eu escrevo me faz pensar em formas de evita-las. E isso nÃ£o Ã© simples.&lt;br&gt;&lt;br&gt;Ultimamente, desde o Java 5, tem se trocado o XML pelas &lt;a href=&#34;http://http://java.sun.com/j2se/1.5.0/docs/guide/language/annotations.html&#34; title=&#34;Java Annotations&#34;&gt;annotations&lt;/a&gt;. TÃ¡ bom, fica bonitinho nÃ©? AtÃ© que fica. Em alguns casos, atÃ© mais organizado. O &lt;a href=&#34;http://www.hibernate.org/hib_docs/annotations/reference/en/html_single/&#34; title=&#34;Hibernate Annotations&#34;&gt;Hibernate&lt;/a&gt; desde a versÃ£o 3 faz uso das &lt;a href=&#34;http://java.sun.com/javaee/overview/faq/persistence.jsp&#34; title=&#34;Java Persistence API&#34;&gt;annotaions da JPA&lt;/a&gt; como alernativa ao seu XML de configuraÃ§Ã£o. E esse sim Ã© um belo caso de sucesso!&lt;br&gt;&lt;br&gt;SÃ£o apenas algumas anotaÃ§Ãµes na classe para mapea-la e pronto, adeus xml! Mas como sempre, as anotaÃ§Ãµes jÃ¡ estÃ£o sendo exageradas por aÃ­. Basta decidir configurar uns 3 frameworks - e provavelmente dois deles sÃ£o descenessÃ¡rios no seu projeto - usando anotaÃ§Ãµes e as suas classes ficarÃ£o uma zona! E muito mais ilegÃ­veis que um arquivo XML!&lt;br&gt;&lt;br&gt;As anotaÃ§Ãµes sÃ£o recursos muito poderosos e devem ser usadas de forma consciente. Use as que realmente valem a pena, como as que vou falar agora, que fazem parte da nova release do Spring framework, a &lt;a href=&#34;http://www.springframework.org/node/548&#34; title=&#34;Spring 2.5 rc1&#34;&gt;2.5 RC1&lt;/a&gt;.</description>
+    </item>
+    
+    <item>
+      <title>como o spring me ajudou a manter o active record</title>
+      <link>http://leonardoborges.com/writings/2007/10/13/como-o-spring-me-ajudou-a-manter-o-active-record/</link>
+      <pubDate>Sat, 13 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2007/10/13/como-o-spring-me-ajudou-a-manter-o-active-record/</guid>
+      <description>&lt;p&gt;
+Nesse primeiro post vou falar um pouco sobre meu novo trabalho. Na verdade, sobre um problema que encontramos lÃ¡.&lt;br&gt;&lt;br&gt;Dentre diversas coisas que estamos fazendo, como migraÃ§Ãµes por exemplo, estou ajudando na elaboraÃ§Ã£o da arquitetura que irÃ¡ abrigar as novas aplicaÃ§Ãµes desenvolvidas na empresa.</description>
+    </item>
+    
+  </channel>
+</rss>
