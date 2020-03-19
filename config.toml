@@ -23,29 +23,29 @@ unsafe= true
     title = "About"
     url = "/about/"    
 
-[[menu.main]]
+  [[menu.main]]
     identifier = "books"
     name = "Books"
     title = "Books"
-    url = "/books/"        
+    url = "/books/"
 
-[[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    title = "Projects"
-    url = "/projects/"
-
-[[menu.main]]
+  [[menu.main]]
     identifier = "tags"
     name = "Tags"
     title = "Tags"
     url = "/tags/"
 
+  [[menu.main]]
+    identifier = "talks"
+    name = "Projects & Talks"
+    title = "Projects & Talks"
+    url = "/talks/"    
+
 
 [params]
   favicon = "images/favicon.png"
-  description = "Code. AI. Leadership."
-  title = "Code. AI. Leadership."
+  description = "Code. Leadership. AI."
+  title = "Code. Leadership. AI."
   twitter = "https://twitter.com/leonardo_borges"
   github = "https://github.com/leonardoborges"
   linkedin = "https://www.linkedin.com/in/leonardoborges/"

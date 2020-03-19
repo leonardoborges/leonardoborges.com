@@ -1,15 +1,25 @@
 ---
-title: "Projects"
-date: 2020-03-19T13:34:28+11:00
+title: "Talks & Code"
+date: 2020-03-19T17:58:15+11:00
 draft: true
 ---
 
+Here's a few of my favourite talks:
+
+- [EuroClojure 2014 - Taming Asynchronous Workflows with Functional Reactive Programming](https://vimeo.com/100688924) 
+- [EuroClojure 2015 - Realtime Collaboration with Clojure](https://www.youtube.com/watch?v=3QR8meTrh5g)
+- [YOW! Lambda Jam 2014 - High Performance Web UI's with Om and React](https://www.youtube.com/watch?v=xzVEaI_T1Kg)
+
+Not all talks I've given have video but you can access the slides for all my talks on [SlideShare](https://www.slideshare.net/borgesleonardo). 
+
+
+### Open Source projects
 
 Here I keep a list of the open-source projects that I've either started or contributed to.
 
 ### Clojure
 
-- [imminent](https://github.com/leonardoborges/imminent) - Composable futures for Clojure
+- [imminent](https://github.com/leonardoborges/imminent) - Composable futures for Clojure (creator)
 - [bouncer](https://github.com/leonardoborges/bouncer) - A validation DSL for Clojure apps (creator)
 - [clojure/algo.monads](https://github.com/clojure/algo.monads) - Macros for defining monads, and definition of the most common monads ([commits](https://github.com/clojure/algo.monads/commits?author=leonardoborges))
 - [clj-logging-config](https://github.com/malcolmsparks/clj-logging-config) - Easy logging configuration for Clojure ([commit #1][7])
@@ -36,3 +46,4 @@ You can also see what I've been up to on my [GitHub profile](https://github.com/
 [5]: https://github.com/commondream/rcov_plugin/commit/49631bb57fa9c7aa26375455b2523b7cd30a158c
 [6]: https://github.com/commondream/rcov_plugin/commit/b22b1883e9dfa50248fa22b1ae0e1859f8c75118
 [7]: https://github.com/malcolmsparks/clj-logging-config/commit/ec8a08535daad01eb9f23e92771b623b5902c8c9
+
