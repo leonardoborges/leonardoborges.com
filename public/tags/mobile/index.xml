@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mobile on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/mobile/</link>
+    <description>Recent content in mobile on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Nov 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>This is what we built in 24 hours</title>
+      <link>http://leonardoborges.com/writings/2012/11/05/this-is-was-we-built-in-24-hours/</link>
+      <pubDate>Mon, 05 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2012/11/05/this-is-was-we-built-in-24-hours/</guid>
+      <description>Last week our current client - ninemsn - ran the 3rd edition of their HackDay.
+It&amp;rsquo;s akin to Atlassian&amp;rsquo;s ShipIt days so if you&amp;rsquo;re not familiar with the concept, you should check their page but here&amp;rsquo;s the gist:
+  We&amp;rsquo;re given 24 hours to work on whatever we like as long as it&amp;rsquo;s related somehow to the business
+  We&amp;rsquo;re also free to use any technology we want</description>
+    </item>
+    
+  </channel>
+</rss>

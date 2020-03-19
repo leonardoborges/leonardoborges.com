@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algorithms on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/algorithms/</link>
+    <description>Recent content in algorithms on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Feb 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>project euler problem 4 in clojure</title>
+      <link>http://leonardoborges.com/writings/2012/02/05/project-euler-problem-4-in-clojure/</link>
+      <pubDate>Sun, 05 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2012/02/05/project-euler-problem-4-in-clojure/</guid>
+      <description>I solved a few of the problems on Project Euler in the past, both in Java and Ruby, and thought it would be useful to redo them in Clojure, thus improving my skills on the language&amp;rsquo;s core functions and libraries. Today I&amp;rsquo;ll share problem 4.
+Go ahead and read it but here&amp;rsquo;s the meat of it:
+&amp;ldquo;Find the largest palindrome made from the product of two 3-digit numbers.&amp;quot;
+From this statement we can tell two things: (1) we&amp;rsquo;ll need a function that can tell whether a number is a palindrome or not and (2) that the largest palindrome is given by the product of two numbers between 100 and 999, inclusive.</description>
+    </item>
+    
+  </channel>
+</rss>

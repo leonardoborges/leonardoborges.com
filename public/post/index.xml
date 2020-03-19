@@ -155,7 +155,7 @@ Clojure clj-syd - the Sydney Clojure User Group - continues going strong and thi
       
       <guid>http://leonardoborges.com/post/2013/09/25/cufp-slash-icfp-2013/</guid>
       <description>I&amp;rsquo;m sitting in the Lobby of the Hilton in Boston and since my flight back to Australia isn&amp;rsquo;t for a few hours I thought I&amp;rsquo;d write my experience report while everything is still fresh in my mind.
-{% img left /assets/images/posts/cufp2013-badge.jpg 318 400 %}
+{{< figure src="/images/cufp2013-badge.jpg" >}}
 CUFP - Commercial Users of Functional Programming - is a Workshop-like conference targeting the practically-minded functional programming community.
 As it&amp;rsquo;s stated on their website, &amp;ldquo;The CUFP workshop is a place where people can see how others are using functional programming to solve real world problems […]&amp;quot;.</description>
     </item>
@@ -409,7 +409,7 @@ Since then, I haven&amp;rsquo;t developed anything else for the iPhone - mostly 
       <pubDate>Thu, 10 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>http://leonardoborges.com/post/2011/11/10/rubyconf-brazil-2011/</guid>
-      <description>{% img /assets/images/rubyconfBR2011-speakers.jpg %}
+      <description>{{< figure src="/images/rubyconfBR2011-speakers.jpg" >}}
 I was in São Paulo last week - the 3rd and 4th of November - for RubyConf Brazil. For those who don&amp;rsquo;t know, RubyConf Brazil is the evolution of Rails Summit Latin America, where I had the privilege to speak in 2009.
 This year though, all bets were off. Fabio Akita and Locaweb put together a great event, with over 700 attendees and about 30 speakers split in two streams and two awesome days.</description>
     </item>

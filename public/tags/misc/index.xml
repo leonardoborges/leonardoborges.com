@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>misc on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/misc/</link>
+    <description>Recent content in misc on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 May 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mission accomplished</title>
+      <link>http://leonardoborges.com/writings/2016/05/27/mission-accomplished/</link>
+      <pubDate>Fri, 27 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2016/05/27/mission-accomplished/</guid>
+      <description>A year and four months ago I joined Atlassian to pursue a very exciting opportunity: to deliver realtime collaborative editing to Confluence. I have talked about it last year at EuroClojure and this year at QCon Brazil. Even Cognitect wrote a few words about it.
+In a nutshell this involved writing Clojure code all day to build an awesome service we call Synchrony. Synchrony is capable of realtime data synchronisation - not just collaborative editing - and as such its applications are many!</description>
+    </item>
+    
+    <item>
+      <title>The Clojure Sydney Meetup, four years in</title>
+      <link>http://leonardoborges.com/writings/2016/02/08/the-clojure-sydney-meetup-four-years-in/</link>
+      <pubDate>Mon, 08 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2016/02/08/the-clojure-sydney-meetup-four-years-in/</guid>
+      <description>In the beginning Nearly 4 years ago I founded the Sydney Clojure User Group. I had been playing with Clojure for a little while and started a small study group to learn more. Initially this group was private and held at the ThoughtWorks office.
+After a couple of meetups and conversations I decided to open up the group to the public and then realised we weren&amp;rsquo;t the only ones interested in Clojure and, even more important, interested in meeting like-minded people, share experiences and help each other.</description>
+    </item>
+    
+    <item>
+      <title>So long 2015: Year highlights</title>
+      <link>http://leonardoborges.com/writings/2016/01/04/so-long-2015-year-highlights/</link>
+      <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2016/01/04/so-long-2015-year-highlights/</guid>
+      <description>I should have published this post still in 2015 but as I was on holidays traveling around Australia I didn&amp;rsquo;t really have the time to do it. Better late than never, right? (also Linode - the provider hosting this site - has been under a severe DDoS attack so the site just came back up today)
+2015 has been a unusually quiet year in this blog. Thankfully that is because I have been extremely busy in many other areas.</description>
+    </item>
+    
+    <item>
+      <title>So long 2014: Year highlights</title>
+      <link>http://leonardoborges.com/writings/2014/12/31/so-long-2014-year-highlights/</link>
+      <pubDate>Wed, 31 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2014/12/31/so-long-2014-year-highlights/</guid>
+      <description>Another year is about to end and as it is tradition in this blog it&amp;rsquo;s time to look at the year&amp;rsquo;s highlights!
+Functional Programming I have been advocating Functional Programming and Clojure for a while now and 2014 has been good to me. It was the first year where I was paid to work almost entirely in functional languages. Most of it was in Scala and a little less in Clojure.</description>
+    </item>
+    
+    <item>
+      <title>A new chapter begins</title>
+      <link>http://leonardoborges.com/writings/2014/12/27/staring-a-new-chapter/</link>
+      <pubDate>Sat, 27 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2014/12/27/staring-a-new-chapter/</guid>
+      <description>Thanks, ThoughtWorks After 4 years and 8 months I have made the hard decision to change jobs: Friday, 19th of December, was my last day at ThoughtWorks.
+In this time I have made many friends and have grown a lot as a professional. Consulting presents so many new challenges that often times the technical problems you are trying to solve are the easiest part of the whole project. I am thankful for that.</description>
+    </item>
+    
+    <item>
+      <title>ClojureBridge Sydney, vol. I</title>
+      <link>http://leonardoborges.com/writings/2014/12/22/clojurebridge-sydney/</link>
+      <pubDate>Mon, 22 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2014/12/22/clojurebridge-sydney/</guid>
+      <description>This past weekend - 19-20th of December - a group of highly motivated individuals gave up their Friday night and their entire Saturday simply to learn how to code in Clojure!
+It was the first ever ClojureBridge edition in Sydney and if you haven&amp;rsquo;t heard of it before, its goal is to increase diversity in the Clojure community. It does so by offering free workshops targeted at beginners.
+You should totally read Julian Gamble&amp;rsquo;s post about the event for details.</description>
+    </item>
+    
+    <item>
+      <title>So long 2013: Year highlights</title>
+      <link>http://leonardoborges.com/writings/2014/01/01/so-long-2013-year-highlights/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2014/01/01/so-long-2013-year-highlights/</guid>
+      <description>I finally got some free time so sit down and write this post. I was travelling with my girlfriend around the state of Victoria, Australia - mostly around the Great Ocean Road. I had an amazing time and it&amp;rsquo;s a trip I highly recommend anyone do.
+As for this year&amp;rsquo;s highlights, let&amp;rsquo;s get started:
+Clojure clj-syd - the Sydney Clojure User Group - continues going strong and this is in great part thanks to the amazing community behind it.</description>
+    </item>
+    
+    <item>
+      <title>So long 2012: Year highlights</title>
+      <link>http://leonardoborges.com/writings/2013/01/02/so-long-2012-year-highlights/</link>
+      <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2013/01/02/so-long-2012-year-highlights/</guid>
+      <description>Keeping the tradition of end-of-year blog posts, here are my year highlights for 2012:
+Clojure I started clj-syd - the Sydney Clojure User Group - back in January and it has seen a major uptake. We consistently get an average of 25 people each month and there&amp;rsquo;s no shortage of talks and topics to discuss. It&amp;rsquo;s a great crowd and I&amp;rsquo;m proud to have started it and of being part of it.</description>
+    </item>
+    
+    <item>
+      <title>So long 2011: Year highlights</title>
+      <link>http://leonardoborges.com/writings/2012/01/01/so-long-2011-year-highlights/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2012/01/01/so-long-2011-year-highlights/</guid>
+      <description>It&amp;rsquo;s that time of the year to look back at what you&amp;rsquo;ve done and either be happy about it or&amp;hellip; well not. :)
+To me anyway 2011 was a great year but I won&amp;rsquo;t bore you with the details so I&amp;rsquo;ll just jump straight into a couple of highlights!
+The biggest one of course was the project we developed to help the Queensland flood victims back in January - which brings me to the next topic:</description>
+    </item>
+    
+  </channel>
+</rss>

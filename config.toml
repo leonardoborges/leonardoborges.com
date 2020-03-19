@@ -12,10 +12,10 @@ unsafe= true
 [menu]
 
   [[menu.main]]
-    identifier = "post"
+    identifier = "writings"
     name = "Posts"
     title = "All posts"
-    url = "/post/"
+    url = "/writings/"
 
   [[menu.main]]
     identifier = "about"
@@ -29,10 +29,23 @@ unsafe= true
     title = "Books"
     url = "/books/"        
 
+[[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    title = "Projects"
+    url = "/projects/"
+
+[[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    title = "Tags"
+    url = "/tags/"
+
 
 [params]
-  favicon = ""
+  favicon = "images/favicon.png"
   description = "Code. AI. Leadership."
+  title = "Code. AI. Leadership."
   twitter = "https://twitter.com/leonardo_borges"
   github = "https://github.com/leonardoborges"
   linkedin = "https://www.linkedin.com/in/leonardoborges/"

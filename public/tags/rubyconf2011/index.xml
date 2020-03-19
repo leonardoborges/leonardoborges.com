@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rubyconf2011 on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/rubyconf2011/</link>
+    <description>Recent content in rubyconf2011 on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Nov 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/rubyconf2011/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RubyConf Brazil 2011</title>
+      <link>http://leonardoborges.com/writings/2011/11/10/rubyconf-brazil-2011/</link>
+      <pubDate>Thu, 10 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/11/10/rubyconf-brazil-2011/</guid>
+      <description>I was in São Paulo last week - the 3rd and 4th of November - for RubyConf Brazil. For those who don&amp;rsquo;t know, RubyConf Brazil is the evolution of Rails Summit Latin America, where I had the privilege to speak in 2009.
+This year though, all bets were off. Fabio Akita and Locaweb put together a great event, with over 700 attendees and about 30 speakers split in two streams and two awesome days.</description>
+    </item>
+    
+  </channel>
+</rss>

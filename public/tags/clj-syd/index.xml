@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>clj-syd on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/clj-syd/</link>
+    <description>Recent content in clj-syd on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Aug 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/clj-syd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sean Corfield: Clojure and CFML sitting in a tree</title>
+      <link>http://leonardoborges.com/writings/2012/08/23/sean-corfield-clojure-and-cfml-sitting-in-a-tree/</link>
+      <pubDate>Thu, 23 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2012/08/23/sean-corfield-clojure-and-cfml-sitting-in-a-tree/</guid>
+      <description>Last night I attended the Adobe User Group here in Sydney. That might strike some of you as a big surprise given my relationship with Adobe is pretty much limited to fiddling with Photoshop/Lightroom to get my photos looking nice.
+However the reason for which I attended the meetup is that Sean Corfield - a prolific member of the Clojure community - gave a presentation on how he introduced and migrated most of his backend code at World Singles from CFML to Clojure - hence my interest.</description>
+    </item>
+    
+    <item>
+      <title>clj syd report number 0</title>
+      <link>http://leonardoborges.com/writings/2012/02/22/clj-syd-report-number-0/</link>
+      <pubDate>Wed, 22 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2012/02/22/clj-syd-report-number-0/</guid>
+      <description>Last night we held the first ever meetup for the Sydney Clojure User Group!
+When I decided to start running the meetups I had no idea we&amp;rsquo;d end up with 37 people on the first night! What a great turn out!
+As for the content, here&amp;rsquo;s what you missed:
+ Running Clojure apps on Heroku - Lincoln Stoll (@lstoll)  Linc works for Heroku but ended up not spending a whole lot of time talking about that - instead he showed us how to build a simple web application using Compojure, a small Clojure web framework.</description>
+    </item>
+    
+    <item>
+      <title>backlog ola bini on clojure conj</title>
+      <link>http://leonardoborges.com/writings/2012/01/22/backlog-ola-bini-on-clojure-conj/</link>
+      <pubDate>Sun, 22 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2012/01/22/backlog-ola-bini-on-clojure-conj/</guid>
+      <description>As I promised in my previous post, here are the highlights of what Ola Bini had to say about Clojure/conj.
+Clojure/conj is the largest gathering of clojure programmers, hackers and enthusiasts, with a single track of talks spanning three days. Ola selected his favorite talks and summarised each one of them.
+The actual slides for each one of the talks can be found on github.
+You can find Ola&amp;rsquo;s slides here.</description>
+    </item>
+    
+    <item>
+      <title>announcing the sydney clojure user group</title>
+      <link>http://leonardoborges.com/writings/2012/01/20/announcing-the-sydney-clojure-user-group/</link>
+      <pubDate>Fri, 20 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2012/01/20/announcing-the-sydney-clojure-user-group/</guid>
+      <description>Update: We now have a [Meetup.com page][9]. Head over there to learn about our next meetups as well as to RSVP to them. We&amp;rsquo;ll discontinue usage of the wiki for registering attendees, in favor of the new site. Everything else on this post however still holds.
+If you&amp;rsquo;ve been following my blog, you&amp;rsquo;ll have noticed I started running internal Clojure meetups/hack nights at ThoughtWorks here in Sydney a while ago. While being closed, we&amp;rsquo;ve already had one international speaker - [Ola Bini][7] - come and share his experience as an attendee at [Clojure/conj][8].</description>
+    </item>
+    
+  </channel>
+</rss>

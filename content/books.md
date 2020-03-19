@@ -6,8 +6,6 @@ draft: true
 
 I am fortunate enough to be able to call myself an author.  I published my first book [Clojure Reactive Programming](https://www.amazon.com/Clojure-Reactive-Programming-Leonardo-Borges/dp/1783986662/) in 2015 and it's available on [Amazon](https://www.amazon.com/Clojure-Reactive-Programming-Leonardo-Borges/dp/1783986662/).
 
-{% img center /assets/images/posts/clj-reactive-prog.jpg 250 333 Clojure Reactive Programming %}
-
 <style>
 figure.cljbook img {
   width: 250px;

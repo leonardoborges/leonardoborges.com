@@ -6,9 +6,217 @@
     <description>Recent content in Tags on Leonardo Borges</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://leonardoborges.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blockchain</title>
+      <link>http://leonardoborges.com/tags/blockchain/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>conferences</title>
+      <link>http://leonardoborges.com/tags/conferences/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/conferences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>atlassian</title>
+      <link>http://leonardoborges.com/tags/atlassian/</link>
+      <pubDate>Fri, 27 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/atlassian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clojure</title>
+      <link>http://leonardoborges.com/tags/clojure/</link>
+      <pubDate>Fri, 27 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/clojure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>misc</title>
+      <link>http://leonardoborges.com/tags/misc/</link>
+      <pubDate>Fri, 27 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/misc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>books</title>
+      <link>http://leonardoborges.com/tags/books/</link>
+      <pubDate>Fri, 27 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functional-programming</title>
+      <link>http://leonardoborges.com/tags/functional-programming/</link>
+      <pubDate>Fri, 27 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/functional-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>euroclojure</title>
+      <link>http://leonardoborges.com/tags/euroclojure/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/euroclojure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scala</title>
+      <link>http://leonardoborges.com/tags/scala/</link>
+      <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>haskell</title>
+      <link>http://leonardoborges.com/tags/haskell/</link>
+      <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functional-data-structures</title>
+      <link>http://leonardoborges.com/tags/functional-data-structures/</link>
+      <pubDate>Mon, 15 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/functional-data-structures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>concurrency</title>
+      <link>http://leonardoborges.com/tags/concurrency/</link>
+      <pubDate>Sat, 06 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/concurrency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lambdajam</title>
+      <link>http://leonardoborges.com/tags/lambdajam/</link>
+      <pubDate>Thu, 11 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/lambdajam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>http://leonardoborges.com/tags/android/</link>
+      <pubDate>Mon, 05 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ios</title>
+      <link>http://leonardoborges.com/tags/ios/</link>
+      <pubDate>Mon, 05 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mobile</title>
+      <link>http://leonardoborges.com/tags/mobile/</link>
+      <pubDate>Mon, 05 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clj-syd</title>
+      <link>http://leonardoborges.com/tags/clj-syd/</link>
+      <pubDate>Thu, 23 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/clj-syd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ipad</title>
+      <link>http://leonardoborges.com/tags/ipad/</link>
+      <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/ipad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iphone</title>
+      <link>http://leonardoborges.com/tags/iphone/</link>
+      <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/iphone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algorithms</title>
+      <link>http://leonardoborges.com/tags/algorithms/</link>
+      <pubDate>Sun, 05 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>project-euler</title>
+      <link>http://leonardoborges.com/tags/project-euler/</link>
+      <pubDate>Sun, 05 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/project-euler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rubyconf2011</title>
+      <link>http://leonardoborges.com/tags/rubyconf2011/</link>
+      <pubDate>Thu, 10 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/rubyconf2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>http://leonardoborges.com/tags/git/</link>
+      <pubDate>Sun, 29 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/tags/git/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

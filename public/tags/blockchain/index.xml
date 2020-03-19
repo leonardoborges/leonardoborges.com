@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blockchain on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/blockchain/</link>
+    <description>Recent content in blockchain on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Highlights of the Symposium on Blockchain and Distributed Ledger Technology - Day 1</title>
+      <link>http://leonardoborges.com/writings/2018/02/19/highlights-of-the-symposium-on-blockchain-and-distributed-ledger-technology-day-1/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2018/02/19/highlights-of-the-symposium-on-blockchain-and-distributed-ledger-technology-day-1/</guid>
+      <description>Early last week I had the chance to attend the Symposium on Blockchain and Distributed Ledger Technology organised by UNSW. I wasn&amp;rsquo;t aware that UNSW was so heavily involved in the community until this event and have since learned about their interest group which has been going on for a while.
+The talks had a healthy mix of research and industry case studies with subjects ranging from the technical challenges of current blockchain implementations to the legal implications of distributed ledger technology.</description>
+    </item>
+    
+    <item>
+      <title>Highlights of the Symposium on Blockchain and Distributed Ledger Technology - Day 2</title>
+      <link>http://leonardoborges.com/writings/2018/02/19/highlights-of-the-symposium-on-blockchain-and-distributed-ledger-technology-day-2/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2018/02/19/highlights-of-the-symposium-on-blockchain-and-distributed-ledger-technology-day-2/</guid>
+      <description>If you haven&amp;rsquo;t yet, make sure you read my summary of Day 1 first.
+Morning Panel Day 2 started with a morning panel with:
+ Paul Fox from Blockchain.capital Leon Gerard Vandenberg from RightsFusion Pty Ltd &amp;amp; Solara Oliver Harvey from ASIC Ross Buckley from UNSW Law  The panelists took turns in giving their views around blockchain, investments and regulation, leading into a Q&amp;amp;A at the end. I was running late to this session and believe I may have missed Ross&amp;rsquo; individual slot.</description>
+    </item>
+    
+  </channel>
+</rss>

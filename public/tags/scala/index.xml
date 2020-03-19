@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scala on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/scala/</link>
+    <description>Recent content in scala on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Jun 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Functional composition with Monads, Kleislis and Functors</title>
+      <link>http://leonardoborges.com/writings/2014/06/17/functional-composition-with-monads-kleisli-functors/</link>
+      <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2014/06/17/functional-composition-with-monads-kleisli-functors/</guid>
+      <description>I&amp;rsquo;ve been learning Scala for my current client project and I find writing to be a great tool to test my understanding of any given topic. This means there might be a few Scala posts coming up soon as I keep learning interesting things.
+Today I&amp;rsquo;ll be exploring a few different ways in which you can compose programs. I&amp;rsquo;ll be using Scalaz in this post.
+The examples that follow all deal with Vehicles - more specifically makes and parts:</description>
+    </item>
+    
+    <item>
+      <title>Functional Programmers Unite! LambdaJam down under</title>
+      <link>http://leonardoborges.com/writings/2013/04/11/functional-programmers-unite-lambdajam-down-under/</link>
+      <pubDate>Thu, 11 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2013/04/11/functional-programmers-unite-lambdajam-down-under/</guid>
+      <description>I hinted at LambdaJam Australia back in my 2012 Highlights post and the dates are fast approaching so I thought appropriate to blog about it once more.
+YOW! LambdaJam is a conference targeted at intermediate and advanced functional programmers and is organised in talks, jams and workshops.
+ Talks are the traditional format and are 30 minutes long; Workshops aim to introduce a specific subjects to attendees in great detail and are up to two hours long; Jams are hands-on sessions.</description>
+    </item>
+    
+  </channel>
+</rss>

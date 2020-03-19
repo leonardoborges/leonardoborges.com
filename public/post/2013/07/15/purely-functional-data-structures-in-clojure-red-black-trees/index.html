@@ -155,8 +155,7 @@ Red-black trees Red-black trees are a type of self-balancing binary search tree.
 <li>Every path from the root to an empty node contains the same number of black nodes</li>
 </ul>
 <p>The image below - taken from the book itself - concisely summarises the 4 cases involved in these invariants, starting at the top and then moving counter-clockwise.</p>
-<p>{% img center /assets/images/posts/red-black-tree.jpg 250 333 Red-black trees invariants %}</p>
-<p>With this in mind I set out to write the <em>balance</em> function in Clojure.</p>
+<p>{{< figure src="/images/p>" >}}<p>With this in mind I set out to write the <em>balance</em> function in Clojure.</p>
 <h3 id="the-code">The code</h3>
 <p>In the functional version of a Red-black tree all pointer manipulation required in its destructive counterpart simply disappears, rendering the algorithm a lot simpler.</p>
 <p>Nevertheless, we&rsquo;re left with some complexity in the <em>balance</em> function around testing a node&rsquo;s colour as well as its children&rsquo;s and grandchildren&rsquo;s.</p>

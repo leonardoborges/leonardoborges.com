@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>concurrency on Leonardo Borges</title>
+    <link>http://leonardoborges.com/tags/concurrency/</link>
+    <description>Recent content in concurrency on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Jul 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Clojure, core.async and the Lisp advantage</title>
+      <link>http://leonardoborges.com/writings/2013/07/06/clojure-core-dot-async-lisp-advantage/</link>
+      <pubDate>Sat, 06 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2013/07/06/clojure-core-dot-async-lisp-advantage/</guid>
+      <description>Long gone are the days when systems needed to do only one thing at a time.
+Concurrency is the word but it often leads to complex code, dealing with locks, mutexes etc…
+There are several different abstractions which allows us to both model and think about asynchronous code in a more sane fashion: futures, promises and events/callbacks are but a few of them.
+I won&amp;rsquo;t get into the merits - or lack thereof - of these alternatives in this post but rather focus on a different alternative: Communicating Sequential Processes - CSP.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://leonardoborges.com/writings/2011/06/19/a-tale-of-concurrency-partitioning-data-between-processes/</link>
+      <pubDate>Sun, 19 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/writings/2011/06/19/a-tale-of-concurrency-partitioning-data-between-processes/</guid>
+      <description>So I had just finished writing this feature. I was confident it&amp;rsquo;d work - after all I had a good level of tests around it. It sounded like yet another successful deployment.
+One week in and something starts breaking. It was hard to track down but at the end I realised it was caused by having concurrent processes running in parallel.
+That&amp;rsquo;s what happened in a recent production release at our current client.</description>
+    </item>
+    
+  </channel>
+</rss>

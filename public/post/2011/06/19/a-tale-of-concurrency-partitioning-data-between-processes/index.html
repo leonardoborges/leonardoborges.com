@@ -154,8 +154,7 @@ de-serializes the criteria contained in the list, builds a SQL query and runs it
 emails belong to a specific theme, say, &lsquo;Kitty lovers&rsquo;.</p>
 <p>It&rsquo;s a powerful concept though because its single most important rule is that a user should <strong>never</strong> receive more than one email within the same &ldquo;Push&rdquo;.</p>
 <p>For example, take a look at the image below, which represents a Push in progress. Let <strong>U</strong> be the universe of all users in the database. <strong>L</strong> are users returned by a List within a given Push. <strong>R</strong> is the set of users that have already received an email from that Push.</p>
-<p>{% img /assets/images/sets.png %}</p>
-<p>Based on the rules I explained above, the green area then represents users we can still send emails to.</p>
+<p>{{< figure src="/images/p>" >}}<p>Based on the rules I explained above, the green area then represents users we can still send emails to.</p>
 <h2 id="content-testing-">Content testing</h2>
 <p>With all the basic concepts in place, let&rsquo;s pretend we are actually creating a Push for the &lsquo;Kitty Lovers&rsquo;. I am organizing
 a kitty expo at my house and I want to invite everyone that lives within 50km of Sydney, Australia - see the list specification going on here?</p>
@@ -170,8 +169,7 @@ which is to say every user that has not received an email from this Push yet.</p
 gets the user ids and sends the email, is sent to a job queue to be later executed by a background process.</p>
 <p>In development and staging we only ever had a single background process running so all was well. The code was basically executed sequentially.</p>
 <p>In production however, we can - and usually have - several background workers picking up jobs from the queue. And that&rsquo;s when the bug happened:</p>
-<p>{% img /assets/images/activity.png %}</p>
-<p>As you can see in the above image, given you have 2 jobs running in parallel, Job#1 selects the users from the list, starts sending some emails and in the meantime
+<p>{{< figure src="/images/p>" >}}<p>As you can see in the above image, given you have 2 jobs running in parallel, Job#1 selects the users from the list, starts sending some emails and in the meantime
 Job#2 comes along, selects roughly the same users and starts doing the same before Job#1 has had enough time to mark
 those users as having received the email already. Bam! Some users will receive duplicates!</p>
 <h2 id="the-solution-">The solution</h2>

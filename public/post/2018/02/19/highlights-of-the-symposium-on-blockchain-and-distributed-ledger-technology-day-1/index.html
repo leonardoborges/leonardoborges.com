@@ -164,11 +164,9 @@ The talks had a healthy mix of research and industry case studies with subjects 
 <h2 id="blockchain-deconstructed--contracts-vs-smart-contracts--fritz-henglein-university-of-copenhagen">Blockchain deconstructed : contracts vs smart contracts - Fritz Henglein (University of Copenhagen)</h2>
 <p>This talk focused on the technical details of smart contracts as currently implemented in platforms such as Ethereum. In particular the fact that the contract rules and its execution are intertwined.</p>
 <p>Fritz began his talk with a summary slide on smart contracts which allowed him to expand on the above:</p>
-<p>{% img center /assets/images/posts/crash-smart-contracts.jpg 250 333 Crash course on Smart Contracts terminology %}</p>
-<p>Due to this mixing of rules (contract checking) and execution (contract actions) in the source code - as in Ethereum smart contracts - there is no possibility of having multiple strategies which may be private and can be reused in different smart contracts.</p>
+<p>{{< figure src="/images/p>" >}}<p>Due to this mixing of rules (contract checking) and execution (contract actions) in the source code - as in Ethereum smart contracts - there is no possibility of having multiple strategies which may be private and can be reused in different smart contracts.</p>
 <p>Fritz argues that contract actions - which he called strategies - should be stored separately to the contract rules. In doing so such strategies can be private and re-used in different contracts. He calls this model Managed Contracts which combine the contracts with join execution strategies:</p>
-<p>{% img center /assets/images/posts/managed-contracts.png 250 333 Managed Contracts %}</p>
-<p>He then moves on to discuss the trade-offs and vulnerabilities of Ethereum smart contracts. I particular he raises these issues:</p>
+<p>{{< figure src="/images/p>" >}}<p>He then moves on to discuss the trade-offs and vulnerabilities of Ethereum smart contracts. I particular he raises these issues:</p>
 <ul>
 <li>Transaction order dependency
 <ul>
