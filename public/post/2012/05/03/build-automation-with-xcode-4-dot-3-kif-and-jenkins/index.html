@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Leonardo Borges  | build automation with xcode 4 dot 3 kif and jenkins</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.67.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="build automation with xcode 4 dot 3 kif and jenkins" />
+<meta property="og:description" content="UPDATE: As pointed to me in this commment, sym links aren&rsquo;t necessary for Waxsim anymore. Check Jonathan Penn&rsquo;s fork on github.
+ After coming back from my holidays in China - which were awesome - I had no downtime at ThoughtWorks and started at a brand new client/project - a much needed change from what I had been working on lately.
+It&rsquo;s an iOS project, more specifically an iPad app and that&rsquo;s pretty much all I can tell you about it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://leonardoborges.com/post/2012/05/03/build-automation-with-xcode-4-dot-3-kif-and-jenkins/" />
+<meta property="article:published_time" content="2012-05-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2012-05-03T00:00:00+00:00" />
+<meta itemprop="name" content="build automation with xcode 4 dot 3 kif and jenkins">
+<meta itemprop="description" content="UPDATE: As pointed to me in this commment, sym links aren&rsquo;t necessary for Waxsim anymore. Check Jonathan Penn&rsquo;s fork on github.
+ After coming back from my holidays in China - which were awesome - I had no downtime at ThoughtWorks and started at a brand new client/project - a much needed change from what I had been working on lately.
+It&rsquo;s an iOS project, more specifically an iPad app and that&rsquo;s pretty much all I can tell you about it.">
+<meta itemprop="datePublished" content="2012-05-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2012-05-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1012">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="build automation with xcode 4 dot 3 kif and jenkins"/>
+<meta name="twitter:description" content="UPDATE: As pointed to me in this commment, sym links aren&rsquo;t necessary for Waxsim anymore. Check Jonathan Penn&rsquo;s fork on github.
+ After coming back from my holidays in China - which were awesome - I had no downtime at ThoughtWorks and started at a brand new client/project - a much needed change from what I had been working on lately.
+It&rsquo;s an iOS project, more specifically an iPad app and that&rsquo;s pretty much all I can tell you about it."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://leonardoborges.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Leonardo Borges
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://leonardoborges.com/post/2012/05/03/build-automation-with-xcode-4-dot-3-kif-and-jenkins/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://leonardoborges.com/post/2012/05/03/build-automation-with-xcode-4-dot-3-kif-and-jenkins/&amp;text=build%20automation%20with%20xcode%204%20dot%203%20kif%20and%20jenkins" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://leonardoborges.com/post/2012/05/03/build-automation-with-xcode-4-dot-3-kif-and-jenkins/&amp;title=build%20automation%20with%20xcode%204%20dot%203%20kif%20and%20jenkins" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">build automation with xcode 4 dot 3 kif and jenkins</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2012-05-03T00:00:00Z">May 3, 2012</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><strong>UPDATE:</strong> As pointed to me in <a href="http://www.leonardoborges.com/writings/2012/05/03/build-automation-with-xcode-4-dot-3-kif-and-jenkins/#comment-703288043">this commment</a>, sym links aren&rsquo;t necessary for Waxsim anymore. Check <a href="https://github.com/jonathanpenn/WaxSim">Jonathan Penn&rsquo;s fork on github</a>.</p>
+<hr>
+<p>After coming back from my holidays in China - which were awesome - I had no downtime at ThoughtWorks and started at a brand new client/project - a much needed change from what I had been working on lately.</p>
+<p>It&rsquo;s an iOS project, more specifically an iPad app and that&rsquo;s pretty much all I can tell you about it. I will however tell you how my first few days in the project have been so far.</p>
+<p>Being a brand new project I wanted to get our <a href="http://en.wikipedia.org/wiki/Continuous_integration">CI</a> environment up and running as fast as possible - after all the project has only a couple of tests now. For context, here&rsquo;s our setup:</p>
+<ul>
+<li>XCode 4.3</li>
+<li><a href="https://github.com/gabriel/gh-unit">GHUnit</a> (I&rsquo;m not gonna talk too much about it since this was the easy part - their docs are pretty decent)</li>
+<li><a href="https://github.com/square/KIF">KIF</a> (for UI tests)</li>
+<li><a href="http://jenkins-ci.org/">Jenkins</a></li>
+<li><a href="https://github.com/square/waxsim">WaxSim</a> (Hack to get the iPhone Simulator to run on the command line)</li>
+</ul>
+<p>In most environments I had worked so far - Java, Ruby, Clojure etc.. - running acceptance tests from the command line is a given and so is integrating that into your build system.</p>
+<p>Well, that&rsquo;s just not the case with iOS projects. These tasks can be a real pain and take a while to complete. Here&rsquo;s what I had to do:</p>
+<h3 id="on-your-development-mac-">On your development Mac</h3>
+<p>I&rsquo;m assuming here you have an XCode project with at least one KIF test and that it builds successfully from the GUI, when you hit play. Now we can move on to run the tests from the command line.</p>
+<p>This is the script I&rsquo;m using to run my KIF tests. I call it <code>RunKIF.sh</code> and  will walk you through it:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+killall <span style="color:#e6db74">&#34;iPhone Simulator&#34;</span>
+rm /tmp/KIF-*
+
+echo <span style="color:#e6db74">&#34;Build the &#34;</span>UI Tests<span style="color:#e6db74">&#34; target to run in the simulator&#34;</span>
+xcodebuild -target <span style="color:#e6db74">&#34;UI Tests&#34;</span> -configuration Release -sdk iphonesimulator clean build
+
+OUT_FILE<span style="color:#f92672">=</span>/tmp/KIF-$$.out
+<span style="color:#75715e"># Run the app we just built in the simulator and send its output to a file</span>
+<span style="color:#75715e"># /path/to/MyApp.app should be the relative or absolute path to the application bundle that was built in the previous step</span>
+echo <span style="color:#e6db74">&#34;Running KIF tests&#34;</span>
+/tmp/waxsim -f <span style="color:#e6db74">&#34;ipad&#34;</span> <span style="color:#e6db74">&#34;build/Release-iphonesimulator/MyApp.app&#34;</span> &gt; $OUT_FILE 2&gt;&amp;<span style="color:#ae81ff">1</span>
+
+<span style="color:#75715e"># WaxSim hides the return value from the app, so to determine success we search for a &#34;no failures&#34; line</span>
+grep -q <span style="color:#e6db74">&#34;TESTING FINISHED: 0 failures&#34;</span> $OUT_FILE
+
+success<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>exec grep -c <span style="color:#e6db74">&#34;TESTING FINISHED: 0 failures&#34;</span> $OUT_FILE<span style="color:#e6db74">`</span>
+
+
+<span style="color:#75715e"># if there was a failure, show what waxsim was hiding and crucially return with a non-zero exit code</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$success<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;0&#39;</span> <span style="color:#f92672">]</span>
+<span style="color:#66d9ef">then</span> 
+    cat $OUT_FILE
+    echo <span style="color:#e6db74">&#34;===========================================&#34;</span>
+    echo <span style="color:#e6db74">&#34;GUI Tests failed&#34;</span>
+    echo <span style="color:#e6db74">&#34;===========================================&#34;</span>
+    exit <span style="color:#ae81ff">1</span>
+<span style="color:#66d9ef">else</span>
+    echo <span style="color:#e6db74">&#34;===========================================&#34;</span>
+    echo <span style="color:#e6db74">&#34;GUI Tests passed&#34;</span>
+    echo <span style="color:#e6db74">&#34;===========================================&#34;</span>
+<span style="color:#66d9ef">fi</span>
+</code></pre></div><p>You&rsquo;ll notice there are mainly two things happening in this script:</p>
+<ul>
+<li>It runs xcodebuild to build the target against which your tests will run</li>
+<li>uses WaxSim to finally run your tests</li>
+</ul>
+<p>To get the building step to work, despite what KIF&rsquo;s documentation DOESN&rsquo;T tell you, you need to add KIF as a target dependency to your KIF Tests target. <a href="http://stackoverflow.com/questions/10000600/build-error-on-zapp-when-running-iphone-app-with-kif-testsuites">This SO thread</a> can walk you through it.</p>
+<p>Now on to the fun stuff!
+For some reason I didn&rsquo;t have the time to dig into, WaxSim seems to expect XCode to be under <code>/Developer/</code> on your Mac.</p>
+<p>The problem is that since Apple started distributing Xcode through the AppStore, it now lives under <code>/Applications/Xcode.app/Contents/Developer/</code>. Bam! This can cause all sorts of issues when building both WaxSim and your project. So if you see weird error messages complaining about not being able to find <code>DevToolsFoundation.framework</code> and the like, these sym links will probably fix things for you:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo ln -s /Applications/Xcode.app/Contents/Developer/ /Developer
+sudo ln -s /Applications/Xcode.app/Contents/OtherFrameworks/DevToolsCore.framework /Developer/Library/PrivateFrameworks/
+sudo ln -s /Applications/Xcode.app/Contents/OtherFrameworks/DevToolsCParsing.framework /Developer/Library/PrivateFrameworks/
+sudo ln -s /Applications/Xcode.app/Contents/OtherFrameworks/DevToolsFoundation.framework /Developer/Library/PrivateFrameworks/
+sudo ln -s /Applications/Xcode.app/Contents/OtherFrameworks/DevToolsInterface.framework /Developer/Library/PrivateFrameworks/
+sudo ln -s /Applications/Xcode.app/Contents/OtherFrameworks/DevToolsKit.framework /Developer/Library/PrivateFrameworks/
+sudo ln -s /Applications/Xcode.app/Contents/OtherFrameworks/DevToolsRemoteClient.framework /Developer/Library/PrivateFrameworks/
+sudo ln -s /Applications/Xcode.app/Contents/OtherFrameworks/DevToolsSupport.framework /Developer/Library/PrivateFrameworks/
+</code></pre></div><p>I know, right? Moving on.</p>
+<p>By now you should be able to successfully run <code>RunKIF.sh</code> and get meaningful results from your test. Let&rsquo;s configure our CI server now, shall we?</p>
+<h3 id="on-your-ci-mac-">On your CI Mac</h3>
+<p>Depending on which state your build box is, you might need to create the same sym links I created in the previous section. So ssh into your build box and try to build your project from the command line:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xcodebuild -target <span style="color:#e6db74">&#34;UI Tests&#34;</span> -configuration Release -sdk iphonesimulator clean build
+</code></pre></div><p>This time I&rsquo;ll assume you already have Jenkins installed and running.</p>
+<p>Your Jenkins server is probably running as the jenkins user. You need to change that. Jenkins has to be running within a Desktop session - that&rsquo;s a requirement from WaxSim.
+It needs an active desktop session in order to launch the simulator - and thus needs to run as a user who can login to your CI Mac.</p>
+<p>If you installed Jenkins using Homebrew, here&rsquo;s a plist you can use to specify which user jenkins should run as:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span style="color:#75715e">&lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt;</span>
+<span style="color:#f92672">&lt;plist</span> <span style="color:#a6e22e">version=</span><span style="color:#e6db74">&#34;1.0&#34;</span><span style="color:#f92672">&gt;</span>
+<span style="color:#f92672">&lt;dict&gt;</span>
+    <span style="color:#f92672">&lt;key&gt;</span>Label<span style="color:#f92672">&lt;/key&gt;</span>
+    <span style="color:#f92672">&lt;string&gt;</span>Jenkins<span style="color:#f92672">&lt;/string&gt;</span>
+    <span style="color:#f92672">&lt;key&gt;</span>ProgramArguments<span style="color:#f92672">&lt;/key&gt;</span>
+    <span style="color:#f92672">&lt;array&gt;</span>
+    <span style="color:#f92672">&lt;string&gt;</span>/usr/bin/java<span style="color:#f92672">&lt;/string&gt;</span>
+    <span style="color:#f92672">&lt;string&gt;</span>-jar<span style="color:#f92672">&lt;/string&gt;</span>
+    <span style="color:#f92672">&lt;string&gt;</span>/usr/local/Cellar/jenkins/1.439/lib/jenkins.war<span style="color:#f92672">&lt;/string&gt;</span>
+    <span style="color:#f92672">&lt;/array&gt;</span>
+    <span style="color:#f92672">&lt;key&gt;</span>RunAtLoad<span style="color:#f92672">&lt;/key&gt;</span>
+    <span style="color:#f92672">&lt;true/&gt;</span>
+    <span style="color:#f92672">&lt;key&gt;</span>UserName<span style="color:#f92672">&lt;/key&gt;</span>
+    <span style="color:#f92672">&lt;string&gt;</span>UserWhoCanLogintoThisMac<span style="color:#f92672">&lt;/string&gt;</span>
+<span style="color:#f92672">&lt;/dict&gt;</span>
+<span style="color:#f92672">&lt;/plist&gt;</span>
+</code></pre></div><p>Then load the new plist:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">launchctl load -w  /Users/UserWhoCanLogintoThisMac/Library/LaunchAgents/org.jenkins-ci.plist
+</code></pre></div><p>Don&rsquo;t forget to enable automatic login on the CI Mac for the user Jenkins is using. Check <a href="http://www.tech-faq.com/how-to-re-enable-mac-os-x-automatic-login.html">this article</a> to learn how to do it.</p>
+<p>Now we&rsquo;re mostly done. Just go ahead and configure your project.</p>
+<p>Add a build step of the type <code>Execute Shell</code> and provide <code>sh RunKIF.sh</code> as the command string. Trigger your build and everything should work as expected.</p>
+<h3 id="final-thoughts-">Final thoughts</h3>
+<p>Once I actually got these steps together to write this post, it didn&rsquo;t look like much. But the amount of time I wasted finding out what had to be done to actually make this work is just insane.</p>
+<p>I&rsquo;m shocked at how much behind iOS development tools seem to be. It just shouldn&rsquo;t take this much effort and time only to get some UI tests automated. So far I&rsquo;m disappointed with the tooling around the Apple ecosystem and I really hope this improves sooner rather than later.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "leonardoborges" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://leonardoborges.com/" >
+    &copy;  Leonardo Borges 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+baseURL = "http://leonardoborges.com/"
+languageCode = "en-us"
+title = "Leonardo Borges"
+theme = "ananke"
+disqusShortname = "leonardoborges"
+
+# SectionPagesMenu = "main"
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "post"
+    name = "Posts"
+    title = "All posts"
+    url = "/post/"
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    title = "About"
+    url = "/about/"    
+
+[[menu.main]]
+    identifier = "books"
+    name = "Books"
+    title = "Books"
+    url = "/books/"        
+
+
+[params]
+  favicon = ""
+  description = "Code. AI. Leadership."
+  twitter = "https://twitter.com/leonardo_borges"
+  github = "https://github.com/leonardoborges"
+  linkedin = "https://www.linkedin.com/in/leonardoborges/"
+  stackoverflow = "https://stackoverflow.com/users/910811/leonardoborges"
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  # background_color_class = "bg-black"
+  featured_image = "/images/wanaka_tree.jpg"
+  # recent_posts_number = 2

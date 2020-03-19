@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Leonardo Borges</title>
+    <link>http://leonardoborges.com/categories/</link>
+    <description>Recent content in Categories on Leonardo Borges</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Nov 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leonardoborges.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conferences</title>
+      <link>http://leonardoborges.com/categories/conferences/</link>
+      <pubDate>Thu, 10 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/categories/conferences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rubyconf2011</title>
+      <link>http://leonardoborges.com/categories/rubyconf2011/</link>
+      <pubDate>Thu, 10 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://leonardoborges.com/categories/rubyconf2011/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

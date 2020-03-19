@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Leonardo Borges  | validation and internationalization in clojure with bouncer and tower</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.67.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="validation and internationalization in clojure with bouncer and tower" />
+<meta property="og:description" content="I released bouncer in April last year and since then it has had a small but steady growth in usage.
+So much so that I received some community feedback in the form of emails and pull requests which is simply great!
+The latest and most substantial pull request, submitted by Vadim Platonov, added the ability to customise validation messages in anyway you like, as you can see in the section Internationalization and customised error messages of the README." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://leonardoborges.com/post/2014/01/04/validation-and-internationalization-in-clojure-with-bouncer-and-tower/" />
+<meta property="article:published_time" content="2014-01-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-01-04T00:00:00+00:00" />
+<meta itemprop="name" content="validation and internationalization in clojure with bouncer and tower">
+<meta itemprop="description" content="I released bouncer in April last year and since then it has had a small but steady growth in usage.
+So much so that I received some community feedback in the form of emails and pull requests which is simply great!
+The latest and most substantial pull request, submitted by Vadim Platonov, added the ability to customise validation messages in anyway you like, as you can see in the section Internationalization and customised error messages of the README.">
+<meta itemprop="datePublished" content="2014-01-04T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2014-01-04T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="824">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="validation and internationalization in clojure with bouncer and tower"/>
+<meta name="twitter:description" content="I released bouncer in April last year and since then it has had a small but steady growth in usage.
+So much so that I received some community feedback in the form of emails and pull requests which is simply great!
+The latest and most substantial pull request, submitted by Vadim Platonov, added the ability to customise validation messages in anyway you like, as you can see in the section Internationalization and customised error messages of the README."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://leonardoborges.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Leonardo Borges
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://leonardoborges.com/post/2014/01/04/validation-and-internationalization-in-clojure-with-bouncer-and-tower/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://leonardoborges.com/post/2014/01/04/validation-and-internationalization-in-clojure-with-bouncer-and-tower/&amp;text=validation%20and%20internationalization%20in%20clojure%20with%20bouncer%20and%20tower" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://leonardoborges.com/post/2014/01/04/validation-and-internationalization-in-clojure-with-bouncer-and-tower/&amp;title=validation%20and%20internationalization%20in%20clojure%20with%20bouncer%20and%20tower" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">validation and internationalization in clojure with bouncer and tower</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2014-01-04T00:00:00Z">January 4, 2014</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>I released <a href="https://github.com/leonardoborges/bouncer">bouncer</a> in April last year and since then it has had a small but steady growth in usage.</p>
+<p>So much so that I received some community feedback in the form of emails and pull requests which is simply <em>great</em>!</p>
+<p>The latest and most substantial pull request, submitted by <a href="https://github.com/dm3">Vadim Platonov</a>, added the ability to customise validation messages in anyway you like, as you can see in the section <a href="https://github.com/leonardoborges/bouncer#internationalization-and-customised-error-messages">Internationalization and customised error messages</a> of the <a href="https://github.com/leonardoborges/bouncer/blob/master/README.md">README</a>.</p>
+<p>However the documentation only gives a simple example and while I believe it should show users how this opens up several different usage patterns, I thought I&rsquo;d expand that in this post and integrate <a href="https://github.com/leonardoborges/bouncer">bouncer</a> with the excellent Internationalization library <a href="https://github.com/ptaoussanis/tower">tower</a> to show how validation and I18n could work together in this configuration.</p>
+<blockquote>
+<p>If you&rsquo;ve never used bouncer before, I&rsquo;d recommend you have a quick look at the <a href="https://github.com/leonardoborges/bouncer#basic-validations">Basic Validations</a> section of the <a href="https://github.com/leonardoborges/bouncer/blob/master/README.md">README</a> before continuing.</p>
+</blockquote>
+<h2 id="setup">Setup</h2>
+<p>The first thing you&rsquo;ll need to do is create a new leiningen project and add both <a href="https://github.com/leonardoborges/bouncer">bouncer</a> and <a href="https://github.com/ptaoussanis/tower">tower</a> as dependencies in your <code>project.clj</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">[bouncer <span style="color:#e6db74">&#34;0.3.1-beta1&#34;</span>]
+[com.taoensso/tower <span style="color:#e6db74">&#34;2.0.1&#34;</span>]
+</code></pre></div><p>Next, in your <code>core</code> namespace - or wherever, really - require both libs and set up a dictionary to be used in the examples:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">ns </span>bouncer+tower.core
+  (<span style="color:#e6db74">:require</span> [taoensso.tower <span style="color:#e6db74">:as</span> tower
+             <span style="color:#e6db74">:refer</span> (<span style="color:#a6e22e">with-locale</span> with-tscope t *locale*)]
+            [bouncer.core <span style="color:#e6db74">:refer</span> [validate]]
+            [bouncer.validators <span style="color:#e6db74">:as</span> v]))
+
+(<span style="color:#66d9ef">def </span>my-tconfig
+  {<span style="color:#e6db74">:dev-mode?</span> true
+   <span style="color:#e6db74">:fallback-locale</span> <span style="color:#e6db74">:en</span>
+   <span style="color:#e6db74">:dictionary</span>
+   {<span style="color:#e6db74">:en</span>
+    {<span style="color:#e6db74">:person</span>  {<span style="color:#e6db74">:name</span> {<span style="color:#e6db74">:required</span> <span style="color:#e6db74">&#34;A person must have a name&#34;</span>}
+               <span style="color:#e6db74">:age</span>  {<span style="color:#e6db74">:number</span>   <span style="color:#e6db74">&#34;A person&#39;s age must be a number. You provided &#39;%s&#39;&#34;</span>}
+               <span style="color:#e6db74">:address</span> {<span style="color:#e6db74">:postcode</span> {<span style="color:#e6db74">:required</span> <span style="color:#e6db74">&#34;Missing postcode in address&#34;</span>}}}
+     <span style="color:#e6db74">:missing</span>  <span style="color:#e6db74">&#34;&lt;Missing translation: [%1$s %2$s %3$s]&gt;&#34;</span>}
+    <span style="color:#e6db74">:pt-BR</span>
+    {<span style="color:#e6db74">:person</span>  {<span style="color:#e6db74">:name</span> {<span style="color:#e6db74">:required</span> <span style="color:#e6db74">&#34;Atributo Nome para Pessoa é obrigatório.&#34;</span>}
+               <span style="color:#e6db74">:age</span>  {<span style="color:#e6db74">:number</span>   <span style="color:#e6db74">&#34;Atributo Idade para Pessoa deve ser um número. Valor recebido foi &#39;%s&#39;&#34;</span>}
+               <span style="color:#e6db74">:address</span> {<span style="color:#e6db74">:postcode</span> {<span style="color:#e6db74">:required</span> <span style="color:#e6db74">&#34;Endereço deve ter um código postal&#34;</span>}}}
+     <span style="color:#e6db74">:missing</span>  <span style="color:#e6db74">&#34;&lt;Tradução ausente: [%1$s %2$s %3$s]&gt;&#34;</span>}}})
+</code></pre></div><p>Also, we need someting to validate so go ahead and create a map representing a person:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>person {<span style="color:#e6db74">:age</span> <span style="color:#e6db74">&#34;NaN&#34;</span>})
+</code></pre></div><h2 id="customising-bouncer">Customising bouncer</h2>
+<p>Since <code>0.3.1-beta1</code>, <a href="https://github.com/leonardoborges/bouncer">bouncer</a>&lsquo;s <code>validate</code> function receives an optional first argument called <em>message-fn</em>. As the name implies, it is a function from <em>error metadata</em> to, most likely, a string. This is our opportunity to use tower&rsquo;s features to translate our error messages.</p>
+<p>In order to accomplish that, we&rsquo;ll be using this message function:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>message-fn
+  <span style="color:#e6db74">&#34;Receives a locale, tscope and a map containing error metadata.
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">  Uses this information to return a I18n&#39;ed string&#34;</span>
+  [locale tscope {<span style="color:#e6db74">:keys</span> [path value]
+                  {validator <span style="color:#e6db74">:validator</span>} <span style="color:#e6db74">:metadata</span>}]
+  (<span style="color:#66d9ef">let </span>[tr-key (<span style="color:#a6e22e">-&gt;&gt;</span> (<span style="color:#a6e22e">flatten</span> [path validator])
+                    (map name)
+                    (<span style="color:#a6e22e">clojure.string/join</span> <span style="color:#e6db74">&#34;/&#34;</span>)
+                    keyword)]
+    (<span style="color:#a6e22e">with-tscope</span> tscope
+      (<span style="color:#a6e22e">t</span> locale my-tconfig tr-key value))))
+</code></pre></div><p>In order to understand the function above, let&rsquo;s validate the person map using <code>identity</code> so we can inspect the error metadata that will be the third argument to this function:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">validate</span> identity
+          person
+          <span style="color:#e6db74">:name</span> v/required)
+          
+<span style="color:#75715e">;; [{:name</span>
+<span style="color:#75715e">;;   ({:path [:name],</span>
+<span style="color:#75715e">;;     :value nil,</span>
+<span style="color:#75715e">;;     :args nil,</span>
+<span style="color:#75715e">;;     :metadata</span>
+<span style="color:#75715e">;;     {:optional false,</span>
+<span style="color:#75715e">;;      :default-message-format &#34;%s must be present&#34;,</span>
+<span style="color:#75715e">;;      :validator :bouncer.validators/required},</span>
+<span style="color:#75715e">;;     :message nil})}</span>
+<span style="color:#75715e">;;  {:age &#34;NaN&#34;,</span>
+<span style="color:#75715e">;;   :bouncer.core/errors</span>
+<span style="color:#75715e">;;   {:name</span>
+<span style="color:#75715e">;;    ({:path [:name],</span>
+<span style="color:#75715e">;;      :value nil,</span>
+<span style="color:#75715e">;;      :args nil,</span>
+<span style="color:#75715e">;;      :metadata</span>
+<span style="color:#75715e">;;      {:optional false,</span>
+<span style="color:#75715e">;;       :default-message-format &#34;%s must be present&#34;,</span>
+<span style="color:#75715e">;;       :validator :bouncer.validators/required},</span>
+<span style="color:#75715e">;;      :message nil})}}]</span>
+</code></pre></div><p>As we&rsquo;re only validating the name in this case, that&rsquo;s all we get in the return value of <code>validate</code>. However you can see how we have all sorts of useful information now - hopefully this makes the <code>message-fn</code> code above easier to understand.</p>
+<h2 id="take-it-for-a-spin">Take it for a spin</h2>
+<p>We&rsquo;re now ready for a couple of examples, using two different locales. Let&rsquo;s get on with it:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">validate</span> (partial message-fn <span style="color:#e6db74">:en</span> <span style="color:#e6db74">:person</span>)
+          person
+          <span style="color:#e6db74">:name</span> v/required
+          <span style="color:#e6db74">:age</span>  v/number
+          [<span style="color:#e6db74">:address</span> <span style="color:#e6db74">:postcode</span>] v/required)
+
+
+<span style="color:#75715e">;; [{:address {:postcode (&#34;Missing postcode in address&#34;)},</span>
+<span style="color:#75715e">;;   :age (&#34;A person&#39;s age must be a number. You provided &#39;NaN&#39;&#34;),</span>
+<span style="color:#75715e">;;   :name (&#34;A person must have a name&#34;)}</span>
+<span style="color:#75715e">;;  {:age &#34;NaN&#34;,</span>
+<span style="color:#75715e">;;   :bouncer.core/errors</span>
+<span style="color:#75715e">;;   {:address {:postcode (&#34;Missing postcode in address&#34;)},</span>
+<span style="color:#75715e">;;    :age (&#34;A person&#39;s age must be a number. You provided &#39;NaN&#39;&#34;),</span>
+<span style="color:#75715e">;;    :name (&#34;A person must have a name&#34;)}}]</span>
+</code></pre></div><p>Now let&rsquo;s get some messages in portuguese, shall we?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">validate</span> (partial message-fn <span style="color:#e6db74">:pt-BR</span> <span style="color:#e6db74">:person</span>)
+          person
+          <span style="color:#e6db74">:name</span> v/required
+          <span style="color:#e6db74">:age</span>  v/number
+          [<span style="color:#e6db74">:address</span> <span style="color:#e6db74">:postcode</span>] v/required)
+
+
+<span style="color:#75715e">;; [{:address {:postcode (&#34;Endereço deve ter um código postal&#34;)},</span>
+<span style="color:#75715e">;;   :age</span>
+<span style="color:#75715e">;;   (&#34;Atributo Idade para Pessoa deve ser um número. Valor recebido foi &#39;NaN&#39;&#34;),</span>
+<span style="color:#75715e">;;   :name (&#34;Atributo Nome para Pessoa é obrigatório.&#34;)}</span>
+<span style="color:#75715e">;;  {:age &#34;NaN&#34;,</span>
+<span style="color:#75715e">;;   :bouncer.core/errors</span>
+<span style="color:#75715e">;;   {:address {:postcode (&#34;Endereço deve ter um código postal&#34;)},</span>
+<span style="color:#75715e">;;    :age</span>
+<span style="color:#75715e">;;    (&#34;Atributo Idade para Pessoa deve ser um número. Valor recebido foi &#39;NaN&#39;&#34;),</span>
+<span style="color:#75715e">;;    :name (&#34;Atributo Nome para Pessoa é obrigatório.&#34;)}}]</span>
+</code></pre></div><p>In case you&rsquo;re too lazy to do this all from scratch, I created a github repo containing this example ready for you to play with. <a href="https://github.com/leonardoborges/bouncer-tower">Go get it</a>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Hopefully this gives you a little taste of what you can do with the latest version of <a href="https://github.com/leonardoborges/bouncer">bouncer</a>. Remember this is but one of many ways you could integrate the library so get creative :)</p>
+<p>Once again, thanks to <a href="https://github.com/dm3">Vadim Platonov</a> for submitting this pull request.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "leonardoborges" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://leonardoborges.com/" >
+    &copy;  Leonardo Borges 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Leonardo Borges  | bouncer validation lib for clojure</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.67.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="bouncer validation lib for clojure" />
+<meta property="og:description" content="Today I&rsquo;m releasing bouncer, which was extracted from a project I&rsquo;ve been working on.
+It&rsquo;s a validation library for Clojure apps and it lets you write code like this:
+(def person {:name &#34;Leo&#34;}) (validate person :name required :age [required number]) If you&rsquo;d like to see more examples and a detailed guide check out the github repository. The README should get you started.
+This post however isn&rsquo;t only about announcing bouncer. It&rsquo;s also about the motivation and implementation details behind it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://leonardoborges.com/post/2013/01/04/bouncer-validation-lib-for-clojure/" />
+<meta property="article:published_time" content="2013-01-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2013-01-04T00:00:00+00:00" />
+<meta itemprop="name" content="bouncer validation lib for clojure">
+<meta itemprop="description" content="Today I&rsquo;m releasing bouncer, which was extracted from a project I&rsquo;ve been working on.
+It&rsquo;s a validation library for Clojure apps and it lets you write code like this:
+(def person {:name &#34;Leo&#34;}) (validate person :name required :age [required number]) If you&rsquo;d like to see more examples and a detailed guide check out the github repository. The README should get you started.
+This post however isn&rsquo;t only about announcing bouncer. It&rsquo;s also about the motivation and implementation details behind it.">
+<meta itemprop="datePublished" content="2013-01-04T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2013-01-04T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1082">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="bouncer validation lib for clojure"/>
+<meta name="twitter:description" content="Today I&rsquo;m releasing bouncer, which was extracted from a project I&rsquo;ve been working on.
+It&rsquo;s a validation library for Clojure apps and it lets you write code like this:
+(def person {:name &#34;Leo&#34;}) (validate person :name required :age [required number]) If you&rsquo;d like to see more examples and a detailed guide check out the github repository. The README should get you started.
+This post however isn&rsquo;t only about announcing bouncer. It&rsquo;s also about the motivation and implementation details behind it."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://leonardoborges.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Leonardo Borges
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://leonardoborges.com/post/2013/01/04/bouncer-validation-lib-for-clojure/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://leonardoborges.com/post/2013/01/04/bouncer-validation-lib-for-clojure/&amp;text=bouncer%20validation%20lib%20for%20clojure" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://leonardoborges.com/post/2013/01/04/bouncer-validation-lib-for-clojure/&amp;title=bouncer%20validation%20lib%20for%20clojure" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">bouncer validation lib for clojure</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2013-01-04T00:00:00Z">January 4, 2013</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Today I&rsquo;m releasing bouncer, which was extracted from a project I&rsquo;ve been working on.</p>
+<p>It&rsquo;s a validation library for Clojure apps and it lets you write code like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>person {<span style="color:#e6db74">:name</span> <span style="color:#e6db74">&#34;Leo&#34;</span>})
+
+(<span style="color:#a6e22e">validate</span> person
+    <span style="color:#e6db74">:name</span> required
+    <span style="color:#e6db74">:age</span>  [required number])
+</code></pre></div><p>If you&rsquo;d like to see more examples and a detailed guide check out the <a href="http://github.com/leonardoborges/bouncer">github repository</a>. The README should get you started.</p>
+<p>This post however isn&rsquo;t only about announcing bouncer. It&rsquo;s also about the motivation and implementation details behind it.</p>
+<p>There are a couple of Clojure validation libraries already out there so why would I write a new one?
+Well&hellip;</p>
+<ul>
+<li>
+<p>Writing Clojure is fun! (who knew? :P)</p>
+</li>
+<li>
+<p>Because I believe this problem can be solved more elegantly with the use of Monads</p>
+</li>
+</ul>
+<p>If you&rsquo;ve been following me for a while, you&rsquo;ll know that I spent most of 2012 deepening my knowledge about functional programming.</p>
+<p>In that journey, the unavoidable subject of monads came about - and it was both interesting and enlightening enough that made me <a href="http://www.leonardoborges.com/writings/2012/11/30/monads-in-small-bites-part-i-functors/">write a whole series of posts about it</a>.</p>
+<p>After learning what they are and then thinking about the validation problem for a while, I couldn&rsquo;t help but notice that the problem had a lot in common with the <a href="http://www.haskell.org/haskellwiki/State_Monad">State Monad</a>.</p>
+<p>In order to explain how the two relate, I&rsquo;ll have to digress for a moment. It&rsquo;ll all make sense in the end - or so I hope</p>
+<h2 id="purity">Purity</h2>
+<p>In pure functional languages, such as Haskell, functions can&rsquo;t have side effects. These include performing IO, changing global variables or launching missiles.</p>
+<p>Because of that, functions in Haskell are pure: if you repeatedly call a function <em>f</em> with the same argument <code>x</code> over time you will <em>always</em> get the same result back.</p>
+<p>Pure functions are not a feature of Haskell though. We, too, can write pure functions if we wish:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>double [x]
+    (+ x x))
+</code></pre></div><p>The function <code>double</code> above is pure. If we call it with 10, we can be sure the result will always be 20.</p>
+<p>This leaves us with a question though: If we were to write our programs with pure functions only, how would we perform computations that need to carry state - state that needs to change over time - around?</p>
+<p>A good example of such computation is generating random numbers.</p>
+<p>Most programming languages provide generators capable of creating random numbers on demand. Using them is usually trivial. Here&rsquo;s an example in Java:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Random gen <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Random<span style="color:#f92672">();</span>
+
+gen<span style="color:#f92672">.</span><span style="color:#a6e22e">nextDouble</span><span style="color:#f92672">();</span> <span style="color:#75715e">// 0.0037635726242281065
+</span><span style="color:#75715e"></span>gen<span style="color:#f92672">.</span><span style="color:#a6e22e">nextDouble</span><span style="color:#f92672">();</span> <span style="color:#75715e">// 0.15821091918430885
+</span></code></pre></div><p><strong>Impurity alert!</strong></p>
+<p>The function <code>nextDouble</code> above is obviously <em>not</em> pure. Multiple invocations of it with the same argument - in this case, none - returns different results.</p>
+<p><code>nextDouble</code>  is keeping some sort of global state between function calls.</p>
+<p>This is where the State Monad comes in. It allows such functions to remain pure.</p>
+<h2 id="the-state-monad">The State Monad</h2>
+<p>The State Monad provides a way to abstract <em>state</em> from the function that needs to operate on it.</p>
+<p>Sounds confusing? Hopefully an example will clear things up.</p>
+<p>Let&rsquo;s have a look at the clojure function <code>rand</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">rand</span>)
+<span style="color:#75715e">;; 0.04388682005715605</span>
+(<span style="color:#a6e22e">rand</span>)
+<span style="color:#75715e">;; 0.43057496371080517</span>
+</code></pre></div><p><code>rand</code> suffers from the same problem as <code>nextDouble</code> we saw above. It keeps it&rsquo;s own state that is shared across calls, therefore being an impure function.</p>
+<p>Now let&rsquo;s write a pure version of <code>rand</code>. We&rsquo;ll call it <code>pure-rand</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">def </span>gen (<span style="color:#a6e22e">java.util.Random.</span>))
+
+(<span style="color:#66d9ef">defn </span>pure-rand [g]
+    [(<span style="color:#a6e22e">.nextDouble</span> g) g])
+
+(<span style="color:#a6e22e">pure-rand</span> gen)
+<span style="color:#75715e">;; [0.5783608063218478 #&lt;Random java.util.Random@7f30ab6&gt;]</span>
+
+(<span style="color:#a6e22e">pure-rand</span> gen)
+<span style="color:#75715e">;; [0.9251968987499839 #&lt;Random java.util.Random@7f30ab6&gt;]</span>
+</code></pre></div><p>This is interesting. <code>pure-rand</code> now takes a generator as an argument and returns a two-element vector containing the random number itself - the result we&rsquo;re actually interested in - and the generator that was passed in.</p>
+<p>Recall however that the generator returned, albeit the same object, is in a new sate.</p>
+<p>By re-writing the function like this, we&rsquo;ve regained purity, as demonstrated below:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">pure-rand</span> (<span style="color:#a6e22e">java.util.Random.</span> <span style="color:#ae81ff">100</span>))
+<span style="color:#75715e">;; [0.7220096548596434 #&lt;Random java.util.Random@bb14fe1&gt;]</span>
+
+(<span style="color:#a6e22e">pure-rand</span> (<span style="color:#a6e22e">java.util.Random.</span> <span style="color:#ae81ff">100</span>))
+<span style="color:#75715e">;; [0.7220096548596434 #&lt;Random java.util.Random@bb14fe1&gt;]</span>
+</code></pre></div><p>As you can see, as long as we provide the same generator - the same argument - we get the same result back.</p>
+<p>If you&rsquo;re wondering why I&rsquo;m returning a two element vector from our little function, the answer lies in the State Monad implementation as found in the <a href="https://github.com/clojure/algo.monads/">algo.monads</a> library.</p>
+<p>From its docstring:</p>
+<blockquote>
+<p><strong>State Monad</strong>: Monad describing stateful computations. The monadic values have the structure:
+(fn [old-state] [result new-state]).</p>
+</blockquote>
+<p>It expects a function that receives its old state and returns the result and the new state - these are called monadic values.</p>
+<p>By designing the function to follow this contract, we can leverage the <code>domonad</code> macro - think of it as syntactic sugar for working with monads:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">require</span> <span style="color:#f92672">&#39;</span>[clojure.algo.monads <span style="color:#e6db74">:as</span> m])
+
+((<span style="color:#a6e22e">m/domonad</span> m/state-m
+    [a pure-rand
+     b pure-rand
+     c pure-rand]
+     [a b c])
+     (<span style="color:#a6e22e">java.util.Random.</span> <span style="color:#ae81ff">100</span>))
+
+<span style="color:#75715e">;; [[0.7220096548596434 0.19497605734770518 0.6671595726539502] </span>
+<span style="color:#75715e">;; #&lt;Random java.util.Random@358ddfd6&gt;]</span>
+</code></pre></div><p>In the example above, we&rsquo;re using our <code>pure-rand</code> function in the context of the State Monad to generate 3 random numbers - based on some initial state - and returning them as a vector.</p>
+<p>As we&rsquo;ve seen before the result is itself in a vector alongside the new state.</p>
+<p>This is where the State Monad and the validation problem meet:</p>
+<p>In <a href="http://github.com/leonardoborges/bouncer">bouncer</a>, each validation function is designed to be compatible with the State Monad, just like <code>pure-rand</code> above:</p>
+<p>It receives an initial state - at first, the map to be validated - and returns a vector with the map of errors and the new state: the original map augmented with any errors from previous validators.</p>
+<p>The end result, should one or more validations fail, is a map with all errors that might have happened, plus our new state.</p>
+<p>Now if you head to the <a href="http://github.com/leonardoborges/bouncer">github repository</a> and read the examples by keeping the State Monad and the above explanation in mind, the similarities should be obvious.</p>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>As I mentioned in the beginning of the article, there are <a href="https://github.com/r0man/validation-clj">other</a> validation <a href="https://github.com/michaelklishin/validateur">libraries</a> for Clojure and at the time of this writing they have more features than <a href="http://github.com/leonardoborges/bouncer">bouncer</a> - by all means have a look at them.</p>
+<p>However I will keep maintaining <a href="http://github.com/leonardoborges/bouncer">bouncer</a> for a couple of reasons:</p>
+<ul>
+<li>That&rsquo;s what I&rsquo;m using in my current side project</li>
+<li>It takes a fundamentally different implementation approach that is in itself worthy of exploration</li>
+<li>If nothing else, this is yet another example of where Monads can be useful.</li>
+</ul>
+<h4 id="acknowledgments">Acknowledgments</h4>
+<p>Thanks to <a href="https://twitter.com/stevebuik">Steve</a> and <a href="https://twitter.com/juliansgamble">Julian</a> for reviewing early drafts of this post as well as <a href="https://twitter.com/nick_s_drew">Nick</a> for being such a PITA :) - our discussions led to a considerably nicer design.</p>
+<p>As usual, let me know your thoughts.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "leonardoborges" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://leonardoborges.com/" >
+    &copy;  Leonardo Borges 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

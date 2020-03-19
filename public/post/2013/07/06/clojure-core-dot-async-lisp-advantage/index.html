@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Leonardo Borges  | clojure core dot async lisp advantage</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.67.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="clojure core dot async lisp advantage" />
+<meta property="og:description" content="Long gone are the days when systems needed to do only one thing at a time.
+Concurrency is the word but it often leads to complex code, dealing with locks, mutexes etc…
+There are several different abstractions which allows us to both model and think about asynchronous code in a more sane fashion: futures, promises and events/callbacks are but a few of them.
+I won&rsquo;t get into the merits - or lack thereof - of these alternatives in this post but rather focus on a different alternative: Communicating Sequential Processes - CSP." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://leonardoborges.com/post/2013/07/06/clojure-core-dot-async-lisp-advantage/" />
+<meta property="article:published_time" content="2013-07-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2013-07-06T00:00:00+00:00" />
+<meta itemprop="name" content="clojure core dot async lisp advantage">
+<meta itemprop="description" content="Long gone are the days when systems needed to do only one thing at a time.
+Concurrency is the word but it often leads to complex code, dealing with locks, mutexes etc…
+There are several different abstractions which allows us to both model and think about asynchronous code in a more sane fashion: futures, promises and events/callbacks are but a few of them.
+I won&rsquo;t get into the merits - or lack thereof - of these alternatives in this post but rather focus on a different alternative: Communicating Sequential Processes - CSP.">
+<meta itemprop="datePublished" content="2013-07-06T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2013-07-06T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1379">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="clojure core dot async lisp advantage"/>
+<meta name="twitter:description" content="Long gone are the days when systems needed to do only one thing at a time.
+Concurrency is the word but it often leads to complex code, dealing with locks, mutexes etc…
+There are several different abstractions which allows us to both model and think about asynchronous code in a more sane fashion: futures, promises and events/callbacks are but a few of them.
+I won&rsquo;t get into the merits - or lack thereof - of these alternatives in this post but rather focus on a different alternative: Communicating Sequential Processes - CSP."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://leonardoborges.com/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Leonardo Borges
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://leonardoborges.com/post/2013/07/06/clojure-core-dot-async-lisp-advantage/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://leonardoborges.com/post/2013/07/06/clojure-core-dot-async-lisp-advantage/&amp;text=clojure%20core%20dot%20async%20lisp%20advantage" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://leonardoborges.com/post/2013/07/06/clojure-core-dot-async-lisp-advantage/&amp;title=clojure%20core%20dot%20async%20lisp%20advantage" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+      <h1 class="f1 athelas mt3 mb1">clojure core dot async lisp advantage</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2013-07-06T00:00:00Z">July 6, 2013</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Long gone are the days when systems needed to do only one thing at a time.</p>
+<p>Concurrency is the word but it often leads to complex code, dealing with locks, mutexes etc…</p>
+<p>There are several different abstractions which allows us to both model and think about asynchronous code in a more sane fashion: futures, promises and events/callbacks are but a few of them.</p>
+<p>I won&rsquo;t get into the merits - or lack thereof - of these alternatives in this post but rather focus on a different alternative: <a href="http://en.wikipedia.org/wiki/Communicating_sequential_processes">Communicating Sequential Processes - CSP</a>.</p>
+<h3 id="csp-and-go">CSP and Go</h3>
+<p>CSP isn&rsquo;t new. It was first described in 1978 by <a href="http://en.wikipedia.org/wiki/C._A._R._Hoare">Tony Hoare</a> and languages such as <a href="http://bit.ly/14rEwxU">Occam</a> and <a href="http://bit.ly/14rEAh7">Erlang</a> stem from it.</p>
+<p>It has however gained momentum by being natively supported by the <a href="http://bit.ly/11ZvMzj">Go programming language</a>.</p>
+<p>I haven&rsquo;t read Hoare&rsquo;s paper so I&rsquo;ll use a little bit of what I know about Go&rsquo;s implementation of CSP.</p>
+<p>Go introduced the concept of a <code>goroutine</code>. It <em>looks</em> like a function call:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// doing some stuff...
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">go</span> <span style="color:#a6e22e">myFunction</span>(<span style="color:#e6db74">&#34;argument&#34;</span>) <span style="color:#75715e">//does stuff in the background...
+</span><span style="color:#75715e">//continuing about my business...
+</span></code></pre></div><p>What this does is it creates a <em>lightweight</em> process and returns control immediately to the caller.</p>
+<p>It is <em>lightweight</em> because it doesn&rsquo;t map 1-1 to native OS threads.</p>
+<p>The reasoning behind it is that creating too many threads can bring your machine (or VM) down due to the amount of stack allocated to each one.</p>
+<p><code>goroutines</code> are cheap to create so you can have hundreds of thousands of them, and the runtime will multiplex them into a thread pool.</p>
+<p>The immediate advantage is that it is dead simple to achieve a higher degree of concurrency.</p>
+<p>So far it sounds awfully similar to using futures with a pre-configured thread pool and a bit of syntactic sugar. But this is not the end of it.</p>
+<h3 id="communication">Communication</h3>
+<p><code>goroutines</code> really shine when your several lightweight processes need to talk to each other. This is where a new abstraction comes into play:<code>channels</code>.</p>
+<p>Channels are first-class citizens - meaning you can pass them as arguments to functions as well as the return value of functions.</p>
+<p>Using them is straightforward:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">c</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">string</span>)
+<span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>() { 
+  <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Sleep</span>(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Duration</span>(<span style="color:#ae81ff">5000</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Millisecond</span>)
+  <span style="color:#a6e22e">c</span> <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;Leo&#34;</span> 
+}()
+<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Hello: %s\n&#34;</span>, <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">c</span>) <span style="color:#75715e">//this will block until the channel has something to give us 
+</span></code></pre></div><p>The code above creates a goroutine from an anonymous-executing function that will, in the background, sleep for 5 seconds and then send the string <code>Leo</code> to the channel <code>c</code>. Since control is returned immediately after that, the call blocks on the next line where it&rsquo;s trying to read a value from the channel using the <code>&lt;-c</code> statement.</p>
+<h3 id="lisp">Lisp</h3>
+<p>&ldquo;But What does all this have to do with Lisp?&rdquo; - ah! I&rsquo;m glad you asked.</p>
+<p>It actually has more to do with <a href="http://clojure.org/">Clojure</a> - and by extension, Lisp.</p>
+<p><a href="http://clojure.org/">Clojure</a> is a modern Lisp for the JVM, built for concurrency. The core team recently released <a href="https://github.com/clojure/core.async">core.async</a>, a new library that adds support for asynchronous programming much in the same way Go does with goroutines.</p>
+<p>To highlight the similarities, I&rsquo;ll show and translate a couple of the examples from Rob Pike&rsquo;s presentation, <a href="http://talks.golang.org/2012/concurrency.slide#1">Go Concurrency patterns</a>.</p>
+<h4 id="setting-the-scene">Setting the scene</h4>
+<p>Say you&rsquo;re Google. And you need to write code that takes user input, - a search string - hits 3 different search services, - web, images and video - aggregates the results and presents them to the user.</p>
+<p>Since they are three different services, you wish to do this concurrently.</p>
+<p>To simulate these services, Rob presented a function that has unpredictable performance based of a random amount of sleep, shown below:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">var</span> (
+    <span style="color:#a6e22e">Web</span>   = <span style="color:#a6e22e">fakeSearch</span>(<span style="color:#e6db74">&#34;web&#34;</span>)
+    <span style="color:#a6e22e">Image</span> = <span style="color:#a6e22e">fakeSearch</span>(<span style="color:#e6db74">&#34;image&#34;</span>)
+    <span style="color:#a6e22e">Video</span> = <span style="color:#a6e22e">fakeSearch</span>(<span style="color:#e6db74">&#34;video&#34;</span>)
+)
+
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Search</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">query</span> <span style="color:#66d9ef">string</span>) <span style="color:#a6e22e">Result</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">fakeSearch</span>(<span style="color:#a6e22e">kind</span> <span style="color:#66d9ef">string</span>) <span style="color:#a6e22e">Search</span> {
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">query</span> <span style="color:#66d9ef">string</span>) <span style="color:#a6e22e">Result</span> {
+              <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Sleep</span>(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Duration</span>(<span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">Intn</span>(<span style="color:#ae81ff">100</span>)) <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Millisecond</span>)
+              <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">Result</span>(<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;%s result for %q\n&#34;</span>, <span style="color:#a6e22e">kind</span>, <span style="color:#a6e22e">query</span>))
+        }
+}
+</code></pre></div><p>This is one way we could write such function in Clojure:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>fake-search [kind]
+  (<span style="color:#66d9ef">fn </span>[query]
+    (<span style="color:#a6e22e">Thread/sleep</span> (int (* (<span style="color:#a6e22e">java.lang.Math/random</span>) <span style="color:#ae81ff">1000</span>)))
+    (str kind <span style="color:#e6db74">&#34; result for &#34;</span> query)))
+
+(<span style="color:#66d9ef">def </span>web   (<span style="color:#a6e22e">fake-search</span> <span style="color:#e6db74">&#34;Web&#34;</span>))
+(<span style="color:#66d9ef">def </span>image (<span style="color:#a6e22e">fake-search</span> <span style="color:#e6db74">&#34;Image&#34;</span>))
+(<span style="color:#66d9ef">def </span>video (<span style="color:#a6e22e">fake-search</span> <span style="color:#e6db74">&#34;Video&#34;</span>))
+</code></pre></div><h4 id="google-search-20">Google Search 2.0</h4>
+<p>The first example is the simple case: we hit the services concurrently, wait for them to respond and then return the results:</p>
+<blockquote>
+<p>This example is from <a href="http://talks.golang.org/2012/concurrency.slide#46">slide #46</a>.</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Google</span>(<span style="color:#a6e22e">query</span> <span style="color:#66d9ef">string</span>) (<span style="color:#a6e22e">results</span> []<span style="color:#a6e22e">Result</span>) {
+    <span style="color:#a6e22e">c</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">Result</span>)
+    <span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>() { <span style="color:#a6e22e">c</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">Web</span>(<span style="color:#a6e22e">query</span>) } ()
+    <span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>() { <span style="color:#a6e22e">c</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">Image</span>(<span style="color:#a6e22e">query</span>) } ()
+    <span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>() { <span style="color:#a6e22e">c</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">Video</span>(<span style="color:#a6e22e">query</span>) } ()
+
+    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> &lt; <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> {
+        <span style="color:#a6e22e">result</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">c</span>
+        <span style="color:#a6e22e">results</span> = append(<span style="color:#a6e22e">results</span>, <span style="color:#a6e22e">result</span>)
+    }
+    <span style="color:#66d9ef">return</span>
+}
+</code></pre></div><p>And here&rsquo;s the Clojure version:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>google2-0 [query]
+  (<span style="color:#66d9ef">let </span>[c (<span style="color:#a6e22e">chan</span>)]
+    (<span style="color:#a6e22e">go</span> (<span style="color:#a6e22e">&gt;!</span> c (<span style="color:#a6e22e">web</span> query)))
+    (<span style="color:#a6e22e">go</span> (<span style="color:#a6e22e">&gt;!</span> c (<span style="color:#a6e22e">image</span> query)))
+    (<span style="color:#a6e22e">go</span> (<span style="color:#a6e22e">&gt;!</span> c (<span style="color:#a6e22e">video</span> query)))
+    (reduce (<span style="color:#66d9ef">fn </span>[results _]
+              (conj results (<span style="color:#a6e22e">&lt;!!</span> (<span style="color:#a6e22e">go</span> (<span style="color:#a6e22e">&lt;!</span> c)))))
+            []
+            (range <span style="color:#ae81ff">3</span>))))
+
+(<span style="color:#a6e22e">google2-0</span> <span style="color:#e6db74">&#34;Clojure&#34;</span>)
+<span style="color:#75715e">;; prints [&#34;Video result for Clojure&#34; &#34;Web result for Clojure&#34; &#34;Image result for Clojure&#34;]</span>
+</code></pre></div><p>The <a href="http://clojure.github.io/core.async/#clojure.core.async/%3E!"><code>&gt;!</code></a> operator puts a value into a channel inside a <code>go</code> form. The function then uses <a href="http://clojure.github.io/core.async/#clojure.core.async/%3C!!"><code>&lt;!!</code></a> to block on the <code>c</code> channel until it gets a value we can use.</p>
+<h4 id="google-search-21">Google Search 2.1</h4>
+<p>This is virtually the same example but this time we do not wish to wait on slow servers. So we&rsquo;ll return whatever results we have after a pre-defined timeout.</p>
+<blockquote>
+<p>This example is from <a href="http://talks.golang.org/2012/concurrency.slide#47">slide #47</a>.</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">c</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">Result</span>)
+<span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>() { <span style="color:#a6e22e">c</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">Web</span>(<span style="color:#a6e22e">query</span>) } ()
+<span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>() { <span style="color:#a6e22e">c</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">Image</span>(<span style="color:#a6e22e">query</span>) } ()
+<span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>() { <span style="color:#a6e22e">c</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">Video</span>(<span style="color:#a6e22e">query</span>) } ()
+
+<span style="color:#a6e22e">timeout</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">After</span>(<span style="color:#ae81ff">80</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Millisecond</span>)
+<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> &lt; <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> {
+    <span style="color:#66d9ef">select</span> {
+    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">c</span>:
+        <span style="color:#a6e22e">results</span> = append(<span style="color:#a6e22e">results</span>, <span style="color:#a6e22e">result</span>)
+    <span style="color:#66d9ef">case</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">timeout</span>:
+        <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;timed out&#34;</span>)
+        <span style="color:#66d9ef">return</span>
+    }
+}
+<span style="color:#66d9ef">return</span>
+</code></pre></div><p>You&rsquo;ll notice the use of <code>select</code> here.</p>
+<p><code>select</code> waits on multiple channels and returns as soon as <em>any</em> of them has something to say.</p>
+<p>The trick of this example is that one of these channels times out, at which point you get the message &ldquo;timed out&rdquo;, effectively moving on to the next iteration and ignoring that slow server(s) response.</p>
+<p>We can express the same intent in Clojure as well:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>google2-1 [query]
+  (<span style="color:#66d9ef">let </span>[c (<span style="color:#a6e22e">chan</span>)
+        t (<span style="color:#a6e22e">timeout</span> <span style="color:#ae81ff">500</span>)]
+    (<span style="color:#a6e22e">go</span> (<span style="color:#a6e22e">&gt;!</span> c (<span style="color:#a6e22e">web</span> query)))
+    (<span style="color:#a6e22e">go</span> (<span style="color:#a6e22e">&gt;!</span> c (<span style="color:#a6e22e">image</span> query)))
+    (<span style="color:#a6e22e">go</span> (<span style="color:#a6e22e">&gt;!</span> c (<span style="color:#a6e22e">video</span> query)))
+    
+    (reduce (<span style="color:#66d9ef">fn </span>[results _]
+              (conj results (first (<span style="color:#a6e22e">alts!!</span> [c t]))))
+            []
+            (range <span style="color:#ae81ff">3</span>))))
+
+
+(<span style="color:#a6e22e">google2-1</span> <span style="color:#e6db74">&#34;Clojure&#34;</span>)
+<span style="color:#75715e">;; prints [&#34;Video result for Clojure&#34; nil nil]</span>
+</code></pre></div><p>Everything looks the same but we&rsquo;re using <a href="http://clojure.github.io/core.async/#clojure.core.async/alts!!"><code>alts!!</code></a> to wait on the channels <code>c</code> and <code>t</code> (the timeout channel). This is analogous to Go&rsquo;s <code>select</code> form in that it waits for any channel to receive a value or, in this case, to timeout.</p>
+<p>Note the <code>nil</code> values. Those came from servers which did not respond in time and were simply ignored.</p>
+<p>Effectively what this means is that each time you run this function you&rsquo;ll likely get different results, depending on how long the <code>fake-search</code> function takes to run.</p>
+<p>Amazing, huh?</p>
+<h3 id="the-big-deal">The big deal</h3>
+<p>But here&rsquo;s the <em>big deal</em> about this: although <a href="https://github.com/clojure/core.async">core.async</a> looks like it&rsquo;s deeply integrated into the language, it is <em>just</em> a library!</p>
+<p>It&rsquo;s not a separate compiler. It&rsquo;s not a new language. And it&rsquo;s not a special version of Clojure.</p>
+<p>Since Clojure supports macros - like all Lisps - the core team was able to create the syntax required to easily use <a href="https://github.com/clojure/core.async">core.async</a>. And that&rsquo;s the beauty of it!</p>
+<p><em>The Lisp advantage, once again.</em></p>
+<h4 id="clojures-advantage">Clojure&rsquo;s advantage</h4>
+<p>Now one thing I haven&rsquo;t mentioned is that Clojure is particularly well suited for this - and in a way even more so than Go: Clojure is opinionated and favours immutability.</p>
+<p>That means that when using channels - and in fact any type of concurrent programming - you can safely share your data structures between concurrent units of work. Since they&rsquo;re immutable, you can&rsquo;t shoot yourself in the foot.</p>
+<p>One last thing: <a href="https://github.com/clojure/core.async">core.async</a> states as one of its goals Clojurescript compatibility, bringing channel based concurrent programming to the browser. Exciting stuff.</p>
+<h3 id="more-on-coreasync">More on core.async</h3>
+<p><a href="https://github.com/clojure/core.async">core.async</a> is still in alpha but you are encouraged to take it for a spin. Documentation is still lacking so I recommend you look at:</p>
+<ul>
+<li><a href="http://clojure.com/blog/2013/06/28/clojure-core-async-channels.html">Rich&rsquo;s blog post about it</a></li>
+<li><a href="https://github.com/clojure/core.async">The source code on github</a></li>
+<li><a href="https://github.com/clojure/core.async/blob/master/examples/walkthrough.clj">The walkthrough namespace</a>, which showcases its features.</li>
+</ul>
+<p>Also, the full Clojure code I used here can be seen in <a href="https://gist.github.com/leonardoborges/5924461">this gist</a>.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "leonardoborges" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://leonardoborges.com/" >
+    &copy;  Leonardo Borges 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
