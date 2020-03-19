@@ -1,4 +1,5 @@
 +++
+title = "A Tale Of Concurrency: Partitioning Data Between Processes"
 date = "2011-06-19"
 slug = "2011/06/19/a-tale-of-concurrency-partitioning-data-between-processes"
 excerpt = "So I had just finished writing this feature. I was confident it'd work - after all I had a good level of tests around it. It sounded like yet another successful deployment. One week in and something starts breaking. It was hard to track down but at the end I realised it was caused by having concurrent processes running in parallel..."
