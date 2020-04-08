@@ -1,6 +1,5 @@
 ---
 title: "Talks & Code"
-date: 2020-03-19T17:58:15+11:00
 draft: true
 ---
 
