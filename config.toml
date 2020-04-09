@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Leonardo Borges"
 theme = "ananke"
 disqusShortname = "leonardoborges"
+googleAnalytics = "UA-2811271-1"
 
 # SectionPagesMenu = "main"
 
