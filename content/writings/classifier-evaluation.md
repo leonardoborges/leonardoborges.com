@@ -1,7 +1,7 @@
 ---
 title: "Classifier Evaluation"
 date: 2020-04-09T07:26:02+10:00
-draft: true
+draft: false
 description: "Code. Leadership. AI."
 tags: ["ai", "ml", "machine-learning"]
 slug: "2020/04/09/classifier-evaluation"

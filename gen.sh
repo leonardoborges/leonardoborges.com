@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-hugo -D
+# Generate including drafts:
+# hugo -D 
+# Generate without drafts:
+hugo

@@ -1,7 +1,7 @@
 ---
 title: "Books"
 date: 2020-03-19T12:29:00+11:00
-draft: true
+draft: false
 ---
 
 I am fortunate enough to be able to call myself an author.  I published my first book [Clojure Reactive Programming](https://www.amazon.com/Clojure-Reactive-Programming-Leonardo-Borges/dp/1783986662/) in 2015 and it's available on [Amazon](https://www.amazon.com/Clojure-Reactive-Programming-Leonardo-Borges/dp/1783986662/).
